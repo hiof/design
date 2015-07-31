@@ -1,0 +1,100 @@
+html {
+  font-size: 62.5%; /* Sets up the Base 10 stuff */
+}
+.body{
+
+  max-width: 1040px;
+  margin: 0 auto;
+  //padding-top: 44px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.ember-view{
+  width: 100%;
+}
+
+
+.navbar-brand{
+  color: #111;
+  padding-left: 4.4rem;
+  background-image: url('/assets/images/icons/emblem.svg');
+  background-size: 32px 32px;
+  font-weight: bold;
+}
+.emblem{
+  position: absolute;
+  top: 14px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  //g{fill: #000;}
+  path{
+    fill: #000;
+  }
+}
+
+.lo-full {
+  float: left;
+  width: 100%;
+}
+
+//.nav{
+//  position: fixed;
+//  top: 0;
+//  background: #fff;
+//  width: 100%;
+//  max-width: 1040px;
+//}
+//.nav ul,
+//.nav h1 {
+//  float: left;
+//  line-height: 44px;
+//  font-size: 16px;
+//  padding: 0;
+//  margin: 0;
+//}
+//.nav h1{
+//  text-align: center;
+//}
+//.nav ul{
+//  padding: 0;
+//}
+//
+//.nav li {
+//  display: inline-block;
+//  list-style: none;
+//}
+//.nav a{
+//  text-decoration: none;
+//  margin-right: 10px;
+//  border: 1px solid #eee;
+//  border-radius: 4px;
+//  line-height: 44px;
+//  padding: 6px 16px;
+//  color: #444;
+//}
+//
+//.nav-internal{
+//  float: right !important;
+//  text-align: right;
+//}
+//
+//.fullscreen .nav{
+//  display: none;
+//}
+
+.fullscreen{
+  padding: 0;
+  .navbar{
+
+  }
+}
+
+
+
+#toc-list li{
+  list-style: none;
+}
+#toc-list li>ol{
+  display: none;
+}
