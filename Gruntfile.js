@@ -21,7 +21,8 @@ module.exports = function(grunt) {
                     width: 10000
                 },
                 files: {
-                    'bower_components/api/sections.json': ['content/*.md']
+                    'bower_components/api/sections.json': ['content/designguidelines/*.md'],
+                    'bower_components/api/files.json': ['content/files/*.md']
                 },
             }
         }
