@@ -5,7 +5,8 @@ module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
   });
-
+  app.import('bower_components/api/sections.json');
+  //app.import(app.bowerDirectory + '/hiof-layout/app/assets/sass/layout.scss');
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //

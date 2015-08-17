@@ -1,18 +1,22 @@
-html {
-  font-size: 62.5%; /* Sets up the Base 10 stuff */
-}
-.body{
 
-  max-width: 1040px;
-  margin: 0 auto;
-  //padding-top: 44px;
-  font-family: 'Source Sans Pro', sans-serif;
-}
+@import 'bootstrap-custom';
+@import '../../bower_components/hiof-layout/dist/layout';
+//@import "pod-styles";
+
+//html {
+//  font-size: 62.5%; /* Sets up the Base 10 stuff */
+//}
+//.body{
+//
+//  max-width: 1040px;
+//  margin: 0 auto;
+//  //padding-top: 44px;
+//  font-family: 'Source Sans Pro', sans-serif;
+//}
 
 .ember-view{
   width: 100%;
 }
-
 
 .navbar-brand{
   color: #111;
@@ -33,11 +37,17 @@ html {
   }
 }
 
-.lo-full {
-  float: left;
-  width: 100%;
-}
+//.lo-full {
+//  float: left;
+//  width: 100%;
+//}
+//.lo-auron-2-3{
+//  width: 66%;
+//}
 
+.visuallyhidden{
+  display: none;
+}
 //.nav{
 //  position: fixed;
 //  top: 0;
