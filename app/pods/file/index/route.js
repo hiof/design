@@ -19,7 +19,7 @@ export default Ember.Route.extend({
                 files.push(val);
 
             });
-            //console.log(files);
+            console.log(files);
             return files;
         });
 

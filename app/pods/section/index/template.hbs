@@ -1,15 +1,33 @@
 {{outlet}}
+
+
+
+
+{{#each model as |entry|}}
+{{#if (eq entry.type 'documentation')}}
+  <p>Documentation!</p>
+{{/if}}
+
+{{#if (eq entry.type 'documenttemplates')}}
+  <p>documenttemplates!</p>
+{{/if}}
+
+{{/each}}
+
+
+
+
 <section class="lo-auron-2-3">
 <h1>Designmal</h1>
 {{#each model as |post|}}
-<section class="section" id="{{post.basename}}">
-  <h2>{{post.title}}</h2>
-{{markdown-to-html markdown=post.preview}}
+  <section class="section" id="{{post.basename}}">
+    <h2>{{post.title}}</h2>
+    {{markdown-to-html markdown=post.preview}}
 
-  <aside class="visuallyhidden">
-    Publsihed by {{post.author}} on {{post.date}}
-  </aside>
-</section>
+    <aside class="visuallyhidden">
+      Publsihed by {{post.author}} on {{post.date}}
+    </aside>
+  </section>
 {{/each}}
 </section>
 
@@ -22,8 +40,9 @@
         <li><a href="#{{post.basename}}">{{post.title}}</a></li>
       {{/each}}
     </ul></li>
-    <li><a href="/filer">Nedlastbare filer</a>
+    <li><a href="/dukumentmaler">Dokumentmaler</a>
     </li>
+    <li><a href="/">Nettside komponenter</a></li>
     </ul>
   </nav>
 </aside>
