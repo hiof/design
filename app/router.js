@@ -20,7 +20,7 @@ Router.map(function() {
   });
 
 
-  this.route('file',{ path: '/files' }, function(){
+  this.route('file',{ path: '/dokumentmaler' }, function(){
      this.route("file", {
           path: ":file_id"
       });
