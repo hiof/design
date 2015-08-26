@@ -8,8 +8,8 @@ module.exports = function(defaults) {
         }
 
     });
-    app.import('bower_components/api/sections.json');
-    app.import('bower_components/api/files.json');
+    //app.import('bower_components/api/sections.json');
+    //app.import('bower_components/api/files.json');
     app.import('bower_components/ember/ember-template-compiler.js', {
         prepend: true
     });
