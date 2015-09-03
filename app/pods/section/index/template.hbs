@@ -1,48 +1,58 @@
 {{outlet}}
 
+<header class="lo-full">
+  <h1>Design</h1>
+</header>
+
+<aside class="lo-auron-1-3 float-right">
+  <nav class="nav" data-spy="affix" data-offset-top="20">
+    <ul>
+    <li><a href="#designmal">Designmal</a><ul>
+      {{#each model.data as |post|}}
+        <li><a href="#{{post.attributes.basename}}">{{post.attributes.title}}</a></li>
+      {{/each}}
+    </ul></li>
+    <li><a href="#dukumentmaler">Dokumentmaler</a><ul>
+
+      {{#each model.included as |dt|}}
+        <li><a href="#{{dt.attributes.title}}">{{dt.attributes.title}}</a></li>
+      {{/each}}</ul>
+    </li>
+    <li><a href="#nettsidekomponenter">Nettside komponenter</a></li>
+    </ul>
+  </nav>
+</aside>
 
 
-
-{{#each model as |entry|}}
-{{#if (eq entry.type 'documentation')}}
-  <p>Documentation!</p>
-{{/if}}
-
-{{#if (eq entry.type 'documenttemplates')}}
-  <p>documenttemplates!</p>
-{{/if}}
-
-{{/each}}
-
-
-
-
-<section class="lo-auron-2-3">
+<section id="designmal" class="lo-auron-2-3">
 <h1>Designmal</h1>
-{{#each model as |post|}}
-  <section class="section" id="{{post.basename}}">
-    <h2>{{post.title}}</h2>
-    {{markdown-to-html markdown=post.preview}}
+{{#each model.data as |post|}}
+  <section class="section" id="{{post.attributes.basename}}">
+    <h2>{{post.attributes.title}}</h2>
+    {{markdown-to-html markdown=post.attributes.preview}}
 
-    <aside class="visuallyhidden">
-      Publsihed by {{post.author}} on {{post.date}}
-    </aside>
+    <footer class="visuallyhidden">
+      Publsihed by {{post.attributes.author}} on {{post.attributes.date}}
+    </footer>
   </section>
 {{/each}}
 </section>
 
 
-<aside class="lo-auron-1-3">
-  <nav class="nav" data-spy="affix" data-offset-top="20">
-    <ul>
-    <li><a href="/">Designmal</a><ul>
-      {{#each model as |post|}}
-        <li><a href="#{{post.basename}}">{{post.title}}</a></li>
-      {{/each}}
-    </ul></li>
-    <li><a href="/dukumentmaler">Dokumentmaler</a>
-    </li>
-    <li><a href="/">Nettside komponenter</a></li>
-    </ul>
-  </nav>
-</aside>
+<section id="dukumentmaler" class="lo-auron-2-3">
+  <h1>Dokumentmaler</h1>
+  {{#each model.included as |dt|}}
+  <section class="section" id="{{dt.attributes.title}}">
+    <h2>{{dt.attributes.title}}</h2>
+    {{markdown-to-html markdown=dt.attributes.body}}
+    <footer class="visuallyhidden">
+      Publsihed by {{post.attributes.author}} on {{post.attributes.date}}
+    </footer>
+  </section>
+  {{/each}}
+</section>
+
+<section id="nettsidekomponenter" class="lo-auron-2-3">
+  <h1>Nettsidekomponenter</h1>
+</section>
+

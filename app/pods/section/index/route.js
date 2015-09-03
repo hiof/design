@@ -13,7 +13,7 @@ export default Ember.Route.extend({
             //Ember.$.each(data, function(key, val) {
             //    sections.push(val);
             //});
-            console.log(data);
+            //console.log(data);
             return data;
         });
 
