@@ -1,0 +1,78 @@
+<header class="header">
+<nav class="navbar navbar-fixed-top">
+<div class="container-fluid">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/">
+      <svg class="emblem" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="11 105.9 29.4 30" enable-background="new 11 105.9 29.4 30" xml:space="preserve">
+        <g>
+          <path fill="none" d="M19,125.6h3.5l4.8-13.1h-3.5L19,125.6L19,125.6z"/>
+          <path fill="none" d="M32.6,107.6l-1.1,3.1c3.5,2,5.8,5.7,5.8,10c0,6.4-5.2,11.5-11.5,11.5s-11.5-5.2-11.5-11.5
+            c0-6.4,5.2-11.5,11.5-11.5c0.9,0,1.8,0.1,2.7,0.3l1.1-3.1c-1.2-0.3-2.5-0.5-3.8-0.5c-8.1,0-14.8,6.6-14.8,14.8s6.6,14.8,14.8,14.8
+            c8.1,0,14.8-6.6,14.8-14.8C40.5,115,37.3,110.1,32.6,107.6L32.6,107.6L32.6,107.6z"/>
+          <path fill="none" d="M26,125.6h3.5l3-8.2H29L26,125.6L26,125.6z"/>
+      </g>
+      </svg>
+
+    Høgskolen i Østfold</a>
+  </div>
+  <div class="collapse navbar-collapse">
+
+
+  <ul id="nav-internal" class="nav navbar-nav  navbar-right">
+      <li class="dropdown">
+      <a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Designmal<span class="caret"></span></a><ul class="dropdown-menu collapse" role="menu">
+      {{#each designmal as |nav|}}
+        <li><a href="#{{nav.attributes.basename}}">{{nav.attributes.title}}</a></li>
+      {{/each}}
+      </ul></li>
+
+      <li class="dropdown">
+      <a href="/files" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dokumentmal<span class="caret"></span></a><ul class="dropdown-menu collapse" role="menu">
+      {{#each dokumentmal as |nav|}}
+        <li><a href="#{{nav.attributes.title}}">{{nav.attributes.title}}</a></li>
+      {{/each}}
+      </ul></li>
+      <!--
+      <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Nettsidekomponenter<span class="caret"></span></a><ul class="dropdown-menu collapse" role="menu">
+      {{#each nettsidekomponenter as |nav|}}
+        <li><a href="#{{nav.attributes.basename}}">{{nav.attributes.title}}</a></li>
+      {{/each}}
+      </ul></li>
+      -->
+  </ul>
+  <!--
+  <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Hva søker du etter?">
+        </div>
+        <button type="submit" class="btn btn-default">Søk</button>
+      </form>
+  <ul class="nav navbar-nav navbar-right">
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Your name<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Min profil</a></li>
+            <li><a href="#">Mine innstillinger</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Logg ut</a></li>
+          </ul>
+        </li>
+      </ul>
+-->
+  </div>
+
+</div>
+</nav>
+
+
+
+</header>
