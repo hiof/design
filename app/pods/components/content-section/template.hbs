@@ -1,9 +1,13 @@
-{{yield}}
+<article class="section" id="{{sectionid}}">
 
-<section class="section" id="{{sectionid}}">
 <h2>{{title}}</h2>
-{{markdown-to-html markdown=content}}
+<section class="section-content">{{markdown-to-html markdown=content}}</section>
+{{#if illustration}}
+  <aside class="section-illustration"><img src="http://placehold.it/650x400"></aside>
+{{else}}
+  <aside class="section-illustration-placeholder"></aside>
+{{/if}}
     <footer class="visuallyhidden">
       Publsihed by {{author}} on {{date}}
     </footer>
-</section>
+</article>
