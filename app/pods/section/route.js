@@ -9,16 +9,7 @@ export default Ember.Route.extend({
 
 
 
-        return Ember.$.getJSON('http://hiof.no/api/v1/designguidelines/').then(function(data){
-          console.log(data.data.type);
-          //if (data.include.type === 'templates') {
-          //  data.set('asset-path', '/assets/plugins/designguidelines-files/');
-          //}else if(data.data.type === 'templates'){
-//
-          //}
-          console.log(data);
-          return data;
-        });
+        return Ember.$.getJSON('http://hiof.no/api/v1/designguidelines/');
 
         //var documentTemplateSections = Ember.$.getJSON("http://hiof.no/api/v1/designguidelines/?type=ducmenemplate").then(function(data) {
         //

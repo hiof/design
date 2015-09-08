@@ -1,0 +1,16 @@
+
+
+
+
+ <header> <h1>Dokumentmaler</h1></header>
+{{#each model.data as |post|}}
+  {{content-section type=post.type title=post.attributes.title content=post.attributes.body sectionid=post.attributes.title author=post.attributes.author date=post.attributes.date illustration=post.attributes.illustration}}
+{{/each}}
+
+<aside>
+<ul>
+  {{#each model.data as |post|}}
+  {{nav-internal title=post.attributes.title sectionid=post.attributes.basename type="dokumentmaler"}}
+  {{/each}}
+</ul>
+</aside>

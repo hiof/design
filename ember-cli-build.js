@@ -5,8 +5,10 @@ module.exports = function(defaults) {
     var app = new EmberApp(defaults, {
         'ember-cli-bootstrap-sass': {
             'importBootstrapJS': true
+        },
+        buildInfoOptions: {
+          metaTemplate: 'version={VERSION}'
         }
-
     });
     //app.import('bower_components/api/sections.json');
     //app.import('bower_components/api/files.json');

@@ -9,6 +9,7 @@ module.exports = function(environment) {
         locationType: 'auto',
         contentSecurityPolicy: {
             'connect-src': "'self' hiof.no",
+            'img-src': "'self' placehold.it placeholdit.imgix.net" // For placeholder images
         },
         EmberENV: {
             FEATURES: {

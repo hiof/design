@@ -1,4 +1,4 @@
-<header class="header">
+
 <nav class="navbar navbar-fixed-top">
 <div class="container-fluid">
   <div class="navbar-header">
@@ -26,19 +26,9 @@
 
 
   <ul id="nav-internal" class="nav navbar-nav  navbar-right">
-      <li class="dropdown">
-      <a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Designmal<span class="caret"></span></a><ul class="dropdown-menu collapse" role="menu">
-      {{#each designmal as |nav|}}
-        <li><a href="#{{nav.attributes.basename}}">{{nav.attributes.title}}</a></li>
-      {{/each}}
-      </ul></li>
-
-      <li class="dropdown">
-      <a href="/files" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dokumentmal<span class="caret"></span></a><ul class="dropdown-menu collapse" role="menu">
-      {{#each dokumentmal as |nav|}}
-        <li><a href="#{{nav.attributes.title}}">{{nav.attributes.title}}</a></li>
-      {{/each}}
-      </ul></li>
+      <li>{{#link-to 'guide'}}Designmal{{/link-to}}</li>
+      <li>{{#link-to 'template'}}Dokumentmaler{{/link-to}}</li>
+      <li>{{#link-to 'webcomponent'}}Web komponenter{{/link-to}}</li>
       <!--
       <li class="dropdown">
       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Nettsidekomponenter<span class="caret"></span></a><ul class="dropdown-menu collapse" role="menu">
@@ -74,5 +64,3 @@
 </nav>
 
 
-
-</header>
