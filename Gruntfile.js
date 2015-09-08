@@ -3,10 +3,10 @@ module.exports = function(grunt) {
     require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
     require('time-grunt')(grunt);
 
-    //var mySecret = false;
-    //if (grunt.file.exists('secret.json')) {
-    //    mySecret = grunt.file.readJSON('secret.json');
-    //}
+    var mySecret = false;
+    if (grunt.file.exists('secret.json')) {
+        mySecret = grunt.file.readJSON('secret.json');
+    }
 
 
     // Initiate grunt tasks
@@ -14,18 +14,6 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         moment: require('moment'),
 
-        m2j: {
-            release: {
-                options: {
-                    minify: false,
-                    width: 10000
-                },
-                files: {
-                    'bower_components/api/sections.json': ['content/designguidelines/*.md'],
-                    'bower_components/api/files.json': ['content/files/*.md']
-                },
-            }
-        }
 
     });
 
@@ -33,7 +21,7 @@ module.exports = function(grunt) {
     // Tasks
 
     // Register tasks
-    grunt.registerTask('default', ['m2j']);
+
 
 
 

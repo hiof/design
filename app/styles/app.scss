@@ -14,19 +14,31 @@ h5,
 h6 {
     margin-top: 0;
 }
-
-.ember-view {
-    width: 100%;
+body{
+  position:relative;
 }
-
+//.ember-view {
+//    //width: 100%;
+//}
+.navbar{
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
 .navbar-brand {
     color: #111;
     padding-left: 4.4rem;
     background-image: url('/assets/images/icons/emblem.svg');
     background-size: 32px 32px;
     font-weight: bold;
+    &:hover{
+      color: #111;
+    }
 }
-
+.container-fluid{
+  max-width: 104rem;
+  margin: 0 auto;
+  position:relative;
+}
 .emblem {
     position: absolute;
     top: 14px;
@@ -38,7 +50,9 @@ h6 {
         fill: #000;
     }
 }
-
+.main{
+  padding-top: 8rem;
+}
 .visuallyhidden {
     display: none;
 }
@@ -49,36 +63,36 @@ h6 {
 //
 //  }
 //}
-#toc-list li {
-    list-style: none;
-}
+//#toc-list li {
+//    list-style: none;
+//}
+//
+//#toc-list li>ol {
+//    display: none;
+//}
 
-#toc-list li>ol {
-    display: none;
-}
-
-.nav {
-    background: #fff;
-    padding: 3rem;
-    position: -webkit-sticky;
-    position: -moz-sticky;
-    position: -ms-sticky;
-    position: -o-sticky;
-    position: sticky;
-    top: 10px;
-    ul {
-        padding-left:0rem;
-        ul {
-            padding-left: 3rem;
-        }
-    }
-    li {
-        list-style: none;
-        &.active{
-          border-left: 2px solid #563d7c;
-        }
-    }
-}
+//.nav {
+//    background: #fff;
+//    padding: 3rem;
+//    position: -webkit-sticky;
+//    position: -moz-sticky;
+//    position: -ms-sticky;
+//    position: -o-sticky;
+//    position: sticky;
+//    top: 10px;
+//    ul {
+//        padding-left:0rem;
+//        ul {
+//            padding-left: 3rem;
+//        }
+//    }
+//    li {
+//        list-style: none;
+//        &.active{
+//          border-left: 2px solid #563d7c;
+//        }
+//    }
+//}
 
 .section {
     position: relative;
