@@ -9,7 +9,9 @@ module.exports = function(environment) {
         locationType: 'auto',
         contentSecurityPolicy: {
             'connect-src': "'self' hiof.no",
-            'img-src': "'self' placehold.it placeholdit.imgix.net" // For placeholder images
+            'img-src': "'self' placehold.it placeholdit.imgix.net", // For placeholder images
+            'script-src': "'self' 'unsafe-inline' 'unsafe-eval' cloudflare.com cdnjs.cloudflare.com",
+            'style-src': "'self' 'unsafe-inline' cloudflare.com cdnjs.cloudflare.com"
         },
         EmberENV: {
             FEATURES: {
