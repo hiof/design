@@ -13,6 +13,7 @@
     "loader.js": "ember-cli/loader.js#3.2.0",
     "qunit": "~1.17.1",
     "hiof-layout": "git@github.com:hiof/layout.git",
-    "hiof-colors": "git@github.com:hiof/colors.git"
+    "hiof-colors": "git@github.com:hiof/colors.git",
+    "hiof-typography": "git@github.com:hiof/typography.git"
   }
 }
