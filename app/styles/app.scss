@@ -1,6 +1,7 @@
 @import 'bootstrap-custom';
 @import '../../bower_components/hiof-layout/dist/layout';
 @import '../../bower_components/hiof-colors/dist/colors';
+@import '../../bower_components/hiof-typography/dist/typography';
 //@import "pod-styles";
 html {
     overflow-x: hidden;
@@ -56,7 +57,9 @@ body{
 .visuallyhidden {
     display: none;
 }
-
+.hljs{
+  width: 100%;
+}
 //.fullscreen{
 //  padding: 0;
 //  .navbar{
