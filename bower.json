@@ -14,6 +14,9 @@
     "qunit": "~1.17.1",
     "hiof-layout": "git@github.com:hiof/layout.git",
     "hiof-colors": "git@github.com:hiof/colors.git",
-    "hiof-typography": "git@github.com:hiof/typography.git"
+    "hiof-typography": "git@github.com:hiof/typography.git",
+    "toc": "git@github.com:ghiculescu/jekyll-table-of-contents.git",
+    "sass-mq": "~3.2.4",
+    "highlightjs": "~8.8.0"
   }
 }

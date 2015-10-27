@@ -1,12 +1,26 @@
+
+
+
+<section class="content">
 <h1>Designmal</h1>
 {{#each model.data as |post|}}
-  {{content-section data-section-id=post.attributes.basename type=post.type title=post.attributes.title content=post.attributes.preview sectionid=post.attributes.basename author=post.attributes.author date=post.attributes.date illustration=post.attributes.illustration}}
-{{/each}}
+  {{content-section data-section-id=post.attributes.basename basename=post.attributes.basename type=post.type title=post.attributes.title content=post.attributes.preview sectionid=post.attributes.basename author=post.attributes.author date=post.attributes.date illustration=post.attributes.illustration}}
+{{/each}}</section>
+{{nav-internal}}
 
-<aside>
+
+<!--
+
+
 <ul>
-  {{#each model.data as |post|}}
-  {{nav-internal title=post.attributes.title sectionid=post.attributes.basename type="designmal"}}
-  {{/each}}
-</ul>
-</aside>
+  <li><a href="/designmal/#top">Til topp</a>
+  <div class="nav-internal-inline">
+  <ul>
+    {{#each model.data as |post|}}
+    {{nav-internal title=post.attributes.title sectionid=post.attributes.basename type="designmal"}}
+    {{/each}}
+
+    </ul>
+    </div>
+  </li>
+</ul>-->

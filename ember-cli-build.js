@@ -15,6 +15,9 @@ module.exports = function(defaults) {
     app.import('bower_components/ember/ember-template-compiler.js', {
         prepend: true
     });
+    app.import(app.bowerDirectory + '/toc/toc.js');
+
+
     //app.import(app.bowerDirectory + '/hiof-layout/app/assets/sass/layout.scss');
     // Use `app.import` to add additional libraries to the generated
     // output files.

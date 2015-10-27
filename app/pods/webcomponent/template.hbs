@@ -1,7 +1,7 @@
 
 
 
-
+<section class="content">
 <header>
   <h1>Web komponenter</h1>
 </header>
@@ -14,16 +14,11 @@
   {{{post.attributes.result}}}
   {{{post.attributes.markup}}}
 
+
 </section>
 
 
   {{!content-section type=post.type content=post.attributes.comment}}
 {{/each}}
-
-<aside class="auron-1-2">
-<ul>
-  {{#each model.data as |post|}}
-  {{nav-internal title=post.attributes.title sectionid=post.attributes.slug type="web-komponenter"}}
-  {{/each}}
-</ul>
-</aside>
+</section>
+{{nav-internal}}

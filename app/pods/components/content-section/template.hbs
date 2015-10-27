@@ -1,13 +1,20 @@
 
 
-<h2>{{title}}</h2>
-<section class="section-content">{{markdown-to-html markdown=content}}</section>
+<h2 id="{{convert-aeoaa basename}}">{{title}}</h2>
+<section class="section-content">{{markdown-to-html markdown=content}}
+
+{{#if assetpath}}
+<footer>
+  <a href="https://hiof.no{{assetpath}}{{url}}" class="btn btn-primary">Last ned {{to-lower-case title}}</a>
+</footer>
+{{/if}}
+</section>
 {{#if illustration}}
-  <aside class="section-illustration"><img src="http://placehold.it/650x400"></aside>
+  <aside class="section-illustration"><img src="https://hiof.no/assets/plugins/design-{{type}}/illustrations/{{illustration}}"></aside>
 {{else}}
   <aside class="section-illustration-placeholder"></aside>
 {{/if}}
 <footer class="visuallyhidden">
-  Publsihed by {{author}} on {{date}}
+  Oppdatert av {{author}} on {{date}}
 </footer>
 
