@@ -7,7 +7,7 @@ module.exports = function(defaults) {
             'importBootstrapJS': true
         },
         buildInfoOptions: {
-          metaTemplate: 'version={VERSION}'
+            metaTemplate: 'version={VERSION}'
         }
     });
     //app.import('bower_components/api/sections.json');

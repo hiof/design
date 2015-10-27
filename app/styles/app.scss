@@ -206,6 +206,9 @@ img {
         background: #fff;
         padding: 2rem;
         border-radius: .4rem;
+        &:hover{
+          cursor: pointer;
+        }
     }
     clear: both;
     //h2{margin-left:-20rem;}
@@ -229,7 +232,12 @@ img {
     //  }
     //}
 }
-
+.btn{
+  .glyphicon{
+    top: 3px;
+    left: -2px;
+  }
+}
 .footer {
     margin-top: 4rem;
     padding-top: 4rem;

@@ -5,12 +5,23 @@
 
 {{#if assetpath}}
 <footer>
-  <a href="https://hiof.no{{assetpath}}{{url}}" class="btn btn-primary">Last ned {{to-lower-case title}}</a>
+  <a href="https://hiof.no{{assetpath}}{{url}}" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span> {{to-lower-case title}}</a>
 </footer>
 {{/if}}
 </section>
 {{#if illustration}}
-  <aside class="section-illustration"><img src="https://hiof.no/assets/plugins/design-{{type}}/illustrations/{{illustration}}"></aside>
+  <aside class="section-illustration">
+
+
+  <img {{action 'openModal' basename}} class="img-illustration" data-id="image-{{convert-aeoaa basename}}" src="https://hiof.no/assets/plugins/design-{{type}}/illustrations/{{illustration}}">
+
+
+{{#my-modal title=title basename=basename}}
+  <img src="https://hiof.no/assets/plugins/design-{{type}}/illustrations/{{illustration}}">
+{{/my-modal}}
+
+</aside>
+
 {{else}}
   <aside class="section-illustration-placeholder"></aside>
 {{/if}}
