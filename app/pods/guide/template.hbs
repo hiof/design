@@ -4,7 +4,7 @@
 <section class="content">
 <h1>Designmal</h1>
 {{#each model.data as |post|}}
-  {{content-section data-section-id=post.attributes.basename basename=post.attributes.basename type=post.type title=post.attributes.title content=post.attributes.preview sectionid=post.attributes.basename author=post.attributes.author date=post.attributes.date illustration=post.attributes.illustration}}
+  {{content-section data-section-id=post.attributes.basename basename=post.attributes.basename type=post.type title=post.attributes.title content=post.attributes.preview sectionid=post.attributes.basename author=post.attributes.author date=post.attributes.date illustration=post.attributes.illustration titletype=post.attributes.titletype}}
 {{/each}}</section>
 {{nav-internal}}
 

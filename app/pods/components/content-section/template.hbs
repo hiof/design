@@ -1,7 +1,28 @@
 
 
+
+
+
+
+<section class="section-content">
+
+{{#if titletype}}
+{{#if (eq titletype 1)}}
+<h1 id="{{convert-aeoaa basename}}">{{title}}</h1>
+{{/if}}
+
+{{#if (eq titletype 2)}}
 <h2 id="{{convert-aeoaa basename}}">{{title}}</h2>
-<section class="section-content">{{markdown-to-html markdown=content}}
+{{/if}}
+
+{{#if (eq titletype 3)}}
+<h3 id="{{convert-aeoaa basename}}">{{title}}</h3>
+{{/if}}
+{{else}}
+<h2 id="{{convert-aeoaa basename}}">{{title}}</h2>
+{{/if}}
+
+{{markdown-to-html markdown=content}}
 
 {{#if assetpath}}
 <footer>
@@ -10,15 +31,13 @@
 {{/if}}
 </section>
 {{#if illustration}}
-  <aside class="section-illustration">
-
-
+<aside class="section-illustration">
   <img {{action 'openModal' basename}} class="img-illustration" data-id="image-{{convert-aeoaa basename}}" src="https://hiof.no/assets/plugins/design-{{type}}/illustrations/{{illustration}}">
 
 
-{{#my-modal title=title basename=basename}}
-  <img src="https://hiof.no/assets/plugins/design-{{type}}/illustrations/{{illustration}}">
-{{/my-modal}}
+  {{#my-modal title=title basename=basename}}
+    <img src="https://hiof.no/assets/plugins/design-{{type}}/illustrations/{{illustration}}">
+  {{/my-modal}}
 
 </aside>
 

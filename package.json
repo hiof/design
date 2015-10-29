@@ -1,6 +1,6 @@
 {
   "name": "design",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Small description for designguidlines goes here",
   "private": true,
   "directories": {
@@ -42,7 +42,7 @@
     "ember-disable-proxy-controllers": "^1.0.0",
     "ember-export-application-global": "^1.0.3",
     "ember-lazy-image": "0.0.14",
-    "ember-truth-helpers": "1.1.0",
+    "ember-truth-helpers": "1.2.0",
     "grunt": "^0.4.5",
     "grunt-markdown-to-json": "^0.4.2",
     "matchdep": "*",
