@@ -3,7 +3,7 @@
 <h1>Dokumentmaler</h1>
 
 {{#each model.data as |post|}}
-  {{content-section  type=post.type basename=post.attributes.slug title=post.attributes.title content=post.attributes.body  author=post.attributes.author date=post.attributes.date illustration=post.attributes.illustration assetpath=post.attributes.assetpath url=post.attributes.url}}
+  {{content-section  type=post.type basename=post.attributes.slug title=post.attributes.title content=post.attributes.body  author=post.attributes.author date=post.attributes.date illustration=post.attributes.illustration assetpath=post.attributes.assetpath url=post.attributes.relatedassets}}
 {{/each}}
 </section>
 {{nav-internal}}

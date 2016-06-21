@@ -1,34 +1,40 @@
 
 
-
-
-
-
 <section class="section-content">
 
-{{#if titletype}}
-{{#if (eq titletype 1)}}
-<h1 id="{{convert-aeoaa basename}}">{{title}}</h1>
-{{/if}}
+  {{#if titletype}}
+  {{#if (eq titletype 1)}}
+  <h1 id="{{convert-aeoaa basename}}">{{title}}</h1>
+  {{/if}}
 
-{{#if (eq titletype 2)}}
-<h2 id="{{convert-aeoaa basename}}">{{title}}</h2>
-{{/if}}
+  {{#if (eq titletype 2)}}
+  <h2 id="{{convert-aeoaa basename}}">{{title}}</h2>
+  {{/if}}
 
-{{#if (eq titletype 3)}}
-<h3 id="{{convert-aeoaa basename}}">{{title}}</h3>
-{{/if}}
-{{else}}
-<h2 id="{{convert-aeoaa basename}}">{{title}}</h2>
-{{/if}}
+  {{#if (eq titletype 3)}}
+  <h3 id="{{convert-aeoaa basename}}">{{title}}</h3>
+  {{/if}}
+  {{else}}
+  <h2 id="{{convert-aeoaa basename}}">{{title}}</h2>
+  {{/if}}
 
-{{markdown-to-html markdown=content}}
+  {{markdown-to-html markdown=content}}
 
-{{#if assetpath}}
-<footer>
-  <a href="https://hiof.no{{assetpath}}{{url}}" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span> {{to-lower-case title}}</a>
-</footer>
-{{/if}}
+  {{#if assetpath}}
+  <footer>
+    {{#if (is-array url)}}
+      {{#each url}}
+      <a href="https://hiof.no/assets/plugins/design-templates/public/{{this}}.zip" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span> {{this}} </a>
+      {{/each}}
+    {{else}}
+      {{#if url}}
+        <a href="https://hiof.no{{assetpath}}{{url}}.zip" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span> {{url}}</a>
+      {{/if}}
+    {{/if}}
+
+
+  </footer>
+  {{/if}}
 </section>
 {{#if illustration}}
 <aside class="section-illustration">
@@ -36,15 +42,14 @@
 
 
   {{#my-modal title=title basename=basename}}
-    <img src="https://hiof.no/assets/plugins/design-{{type}}/illustrations/{{illustration}}">
+  <img src="https://hiof.no/assets/plugins/design-{{type}}/illustrations/{{illustration}}">
   {{/my-modal}}
 
 </aside>
 
 {{else}}
-  <aside class="section-illustration-placeholder"></aside>
+<aside class="section-illustration-placeholder"></aside>
 {{/if}}
 <footer class="visuallyhidden">
   Oppdatert av {{author}} on {{date}}
 </footer>
-
