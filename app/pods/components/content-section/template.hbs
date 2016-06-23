@@ -41,9 +41,10 @@
   <img {{action 'openModal' basename}} class="img-illustration" data-id="image-{{convert-aeoaa basename}}" src="https://hiof.no/assets/plugins/design-{{type}}/illustrations/{{illustration}}">
 
 
-  {{#my-modal title=title basename=basename}}
+  {{#bs-modal title=title basename=basename footer=false open=false id=basename}}
   <img src="https://hiof.no/assets/plugins/design-{{type}}/illustrations/{{illustration}}">
-  {{/my-modal}}
+  {{bs-modal-footer closeTitle="Cancel" submitTitle="Ok"}}
+  {{/bs-modal}}
 
 </aside>
 

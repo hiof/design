@@ -1,10 +1,10 @@
-@import 'bootstrap-custom';
+//@import 'bootstrap-custom';
 @import '../../bower_components/sass-mq/mq';
 @import '../../bower_components/hiof-layout/dist/layout';
 @import '../../bower_components/hiof-colors/dist/colors';
 @import '../../bower_components/hiof-typography/dist/typography';
 @import '../../bower_components/highlightjs/styles/github';
-@import "pod-styles";
+//@import "pod-styles";
 html {
     overflow-x: hidden;
 
@@ -41,7 +41,9 @@ body {
         color: #111;
     }
 }
-
+.nav-stacked > li + li{
+  margin-left: 2.4rem;
+}
 .container-fluid {
     max-width: 104rem;
     margin: 0 auto;
