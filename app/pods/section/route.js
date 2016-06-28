@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
     activateDropdowns: function(){
-      console.log('Document is ready');
+      //console.log('Document is ready');
 
     },
     model: function() {

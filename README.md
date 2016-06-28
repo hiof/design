@@ -53,7 +53,7 @@ Specify what it takes to deploy your app.
 
 ## Todo
 
-
 [ ] Resources formats with descriptions
 [ ] Make section-links available for deep-linking straight to content.
-[ ] Feedback for each
+[ ] Feedback for each resource section
+[ ] Move the section regarding logo-clear space to a more prominent position and add more guidance

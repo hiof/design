@@ -10,7 +10,7 @@ export default Ember.Component.extend({
       headers: '.content h1, .content h2, .content h3, .content h4, .content h5, .content h6',
       showEffect: 'fadeIn'
     });
-    //Ember.$('body').scrollspy({ target: 'nav.nav-internal' });
+    Ember.$('body').scrollspy({ target: 'nav.nav-internal' });
     Ember.$('.nav-internal ul').addClass('nav nav-pills nav-stacked');
 
     Ember.$('.nav-internal a').on('click', function(e) {
@@ -25,6 +25,14 @@ export default Ember.Component.extend({
 
       //Ember.$.scrolTo($(this).attr('href'));
       //console.log(this);
+    });
+    Ember.$('.nav-internal').affix({
+      offset: {
+        top: 0,
+        bottom: function () {
+          return (this.bottom = Ember.$('.footer').outerHeight(true));
+        }
+      }
     });
   }
 });

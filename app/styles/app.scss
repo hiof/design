@@ -1,15 +1,17 @@
-//@import 'bootstrap-custom';
+@import 'bootstrap-custom';
 @import '../../bower_components/sass-mq/mq';
 @import '../../bower_components/hiof-layout/dist/layout';
 @import '../../bower_components/hiof-colors/dist/colors';
 @import '../../bower_components/hiof-typography/dist/typography';
 @import '../../bower_components/highlightjs/styles/github';
-//@import "pod-styles";
+@import "pod-styles";
 html {
     overflow-x: hidden;
 
 }
-
+body {
+  position: relative;
+}
 h1,
 h2,
 h3,
