@@ -23,28 +23,45 @@
   {{#if assetpath}}
   <footer>
     {{#if (is-array url)}}
-      {{#each url}}
-      <a href="https://hiof.no/assets/plugins/design-templates/public/{{this}}.zip" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span> {{this}} </a>
+      <h3>Last ned mal:</h3>
+      <br/>
+      {{#each url as |resource|}}
+      <div class="card">
+        <div class="card-header">
+          {{resource.title}}
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><strong>Versjon:</strong> {{resource.version}}</li>
+          <li class="list-group-item"><strong>Format:</strong> <em>.{{resource.format}}</em></li>
+          {{#if resource.formathelpertext}}
+          <li class="list-group-item"><strong>Beskrivelse:</strong> {{markdown-to-html markdown=resource.formathelpertext}}</li>
+          {{/if}}
+        </ul>
+        <div class="card-block">
+          <a class="btn btn-primary" href="https://hiof.no/assets/plugins/design-templates/public/{{resource.file}}-{{resource.format}}-{{resource.version}}.zip"><span class="glyphicon glyphicon-download"></span>Last ned</a>
+          <a class="card-link" href="mailto:infoenheten@hiof.no?subject=Malfeil: Fil:{{resource.file}}, versjon: {{resource.version}}">Meld fra om feil/mangler</a>
+        </div>
+      </div>
       {{/each}}
     {{else}}
       {{#if url}}
         <a href="https://hiof.no{{assetpath}}{{url}}.zip" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span> {{url}}</a>
       {{/if}}
     {{/if}}
-
-
-  </footer>
-  {{/if}}
+</footer>
+{{/if}}
 </section>
 {{#if illustration}}
 <aside class="section-illustration">
   <img {{action 'openModal' basename}} class="img-illustration" data-id="image-{{convert-aeoaa basename}}" src="https://hiof.no/assets/plugins/design-{{type}}/illustrations/{{illustration}}">
-
-
+  {{#my-modal basename=basename}}
+    <img src="https://hiof.no/assets/plugins/design-{{type}}/illustrations/{{illustration}}">
+  {{/my-modal}}
+  <!--
   {{#bs-modal title=title basename=basename footer=false open=false id=basename}}
     <img src="https://hiof.no/assets/plugins/design-{{type}}/illustrations/{{illustration}}">
   {{/bs-modal}}
-
+-->
 </aside>
 
 {{else}}

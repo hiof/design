@@ -12,7 +12,6 @@
     "hiof-typography": "git@github.com:hiof/typography.git",
     "sass-mq": "~3.2.4",
     "highlightjs": "~8.8.0",
-    "bootstrap-sass": "^3.3.6",
-    "bootstrap-v4": "bootstrap#v4.0.0-alpha.2"
+    "Stickyfill": "^1.1.4"
   }
 }

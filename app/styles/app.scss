@@ -25,24 +25,79 @@ body {
     position: relative;
 }
 
+ul,ol{
+  li.list-group-item{
+    margin-left: 0;
+  }
+}
+
+
 //.ember-view {
 //    //width: 100%;
 //}
 .navbar {
     background: #fff;
-    border-bottom: 1px solid #ddd;
+    background: rgba(255,255,255,.95);
+    //border-bottom: 1px solid #ddd;
+
+    max-width: 104rem;
+    margin: 0 auto;
+    &:after{
+      content: "";
+      position: absolute;
+      top: 52px;
+      width: 200%;
+      left: -50%;
+      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid rgba(0,0,0,.1);
+      display: block;
+    }
 }
 
 .navbar-brand {
     color: #111;
     padding-left: 4.4rem;
-    background-image: url('/assets/images/icons/emblem.svg');
+    //background-image: url('/assets/images/icons/emblem.svg');
     background-size: 32px 32px;
     font-weight: bold;
+    font-size: 1.8rem;
+    position: relative;
     &:hover {
         color: #111;
     }
+    .emblem {
+        position: absolute;
+        top: .4rem;
+        left: .6rem;
+        width: 32px;
+        height: 32px;
+        //g{fill: #000;}
+        path {
+            fill: #000;
+        }
+    }
+    .text-muted{
+      position: absolute;
+      top: 1.6rem;
+      left: 4.4rem;
+      font-size: 1rem;
+      color: #111;
+    }
 }
+.navbar-light{
+  .navbar-nav{
+    .nav-link{
+      color: #111;
+      padding: 5px 1rem;
+      &.active, &:focus, &:hover, &:active{
+        background: #0275d8;
+          color: #fff;
+      }
+    }
+
+  }
+}
+
 .nav-stacked > li + li{
   margin-left: 2.4rem;
 }
@@ -52,17 +107,7 @@ body {
     position: relative;
 }
 
-.emblem {
-    position: absolute;
-    top: 14px;
-    left: 0;
-    width: 24px;
-    height: 24px;
-    //g{fill: #000;}
-    path {
-        fill: #000;
-    }
-}
+
 
 @mixin flexbox() {
     display: -webkit-box;

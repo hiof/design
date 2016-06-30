@@ -1,7 +1,10 @@
 import Ember from 'ember';
-
+import fetch from 'ember-network/fetch';
 export default Ember.Route.extend({
-  model: function(){
-    return Ember.$.getJSON('http://hiof.no/api/v1/designguidelines/?type=guides');
+  model() {
+    return fetch('http://hiof.no/api/v2/designguidelines/?type=guides')
+      .then(function(response) {
+        return response.json();
+      });
   }
 });

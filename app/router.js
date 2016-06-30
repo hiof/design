@@ -26,7 +26,7 @@ Router.map(function() {
   //    });
   //});
 
-  this.route('guide', {path: '/designmal'}, function(){
+  this.route('guide', {path: '/grafisk-profil'}, function(){
       this.route("guide", {
           path: ":guide_id"
       });
@@ -44,8 +44,8 @@ Router.map(function() {
       });
   });
 
-  this.route('show');
-  this.route('internalnav');
+  //this.route('show');
+  //this.route('internalnav');
 });
 
 export default Router;

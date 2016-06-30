@@ -4,14 +4,15 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
-    'ember-bootstrap': {
-      'importBootstrapCSS': false
-
-    }
+    //'ember-bootstrap': {
+    //  'importBootstrapCSS': false
+    //}
     // Add options here
   });
   //app.import('bower_components/bootstrap/dist/css/bootstrap.css');
-  //app.import('bower_components/bootstrap/dist/js/bootstrap.js');
+  app.import(app.bowerDirectory + '/Stickyfill/dist/stickyfill.css');
+  app.import(app.bowerDirectory + '/Stickyfill/dist/stickyfill.js');
+  //app.import(app.bowerDirectory + '/scrollspy/jquery-scrollspy.js');
   //app.import('bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot', {
   //    destDir: 'fonts'
   //});
