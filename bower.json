@@ -12,6 +12,7 @@
     "hiof-typography": "git@github.com:hiof/typography.git",
     "sass-mq": "~3.2.4",
     "highlightjs": "~8.8.0",
-    "Stickyfill": "^1.1.4"
+    "Stickyfill": "^1.1.4",
+    "tocify": "git@github.com:gfranko/jquery.tocify.js.git"
   }
 }

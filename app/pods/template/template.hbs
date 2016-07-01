@@ -1,6 +1,7 @@
 <section class="content">
-
-<h1 class="display-1">Dokumentmaler</h1>
+<header>
+  <h1 class="display-1">Dokumentmaler</h1>
+</header>
 
 {{#each model.data as |post|}}
   {{content-section  type=post.type basename=post.attributes.slug title=post.attributes.title content=post.attributes.body  author=post.attributes.author date=post.attributes.date illustration=post.attributes.illustration assetpath=post.attributes.assetpath url=post.attributes.relatedassets}}

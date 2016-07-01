@@ -12,22 +12,28 @@
   //overflow: hidden;
   background: #fff;
   padding: 1rem;
-  li {
+  .nav-item {
     //display: inline-block;
-    list-style: none;
+    //list-style: none;
     margin-left: 0;
     a {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       padding: 0rem 1rem;
     }
     ul{display:none;}
-    &.active{
-      &> ul{
+    .active{
+      & + ul{
         display: block;
       }
     }
-    li{
+    .nav-item{
       margin-left: 2.4rem;
+      .nav-item{
+        margin-left: 2.4rem;
+        .nav-item{
+          margin-left: 2.4rem;
+        }
+      }
     }
   }
   //    white-space: nowrap;

@@ -2,25 +2,11 @@
 
 
 <section class="content">
-<h1 class="display-1">Grafisk profil</h1>
-{{#each model.data as |post|}}
-  {{content-section data-section-id=post.attributes.basename basename=post.attributes.basename type=post.type title=post.attributes.title content=post.attributes.preview sectionid=post.attributes.basename author=post.attributes.author date=post.attributes.date illustration=post.attributes.illustration titletype=post.attributes.titletype}}
-{{/each}}</section>
+  <header>
+    <h1 class="display-1">Grafisk profil</h1>
+  </header>
+  {{#each model.data as |post|}}
+    {{content-section data-section-id=post.attributes.basename basename=post.attributes.basename type=post.type title=post.attributes.title content=post.attributes.preview sectionid=post.attributes.basename author=post.attributes.author date=post.attributes.date illustration=post.attributes.illustration titletype=post.attributes.titletype}}
+  {{/each}}
+</section>
 {{nav-internal}}
-
-
-<!--
-
-
-<ul>
-  <li><a href="/designmal/#top">Til topp</a>
-  <div class="nav-internal-inline">
-  <ul>
-    {{#each model.data as |post|}}
-    {{nav-internal title=post.attributes.title sectionid=post.attributes.basename type="designmal"}}
-    {{/each}}
-
-    </ul>
-    </div>
-  </li>
-</ul>-->

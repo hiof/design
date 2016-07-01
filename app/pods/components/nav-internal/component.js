@@ -35,19 +35,12 @@ export default Ember.Component.extend({
 
 
     Ember.$('[data-spy="scroll"]').each(function () {
-      var $spy = Ember.$(this).scrollspy('refresh');
+      Ember.$(this).scrollspy('refresh');
     });
 
 
     Ember.$('.nav-internal').Stickyfill();
-    //Ember.$('.nav-internal').affix({
-    //  offset: {
-    //    top: 0,
-    //    bottom: function () {
-    //      return (this.bottom = Ember.$('.footer').outerHeight(true));
-    //    }
-    //  }
-    //});
+
 
     //TODO: highlight internal-nav when you scroll
 
