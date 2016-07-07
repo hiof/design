@@ -31,11 +31,75 @@ ul,ol{
   }
 }
 
-
-
-.nav-stacked > li + li{
-  margin-left: 2.4rem;
+.nav-internal {
+  //position: -webkit-sticky;
+  //position: -moz-sticky;
+  //position: -o-sticky;
+  //position: -ms-sticky;
+  //position: sticky;
+  //top: 100px;
+  //z-index: 1;
+  //top: 0px;
+  //right: 0;
+  //height: 52px;
+  //overflow: hidden;
+  background: #fff;
+  padding: 1rem;
+  .nav-item {
+    //display: inline-block;
+    //list-style: none;
+    margin-left: 0;
+    a {
+      font-size: 1.4rem;
+      padding: 0rem 1rem;
+    }
+    ul{display:none;}
+    .active{
+      & + ul{
+        display: block;
+      }
+    }
+    .nav-item{
+      margin-left: 2.4rem;
+      .nav-item{
+        margin-left: 2.4rem;
+        .nav-item{
+          margin-left: 2.4rem;
+        }
+      }
+    }
+  }
+  //    white-space: nowrap;
+  //  overflow-x: auto;
+  //  -webkit-overflow-scrolling: touch;
+  //  -ms-overflow-style: -ms-autohiding-scrollbar;
 }
+
+
+.nav-internal-inline {
+  //width: 9000px;
+  margin-top: -3rem;
+}
+
+
+.nav-stacked {
+  .nav-item {
+    margin-left: 0;
+  }
+  //margin-left: 2.4rem;
+}
+
+.fixedsticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10rem;
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+}
+
 .container-fluid {
     max-width: 104rem;
     margin: 0 auto;
@@ -86,8 +150,19 @@ ul,ol{
 
 .internal-nav {
     flex: 1 0px;
+    border-left: 1px solid #eee;
 }
-
+.internal-nav-top{
+  position: fixed;
+  bottom: 0;
+  right: 2%;
+  ul{
+    margin: 0;
+  }
+  li{
+    list-style: none;
+  }
+}
 .footer {}
 
 
@@ -201,6 +276,10 @@ img {
         //margin-left: -20rem;
         width: 50%;
         float: left;
+        ul,
+        ol{
+          padding-left: 0;
+        }
     }
     .section-illustration {
         float: right;
@@ -231,6 +310,31 @@ img {
     padding: 2rem;
     padding-top: 12rem;
 
+  }
+}
+
+.section{
+  img.card-img-top{
+    padding: 0;
+    border-radius: 0;
+  }
+  img + ul{
+    margin-top: 0;
+  }
+}
+
+.section-resources{
+  h2{
+    display: block;
+    width: 100%;
+  }
+  width: 100%;
+  display: flex;
+  //flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  .card{
+    flex: 0 0 49%;
   }
 }
 

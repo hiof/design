@@ -19,9 +19,7 @@ export default Ember.Component.extend({
   },
   actions: {
     openModal(element){
-      //console.log("#"+element + "-modal");
-      Ember.$("#"+element + "-modal").modal();
-      //console.log('modal-image-'+element);
+      Ember.$("#modal-image-"+element).modal();
     }
   }
 

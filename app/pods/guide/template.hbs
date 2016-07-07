@@ -1,12 +1,29 @@
 
 
 
-<section class="content">
+<section class="content" >
   <header>
-    <h1 class="display-1">Grafisk profil</h1>
+    <h1 class="display-1" id="top">Grafisk profil</h1>
   </header>
   {{#each model.data as |post|}}
-    {{content-section data-section-id=post.attributes.basename basename=post.attributes.basename type=post.type title=post.attributes.title content=post.attributes.preview sectionid=post.attributes.basename author=post.attributes.author date=post.attributes.date illustration=post.attributes.illustration titletype=post.attributes.titletype}}
+  {{content-section data-section-id=post.attributes.basename basename=post.attributes.basename type=post.type title=post.attributes.title content=post.attributes.preview sectionid=post.attributes.basename author=post.attributes.author date=post.attributes.date illustration=post.attributes.illustration titletype=post.attributes.titletype}}
   {{/each}}
 </section>
-{{nav-internal}}
+
+
+<aside class="internal-nav">
+
+  <ul class="nav nav-pills nav-stacked fixedsticky">
+    {{#each model.data as |post|}}
+    {{#if (eq post.attributes.titletype 2)}}
+    <li class="nav-item"{{action "goToSection"}}>{{#link-to 'guide' (query-params del=post.attributes.basename) class="link-text" }}{{post.attributes.title}}{{/link-to}}</li>
+    {{/if}}
+    {{/each}}
+  </ul>
+</aside>
+
+<aside class="internal-nav-top">
+  <ul>
+    <li class="nav-item"{{action "goToSection"}}>{{#link-to 'guide' (query-params del="top") class="btn btn-primary" }}{{post.attributes.title}}til toppen{{/link-to}}</li>
+  </ul>
+</aside>

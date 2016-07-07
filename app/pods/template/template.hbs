@@ -1,10 +1,23 @@
 <section class="content">
-<header>
-  <h1 class="display-1">Dokumentmaler</h1>
-</header>
+  <header>
+    <h1 class="display-1" id="top">Dokumentmaler</h1>
+  </header>
 
-{{#each model.data as |post|}}
+  {{#each model.data as |post|}}
   {{content-section  type=post.type basename=post.attributes.slug title=post.attributes.title content=post.attributes.body  author=post.attributes.author date=post.attributes.date illustration=post.attributes.illustration assetpath=post.attributes.assetpath url=post.attributes.relatedassets}}
-{{/each}}
+  {{/each}}
 </section>
-{{nav-internal}}
+<aside class="internal-nav">
+  <ul class="nav nav-pills nav-stacked fixedsticky">
+    {{#each model.data as |post|}}
+    <li class="nav-item" {{action "goToSection"}}>{{#link-to 'template' (query-params del=post.attributes.slug) class="link-text" }}{{post.attributes.title}}{{/link-to}}</li>
+    {{/each}}
+  </ul>
+</aside>
+
+
+<aside class="internal-nav-top">
+  <ul>
+    <li class="nav-item"{{action "goToSection"}}>{{#link-to 'template' (query-params del="top") class="btn btn-primary" }}{{post.attributes.title}}til toppen{{/link-to}}</li>
+  </ul>
+</aside>

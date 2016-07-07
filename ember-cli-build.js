@@ -17,7 +17,7 @@ module.exports = function(defaults) {
     // This will only be included in the browser build
     app.import(app.bowerDirectory + '/Stickyfill/dist/stickyfill.js');
     //app.import(app.bowerDirectory + '/tocify/src/javascripts/jquery.tocify.js');
-    app.import(app.bowerDirectory + '/toc/toc.js');
+    //app.import(app.bowerDirectory + '/toc/toc.js');
     app.import(app.bowerDirectory + '/bootstrap-v4/dist/js/bootstrap.js');
   }
   //app.import(app.bowerDirectory + '/scrollspy/jquery-scrollspy.js');

@@ -2,19 +2,20 @@
     background: #fff;
     background: rgba(255,255,255,.95);
     //border-bottom: 1px solid #ddd;
-
+    //border-bottom: 1px solid #ddd;
+    //border-bottom: 1px solid rgba(0,0,0,.1);
     max-width: 104rem;
     margin: 0 auto;
-    &:after{
-      content: "";
-      position: absolute;
-      top: 52px;
-      width: 200%;
-      left: -50%;
-      border-bottom: 1px solid #ddd;
-      border-bottom: 1px solid rgba(0,0,0,.1);
-      display: block;
-    }
+    //&:after{
+    //  content: "";
+    //  position: absolute;
+    //  top: 52px;
+    //  width: 200%;
+    //  left: -50%;
+    //  border-bottom: 1px solid #ddd;
+    //  border-bottom: 1px solid rgba(0,0,0,.1);
+    //  display: block;
+    //}
 }
 
 .navbar-brand {
@@ -41,7 +42,7 @@
     }
     .text-muted{
       position: absolute;
-      top: 1.6rem;
+      top: 1.8rem;
       left: 4.4rem;
       font-size: 1rem;
       color: #111;
