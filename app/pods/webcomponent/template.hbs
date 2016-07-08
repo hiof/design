@@ -1,0 +1,24 @@
+
+
+
+<section class="content">
+<header>
+  <h1>Web komponenter</h1>
+</header>
+<p>Siden programmeringsspråkene som blir brukt for å beskrive innhold, design og funksjonalitet på høgskolens nettsider er på engelsk er også dokumentasjonen under skrevet på engelsk.</p>
+<hr>
+{{#each model.data as |post|}}
+<section>
+
+  {{{post.attributes.comment}}}
+  {{{post.attributes.result}}}
+  {{{post.attributes.markup}}}
+
+
+</section>
+
+
+  {{!content-section type=post.type content=post.attributes.comment}}
+{{/each}}
+</section>
+{{nav-internal}}

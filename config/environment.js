@@ -2,16 +2,26 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'designguidlines',
+    modulePrefix: 'design',
+    podModulePrefix: 'design/pods',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
+    contentSecurityPolicy: {
+        'connect-src': "'self' hiof.no",
+        'img-src': "'self' https://hiof.no http://hiof.no placehold.it https://placeholdit.imgix.net www.google-analytics.com", // For placeholder images
+        'script-src': "'self' 'unsafe-inline' 'unsafe-eval' cloudflare.com cdnjs.cloudflare.com https://gstatic.com www.google-analytics.com",
+        'style-src': "'self' 'unsafe-inline' cloudflare.com cdnjs.cloudflare.com https://fonts.googleapis.com https://gstatic.com",
+        'font-src': "'self' fonts.googleapis.com https://fonts.gstatic.com gstatic.com"
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
       }
     },
+
+
 
     APP: {
       // Here you can pass flags/options to your application instance
@@ -40,7 +50,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.APP.trackingId = 'UA-2034265-6';
   }
 
   return ENV;

@@ -3,22 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Designguidlines</title>
+    <title>Design</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {{content-for 'head'}}
 
     <link rel="stylesheet" href="assets/vendor.css">
-    <link rel="stylesheet" href="assets/designguidlines.css">
+    <link rel="stylesheet" href="assets/design.css">
 
     {{content-for 'head-footer'}}
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </head>
-  <body class="body">
+  <body data-spy="scroll" data-target="nav.nav-internal">
     {{content-for 'body'}}
 
     <script src="assets/vendor.js"></script>
-    <script src="assets/designguidlines.js"></script>
+    <script src="assets/design.js"></script>
 
     {{content-for 'body-footer'}}
   </body>

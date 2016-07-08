@@ -1,7 +1,7 @@
-# Designguidlines
+# Design
 
 This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+
 
 ## Prerequisites
 
@@ -10,12 +10,12 @@ You will need the following things properly installed on your computer.
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM)
 * [Bower](http://bower.io/)
-* [Ember CLI](http://www.ember-cli.com/)
+* [Ember CLI](http://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone git@github.com:hiof/design.git` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
@@ -46,8 +46,18 @@ Specify what it takes to deploy your app.
 ## Further Reading / Useful Links
 
 * [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
+* [ember-cli](http://ember-cli.com/)
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+## Release
+
+* V1.0.0 - Initial public release
+    [x] Resources formats with descriptions
+    [x] Make section-links available for deep-linking straight to content.
+    [x] Feedback for each resource section
+
+## Todo
+
+[ ] Add feedback-plugin for feedback

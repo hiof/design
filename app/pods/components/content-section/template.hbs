@@ -1,0 +1,92 @@
+
+<header>
+  {{#if titletype}}
+  {{#if (eq titletype 1)}}
+  <h1 id="{{convert-aeoaa basename}}">{{title}}</h1>
+  {{/if}}
+
+  {{#if (eq titletype 2)}}
+  <h1 id="{{convert-aeoaa basename}}">{{title}}</h1>
+  {{/if}}
+
+  {{#if (eq titletype 3)}}
+  <h2 id="{{convert-aeoaa basename}}">{{title}}</h2>
+  {{/if}}
+  {{else}}
+  <h1 id="{{convert-aeoaa basename}}">{{title}}</h1>
+  {{/if}}
+</header>
+<section class="section-content">
+
+
+
+  {{markdown-to-html markdown=content}}
+
+  <footer class="visuallyhidden">
+    Oppdatert av {{author}} on {{date}}
+  </footer>
+</section>
+{{#if illustration}}
+<aside class="section-illustration">
+  <img {{action 'openModal' basename}} class="img-illustration" data-id="modal-image-{{convert-aeoaa basename}}" src="https://hiof.no/assets/plugins/design-{{type}}/illustrations/{{illustration}}">
+  {{#my-modal basename=basename}}
+  <img src="https://hiof.no/assets/plugins/design-{{type}}/illustrations/{{illustration}}">
+  {{/my-modal}}
+  <!--
+  {{#bs-modal title=title basename=basename footer=false open=false id=basename}}
+  <img src="https://hiof.no/assets/plugins/design-{{type}}/illustrations/{{illustration}}">
+  {{/bs-modal}}
+-->
+</aside>
+
+{{else}}
+<aside class="section-illustration-placeholder"></aside>
+{{/if}}
+
+{{#if assetpath}}
+<footer class="section-resources">
+  {{#if (is-array url)}}
+  <h2>Last ned mal:</h2>
+  <br/>
+  {{#each url as |resource|}}
+  <div class="card">
+    <div class="card-header">
+      {{resource.title}}
+    </div>
+    {{#if resource.illustration}}
+      {{#if (is-array resource.illustration)}}
+
+      {{#each resource.illustration as |image|}}
+        <img class="card-img-top" src="https://hiof.no/assets/plugins/design-templates/illustrations/{{image.image}}-{{resource.version}}.jpg" data-each="true">
+      {{/each}}
+      {{else}}
+        <img class="card-img-top" src="https://hiof.no/assets/plugins/design-templates/illustrations/{{resource.illustration.image}}.jpg">
+      {{/if}}
+    {{else}}
+    {{/if}}
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><strong>{{#if (eq resource.lang 'en')}}Version{{else}}Versjon{{/if}}:</strong> {{resource.version}}</li>
+      {{#if resource.format}}
+      <li class="list-group-item"><strong>Format:</strong> <em>.{{resource.format}}</em></li>
+      {{/if}}
+      {{#if resource.formathelpertext}}
+      <li class="list-group-item"><strong>{{#if (eq resource.lang 'en')}}Description{{else}}Beskrivelse:{{/if}}</strong> {{markdown-to-html markdown=resource.formathelpertext}}</li>
+      {{/if}}
+    </ul>
+    <div class="card-block">
+      {{#if resource.format}}
+      <a class="btn btn-primary" href="https://hiof.no/assets/plugins/design-templates/public/{{resource.file}}-{{resource.format}}-{{resource.version}}.zip"><span class="glyphicon glyphicon-download"></span>{{#if (eq resource.lang 'en')}}Download{{else}}Last ned{{/if}}</a>
+      {{else}}
+      <a class="btn btn-primary" href="https://hiof.no/assets/plugins/design-templates/public/{{resource.file}}-{{resource.version}}.zip"><span class="glyphicon glyphicon-download"></span>{{#if (eq resource.lang 'en')}}Download{{else}}Last ned{{/if}}</a>
+      {{/if}}
+      <a class="card-link" href="mailto:design@hiof.no?subject=Malfeil: Fil:{{resource.file}}-{{resource.format}}, versjon: {{resource.version}}">{{#if (eq resource.lang 'en')}}Report issues with this file{{else}}Meld fra om feil/mangler{{/if}}</a>
+    </div>
+  </div>
+  {{/each}}
+  {{else}}
+  {{#if url}}
+  <a href="https://hiof.no{{assetpath}}{{url}}.zip" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span> {{url}}</a>
+  {{/if}}
+  {{/if}}
+</footer>
+{{/if}}
