@@ -9,8 +9,8 @@ module.exports = function(environment) {
     locationType: 'auto',
     contentSecurityPolicy: {
         'connect-src': "'self' hiof.no",
-        'img-src': "'self' https://hiof.no http://hiof.no placehold.it https://placeholdit.imgix.net", // For placeholder images
-        'script-src': "'self' 'unsafe-inline' 'unsafe-eval' cloudflare.com cdnjs.cloudflare.com https://gstatic.com",
+        'img-src': "'self' https://hiof.no http://hiof.no placehold.it https://placeholdit.imgix.net www.google-analytics.com", // For placeholder images
+        'script-src': "'self' 'unsafe-inline' 'unsafe-eval' cloudflare.com cdnjs.cloudflare.com https://gstatic.com www.google-analytics.com",
         'style-src': "'self' 'unsafe-inline' cloudflare.com cdnjs.cloudflare.com https://fonts.googleapis.com https://gstatic.com",
         'font-src': "'self' fonts.googleapis.com https://fonts.gstatic.com gstatic.com"
     },
@@ -50,7 +50,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.APP.trackingId = 'UA-2034265-6';
   }
 
   return ENV;
