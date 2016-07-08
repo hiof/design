@@ -53,11 +53,11 @@ Specify what it takes to deploy your app.
 
 ## Release
 
-* V1.0.0 - Initial public release
-    [x] Resources formats with descriptions
-    [x] Make section-links available for deep-linking straight to content.
-    [x] Feedback for each resource section
+- V1.0.0 - Initial public release
+    - [x] Resources formats with descriptions
+    - [x] Make section-links available for deep-linking straight to content.
+    - [x] Feedback for each resource section
 
 ## Todo
 
-[ ] Add feedback-plugin for feedback
+- [ ] Add feedback-plugin for feedback
