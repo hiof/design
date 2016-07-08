@@ -15,7 +15,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone git@github.com:hiof/design.git` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
@@ -51,9 +51,13 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+## Release
+
+* V1.0.0 - Initial public release
+    [x] Resources formats with descriptions
+    [x] Make section-links available for deep-linking straight to content.
+    [x] Feedback for each resource section
+
 ## Todo
 
-[ ] Resources formats with descriptions
-[ ] Make section-links available for deep-linking straight to content.
-[ ] Feedback for each resource section
-[ ] Move the section regarding logo-clear space to a more prominent position and add more guidance
+[ ] Add feedback-plugin for feedback
