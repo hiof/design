@@ -35,7 +35,7 @@ Router.map(function() {
       });
   });
 
-  this.route('webcomponent', {path: '/web-komponenter'}, function(){
+  this.route('webcomponent', {path: '/webdesign'}, function(){
       this.route("webcomponent", {
           path: ":webcomponent_id"
       });

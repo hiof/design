@@ -3,18 +3,41 @@ import Ember from 'ember';
 export default Ember.Route.extend({
     model: function() {
 
+
+        //return fetch('http://hiof.no/api/v2/designguidelines/?type=webcomponents')
+        //  .then(function(response) {
+        //    return response.json();
+        //  });
+
+
         var data = Ember.$.getJSON('http://hiof.no/api/v1/designguidelines/?type=webcomponents');
         console.log(data);
         return data;
     },
-    didInsertElement: function() {
+    setupController: function(controller, model) {
+      this._super(controller, model);
 
-        //this.$('pre code').each(function(i, block) {
-        //    //hljs.highlightBlock(block);
-        //});
-        //this.$('.hamburger').on('click', function(e) {
-        //    e.preventDefault();
-        //    Ember.$(this).toggleClass('open');
-        //});
+
+      //Ember.$('.nav-internal ').Stickyfill();
+
+
+      //Ember.$('.internal-nav .nav').Stickyfill();
+      let del = this.get('controller.del');
+
+      //console.log(del);
+
+      if (typeof del === 'string' || del instanceof String){
+        setTimeout(function(){
+
+          Ember.$('html, body').animate({
+            scrollTop: Ember.$("#"+del).offset().top -80
+          }, 1000);
+
+
+        }, 100);
+
+      }
+
+
     }
 });

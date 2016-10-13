@@ -3,22 +3,39 @@
 
 <section class="content">
 <header>
-  <h1>Web komponenter</h1>
+  <h1 class="display-1" id="top">Webdesign</h1>
 </header>
 <p>Siden programmeringsspråkene som blir brukt for å beskrive innhold, design og funksjonalitet på høgskolens nettsider er på engelsk er også dokumentasjonen under skrevet på engelsk.</p>
 <hr>
+
+{{log model.data}}
+
+
 {{#each model.data as |post|}}
-<section>
+  <section>
 
-  {{{post.attributes.comment}}}
-  {{{post.attributes.result}}}
-  {{{post.attributes.markup}}}
+    {{{post.attributes.comment}}}
+
+    {{{post.attributes.markup}}}
+
+    {{!--{{{post.attributes.result}}}{{{post.attributes.markup}}}--}}
 
 
-</section>
-
-
+  </section>
   {{!content-section type=post.type content=post.attributes.comment}}
 {{/each}}
 </section>
-{{nav-internal}}
+<aside class="internal-nav">
+  <ul class="nav nav-pills nav-stacked fixedsticky">
+    {{#each model.data as |post|}}
+    {{#if (eq post.attributes.titletype 2)}}
+    <li class="nav-item" {{action "goToSection"}}>{{#link-to 'webcomponent' (query-params del=post.attributes.slug) class="link-text" }}{{post.attributes.title}}{{/link-to}}</li>
+    {{/if}}
+    {{/each}}
+  </ul>
+</aside>
+<aside class="internal-nav-top">
+  <ul>
+    <li class="nav-item"{{action "goToSection"}}>{{#link-to 'webcomponent' (query-params del="top") class="btn btn-primary" }}{{post.attributes.title}}til toppen{{/link-to}}</li>
+  </ul>
+</aside>
