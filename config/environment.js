@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'design',
     podModulePrefix: 'design/pods',
     environment: environment,
-    baseURL: '/',
+    rootURL: '/',
     locationType: 'auto',
     contentSecurityPolicy: {
         'connect-src': "'self' hiof.no",
@@ -39,7 +39,7 @@ module.exports = function(environment) {
 
   if (environment === 'test') {
     // Testem prefers this...
-    ENV.baseURL = '/';
+    ENV.rootURL = '/';
     ENV.locationType = 'none';
 
     // keep test console output quieter

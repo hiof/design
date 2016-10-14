@@ -3,7 +3,7 @@ import fetch from 'ember-network/fetch';
 export default Ember.Route.extend({
 
 
-  model(params) {
+  model() {
     //console.log(params.del);
     //let store = this.get('store');
     //store.createRecord('params', {
@@ -27,7 +27,7 @@ export default Ember.Route.extend({
     });
   },
 
-  afterModel: function(params) {
+  afterModel: function() {
 
     //let store = this.get('store');
     //let del = store.get('params');
