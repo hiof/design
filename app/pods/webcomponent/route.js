@@ -11,8 +11,20 @@ export default Ember.Route.extend({
 
 
         var data = Ember.$.getJSON('http://hiof.no/api/v1/designguidelines/?type=webcomponents');
-        console.log(data);
+        //console.log(data);
         return data;
+    },
+    didInsertElement(){
+      this._super(...arguments);
+      console.log('did render...');
+
+
+      //this.$('body').addClass('enabled');
+    },
+    actions:{
+      playVideo(thisVideo){
+        //thisVideo.paused ? this.play() : this.pause();
+      }
     },
     setupController: function(controller, model) {
       this._super(controller, model);

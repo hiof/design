@@ -2,34 +2,45 @@
 
 
 <section class="content">
-<header>
-  <h1 class="display-1" id="top">Webdesign</h1>
-</header>
-<p>Siden programmeringsspråkene som blir brukt for å beskrive innhold, design og funksjonalitet på høgskolens nettsider er på engelsk er også dokumentasjonen under skrevet på engelsk.</p>
-<hr>
-
-{{log model.data}}
+  <header>
+    <h1 class="display-1" id="top">Webdesign</h1>
+  </header>
 
 
-{{#each model.data as |post|}}
-  <section>
+  {{log model}}
 
+  {{#each model.data as |post|}}
+
+  {{content-section data-section-id=post.attributes.slug basename=post.attributes.slug type=post.type content=post.attributes.comment sectionid=post.attributes.slug titletype=post.attributes.titletype markup=post.attributes.result}}
+
+
+
+  {{!--
     {{{post.attributes.comment}}}
 
     {{{post.attributes.markup}}}
+{{{post.attributes.result}}}{{{post.attributes.markup}}}--}}
 
-    {{!--{{{post.attributes.result}}}{{{post.attributes.markup}}}--}}
 
 
-  </section>
   {{!content-section type=post.type content=post.attributes.comment}}
-{{/each}}
+  {{/each}}
+
 </section>
 <aside class="internal-nav">
   <ul class="nav nav-pills nav-stacked fixedsticky">
     {{#each model.data as |post|}}
     {{#if (eq post.attributes.titletype 2)}}
-    <li class="nav-item" {{action "goToSection"}}>{{#link-to 'webcomponent' (query-params del=post.attributes.slug) class="link-text" }}{{post.attributes.title}}{{/link-to}}</li>
+    <li class="nav-item" {{action "goToSection"}}>
+      {{#link-to 'webcomponent' (query-params del=post.attributes.slug) class="link-text" }}{{post.attributes.title}}{{/link-to}}
+    </li>
+
+    {{else if (eq post.attributes.titletype 3)}}
+    <ul>
+    <li class="nav-item" {{action "goToSection"}}>
+      {{#link-to 'webcomponent' (query-params del=post.attributes.slug) class="link-text" }}{{post.attributes.title}}{{/link-to}}
+    </li>
+    </ul>
     {{/if}}
     {{/each}}
   </ul>

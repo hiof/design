@@ -274,8 +274,11 @@ img {
     //h2{margin-left:-20rem;}
     .section-content {
         //margin-left: -20rem;
-        width: 50%;
+        max-width: 60rem;
         float: left;
+        &.include-illustration{
+          width: 50%;
+        }
         ul,
         ol{
           padding-left: 0;

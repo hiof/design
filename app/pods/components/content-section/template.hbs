@@ -1,4 +1,4 @@
-
+{{#if title}}
 <header>
   {{#if titletype}}
   {{#if (eq titletype 1)}}
@@ -16,31 +16,37 @@
   <h1 id="{{convert-aeoaa basename}}">{{title}}</h1>
   {{/if}}
 </header>
-<section class="section-content">
+{{/if}}
 
 
 
-  {{markdown-to-html markdown=content}}
 
-  <footer class="visuallyhidden">
-    Oppdatert av {{author}} on {{date}}
-  </footer>
-</section>
 {{#if illustration}}
+<section class="section-content include-illustration">
+  {{{markdown-to-html markdown=content}}}
+  {{#if auhtor}}
+  {{content-section-footer author=author pubdate=date}}
+  {{/if}}
+</section>
+
 <aside class="section-illustration">
   <img {{action 'openModal' basename}} class="img-illustration" data-id="modal-image-{{convert-aeoaa basename}}" src="https://hiof.no/assets/plugins/design-{{type}}/illustrations/{{illustration}}">
   {{#my-modal basename=basename}}
   <img src="https://hiof.no/assets/plugins/design-{{type}}/illustrations/{{illustration}}">
   {{/my-modal}}
-  <!--
-  {{#bs-modal title=title basename=basename footer=false open=false id=basename}}
-  <img src="https://hiof.no/assets/plugins/design-{{type}}/illustrations/{{illustration}}">
-  {{/bs-modal}}
--->
 </aside>
 
 {{else}}
-<aside class="section-illustration-placeholder"></aside>
+<section class="section-content">
+  {{{markdown-to-html markdown=content}}}
+  {{#if markup}}
+  {{{markup}}}
+  {{/if}}
+  {{#if auhtor}}
+  {{content-section-footer author=author pubdate=date}}
+  {{/if}}
+</section>
+
 {{/if}}
 
 {{#if assetpath}}
@@ -54,14 +60,14 @@
       {{resource.title}}
     </div>
     {{#if resource.illustration}}
-      {{#if (is-array resource.illustration)}}
+    {{#if (is-array resource.illustration)}}
 
-      {{#each resource.illustration as |image|}}
-        <img class="card-img-top" src="https://hiof.no/assets/plugins/design-templates/illustrations/{{image.image}}-{{resource.version}}.jpg" data-each="true">
-      {{/each}}
-      {{else}}
-        <img class="card-img-top" src="https://hiof.no/assets/plugins/design-templates/illustrations/{{resource.illustration.image}}.jpg">
-      {{/if}}
+    {{#each resource.illustration as |image|}}
+    <img class="card-img-top" src="https://hiof.no/assets/plugins/design-templates/illustrations/{{image.image}}-{{resource.version}}.jpg" data-each="true">
+    {{/each}}
+    {{else}}
+    <img class="card-img-top" src="https://hiof.no/assets/plugins/design-templates/illustrations/{{resource.illustration.image}}.jpg">
+    {{/if}}
     {{else}}
     {{/if}}
     <ul class="list-group list-group-flush">
