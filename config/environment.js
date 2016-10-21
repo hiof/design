@@ -8,11 +8,11 @@ module.exports = function(environment) {
     rootURL: '/',
     locationType: 'auto',
     contentSecurityPolicy: {
-        'connect-src': "'self' hiof.no",
-        'img-src': "'self' https://hiof.no http://hiof.no placehold.it https://placeholdit.imgix.net www.google-analytics.com", // For placeholder images
-        'script-src': "'self' 'unsafe-inline' 'unsafe-eval' cloudflare.com cdnjs.cloudflare.com https://gstatic.com www.google-analytics.com",
-        'style-src': "'self' 'unsafe-inline' cloudflare.com cdnjs.cloudflare.com https://fonts.googleapis.com https://gstatic.com",
-        'font-src': "'self' fonts.googleapis.com https://fonts.gstatic.com gstatic.com"
+      'connect-src': "'self' hiof.no",
+      'img-src': "'self' https://hiof.no http://hiof.no placehold.it https://placeholdit.imgix.net www.google-analytics.com", // For placeholder images
+      'script-src': "'self' 'unsafe-inline' 'unsafe-eval' cloudflare.com cdnjs.cloudflare.com https://gstatic.com www.google-analytics.com",
+      'style-src': "'self' 'unsafe-inline' cloudflare.com cdnjs.cloudflare.com https://fonts.googleapis.com https://gstatic.com",
+      'font-src': "'self' fonts.googleapis.com https://fonts.gstatic.com gstatic.com"
     },
     EmberENV: {
       FEATURES: {
@@ -20,9 +20,10 @@ module.exports = function(environment) {
         // e.g. 'with-controller': true
       }
     },
-
-
-
+    EXTEND_PROTOTYPES: {
+      // Prevent Ember Data from overriding Date.parse.
+      Date: false
+    },
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
