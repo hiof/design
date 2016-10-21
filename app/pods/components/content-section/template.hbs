@@ -40,7 +40,10 @@
 <section class="section-content">
   {{{markdown-to-html markdown=content}}}
   {{#if markup}}
+  {{#themed-syntax withBuffers="true" lang=scss}}
   {{{markup}}}
+  {{/themed-syntax}}
+
   {{/if}}
   {{#if auhtor}}
   {{content-section-footer author=author pubdate=date}}

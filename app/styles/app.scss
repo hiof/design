@@ -19,6 +19,7 @@ h4,
 h5,
 h6 {
     margin-top: 0;
+    clear: both;
 }
 
 body {
@@ -30,6 +31,15 @@ ul,ol{
     margin-left: 0;
   }
 }
+.section-content{
+  > code,
+  > pre {
+    background: transparent;
+    padding: 0;
+    width: 60rem;
+  }
+}
+
 
 .nav-internal {
   //position: -webkit-sticky;
@@ -85,6 +95,9 @@ ul,ol{
 .nav-stacked {
   .nav-item {
     margin-left: 0;
+  }
+  ul{
+    padding-left: 2rem;
   }
   //margin-left: 2.4rem;
 }
@@ -352,4 +365,21 @@ img {
     padding-top: 4rem;
     border-top: .1rem solid #ddd;
     text-align: center;
+}
+
+
+
+// This will be extracted to the media module
+
+.media{
+  border: 0;
+  margin: 1rem 2rem 2rem;
+}
+.media-float-left{
+  margin-left: 0;
+  float: left;
+}
+.media-float-right{
+  margin-right: 0;
+  float: right;
 }
