@@ -3,22 +3,20 @@
 
 <section class="content">
   <header>
-    <h1 class="display-1" id="top">Webdesign</h1>
+    <h1 class="display-1" id="top">Stilguide</h1>
   </header>
-
-
 
   {{#each model.data as |post|}}
 
-  {{content-section data-section-id=post.attributes.slug basename=post.attributes.slug type=post.type content=post.attributes.comment sectionid=post.attributes.slug titletype=post.attributes.titletype}}
+  {{content-section data-section-id=post.attributes.slug basename=post.attributes.slug type=post.type content=post.attributes.comment sectionid=post.attributes.slug titletype=post.attributes.titletype markup=post.attributes.result}}
 
 
 
   {{!--
-    {{{post.attributes.comment}}}
+  {{{post.attributes.comment}}}
 
-    {{{post.attributes.markup}}}
-{{{post.attributes.result}}}{{{post.attributes.markup}}}--}}
+  {{{post.attributes.markup}}}
+  {{{post.attributes.result}}}{{{post.attributes.markup}}}--}}
 
 
 
@@ -36,9 +34,9 @@
 
     {{else if (eq post.attributes.titletype 3)}}
     <ul>
-    <li class="nav-item" {{action "goToSection"}}>
-      {{#link-to 'webcomponent' (query-params del=post.attributes.slug) class="link-text" }}{{post.attributes.title}}{{/link-to}}
-    </li>
+      <li class="nav-item" {{action "goToSection"}}>
+        {{#link-to 'webcomponent' (query-params del=post.attributes.slug) class="link-text" }}{{post.attributes.title}}{{/link-to}}
+      </li>
     </ul>
     {{/if}}
     {{/each}}
