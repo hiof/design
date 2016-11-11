@@ -1,8 +1,8 @@
 <section class="content content-frontpage">
 
-  <div class="card card-inverse">
-    {{#link-to 'template' class="card-link"}}
-    <img class="card-img-top" src="/assets/images/hiof-design-hiof-no-illustrations-lavendel.jpg" alt="Dokumentmaler">
+  <div class="card card-inverse c-bg-purple">
+    {{#link-to 'template' (query-params del="top")  class="card-link"}}
+    {{grid-markup}}
     <div class="card-img-overlay">
       <h1 class="display-4 card-title">Dokumentmaler</h1>
       <p class="card-text">Her finner du alltid oppdaterte dokumentmaler.</p>
@@ -11,9 +11,9 @@
     {{/link-to}}
   </div>
 
-  <div class="card card-inverse">
-    {{#link-to 'guide' class="card-link"}}
-    <img class="card-img-top" src="/assets/images/hiof-design-hiof-no-illustrations-rosa.jpg" alt="Grafisk profil">
+  <div class="card card-inverse c-bg-pink">
+    {{#link-to 'guide' (query-params del="top") class="card-link"}}
+    {{grid-markup}}
     <div class="card-img-overlay">
       <h1 class="display-4 card-title">Grafisk profil</h1>
       <p class="card-text">Den grafiske profilen inneholder regler og retningslinjer for eksterne byråer og de som skal sette opp dokumentmaler.</p>
@@ -21,10 +21,28 @@
     {{/link-to}}
   </div>
 
-<!--
-  <ul>
-    <li>{{#link-to 'template'}}Dokumentmaler{{/link-to}} - Dokumentmaler (som for eksempel presentasjonsmal, osv.) med retningslinjer for bruk</li>
-    <li>{{#link-to 'guide'}}Designmal{{/link-to}} - Design og retningslinjer for branding osv.</li>
-    <li>{{#link-to 'webcomponent'}}Web komponenter{{/link-to}} - Dokumentasjon for komponenter som kan brukes på nettsidene</li>
-  </ul>-->
+
+  <!--
+  <div class="card card-inverse c-bg-aquablue">
+    {{#link-to 'webcomponent' (query-params del="top") class="card-link"}}
+    {{grid-markup}}
+    <div class="card-img-overlay">
+      <h1 class="display-4 card-title">Webdesign</h1>
+      <p class="card-text">Her finner du dokumentasjon på hvordan høgskolens design på nett.</p>
+    </div>
+    {{/link-to}}
+  </div>
+
+
+
+  <div class="card c-bg-warmgrey">
+    {{#link-to 'styleguide' (query-params del="top") class="card-link"}}
+    {{grid-markup}}
+    <div class="card-img-overlay">
+      <h1 class="display-4 card-title">Stilguide</h1>
+      <p class="card-text">Teknisk design dokumentasjon av moduler, plugins og komponenter som brukes på Høgksolens nettsider.</p>
+    </div>
+    {{/link-to}}
+  </div>
+  -->
 </section>

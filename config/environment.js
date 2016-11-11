@@ -14,6 +14,9 @@ module.exports = function(environment) {
       'style-src': "'self' 'unsafe-inline' cloudflare.com cdnjs.cloudflare.com https://fonts.googleapis.com https://gstatic.com",
       'font-src': "'self' fonts.googleapis.com https://fonts.gstatic.com gstatic.com"
     },
+    'ember-component-css': {
+      namespacing: true
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

@@ -20,7 +20,11 @@ Router.map(function() {
       path: ":show_id"
     });
   });
-
+  this.route('template', {path: '/dokumentmaler'}, function(){
+    this.route("template", {
+      path: ":template_id"
+    });
+  });
   this.route('guide', {path: '/grafisk-profil'}, function(){
     this.route("guide", {
       path: ":guide_id"
@@ -33,12 +37,9 @@ Router.map(function() {
     });
   });
 
-  this.route('template', {path: '/dokumentmaler'}, function(){
-    this.route("template", {
-      path: ":template_id"
-    });
-  });
 
+
+  this.route('styleguide');
 });
 
 export default Router;
