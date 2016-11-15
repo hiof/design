@@ -22,9 +22,9 @@ export default Ember.Route.extend({
       //this.$('body').addClass('enabled');
     },
     actions:{
-      playVideo(thisVideo){
-        //thisVideo.paused ? this.play() : this.pause();
-      }
+      //playVideo(thisVideo){
+      //  //thisVideo.paused ? this.play() : this.pause();
+      //}
     },
     setupController: function(controller, model) {
       this._super(controller, model);
