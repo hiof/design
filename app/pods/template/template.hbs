@@ -1,4 +1,4 @@
-<section class="content col-8">
+<section class="content col-md-8">
   <header>
     <h1 class="display-1" id="top">Dokumentmaler</h1>
   </header>
@@ -7,7 +7,7 @@
   {{content-section  type=post.type basename=post.attributes.slug title=post.attributes.title content=post.attributes.body  author=post.attributes.author date=post.attributes.date illustration=post.attributes.illustration assetpath=post.attributes.assetpath url=post.attributes.relatedassets}}
   {{/each}}
 </section>
-<aside class="internal-nav col-4">
+<aside class="internal-nav col-md-4">
   <ul class="nav flex-column fixedsticky">
     {{#each model.data as |post|}}
     <li class="nav-item" {{action "goToSection"}}>
