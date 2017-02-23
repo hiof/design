@@ -1,7 +1,7 @@
 
 
 
-<section class="content">
+<section class="content col-8">
   <header>
     <h1 class="display-1" id="top">Webdesign</h1>
   </header>
@@ -26,18 +26,18 @@
   {{/each}}
 
 </section>
-<aside class="internal-nav">
-  <ul class="nav nav-pills nav-stacked fixedsticky">
+<aside class="internal-nav col-4">
+  <ul class="nav flex-column fixedsticky">
     {{#each model.data as |post|}}
     {{#if (eq post.attributes.titletype 2)}}
     <li class="nav-item" {{action "goToSection"}}>
-      {{#link-to 'webcomponent' (query-params del=post.attributes.slug) class="link-text" }}{{post.attributes.title}}{{/link-to}}
+      {{#link-to 'webcomponent' (query-params del=post.attributes.slug) class="nav-link" }}{{post.attributes.title}}{{/link-to}}
     </li>
 
     {{else if (eq post.attributes.titletype 3)}}
     <ul>
     <li class="nav-item" {{action "goToSection"}}>
-      {{#link-to 'webcomponent' (query-params del=post.attributes.slug) class="link-text" }}{{post.attributes.title}}{{/link-to}}
+      {{#link-to 'webcomponent' (query-params del=post.attributes.slug) class="nav-link" }}{{post.attributes.title}}{{/link-to}}
     </li>
     </ul>
     {{/if}}

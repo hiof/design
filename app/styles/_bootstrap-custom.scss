@@ -1,6 +1,10 @@
    // Core variables and mixins
 
-   $enable-grid-classes: false;
+   //$enable-grid-classes: false;
+
+   $grid-columns:               12 !default;
+   $grid-gutter-width-base:     20px !default;
+
    @import "bootstrap";
 
 

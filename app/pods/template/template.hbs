@@ -1,4 +1,4 @@
-<section class="content">
+<section class="content col-8">
   <header>
     <h1 class="display-1" id="top">Dokumentmaler</h1>
   </header>
@@ -7,10 +7,12 @@
   {{content-section  type=post.type basename=post.attributes.slug title=post.attributes.title content=post.attributes.body  author=post.attributes.author date=post.attributes.date illustration=post.attributes.illustration assetpath=post.attributes.assetpath url=post.attributes.relatedassets}}
   {{/each}}
 </section>
-<aside class="internal-nav">
-  <ul class="nav nav-pills nav-stacked fixedsticky">
+<aside class="internal-nav col-4">
+  <ul class="nav flex-column fixedsticky">
     {{#each model.data as |post|}}
-    <li class="nav-item" {{action "goToSection"}}>{{#link-to 'template' (query-params del=post.attributes.slug) class="link-text" }}{{post.attributes.title}}{{/link-to}}</li>
+    <li class="nav-item" {{action "goToSection"}}>
+      {{#link-to 'template' (query-params del=post.attributes.slug) class="nav-link" }}{{post.attributes.title}}{{/link-to}}
+    </li>
     {{/each}}
   </ul>
 </aside>
