@@ -26,6 +26,7 @@
     font-weight: bold;
     font-size: 1.8rem;
     position: relative;
+    max-width: 21rem;
     &:hover {
         color: #111;
     }
@@ -60,4 +61,7 @@
     }
 
   }
+}
+.nav-item{
+  margin-left: 0;
 }

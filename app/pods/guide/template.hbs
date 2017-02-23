@@ -1,7 +1,7 @@
 
 
 
-<section class="content" >
+<section class="content col-8" >
   <header>
     <h1 class="display-1" id="top">Grafisk profil</h1>
   </header>
@@ -11,12 +11,14 @@
 </section>
 
 
-<aside class="internal-nav">
+<aside class="internal-nav col-4">
 
-  <ul class="nav nav-pills nav-stacked fixedsticky">
+  <ul class="nav flex-column fixedsticky">
     {{#each model.data as |post|}}
     {{#if (eq post.attributes.titletype 2)}}
-    <li class="nav-item"{{action "goToSection"}}>{{#link-to 'guide' (query-params del=post.attributes.basename) class="link-text" }}{{post.attributes.title}}{{/link-to}}</li>
+    <li class="nav-item"{{action "goToSection"}}>
+      {{#link-to 'guide' (query-params del=post.attributes.basename) class="nav-link" }}{{post.attributes.title}}{{/link-to}}
+    </li>
     {{/if}}
     {{/each}}
   </ul>

@@ -1,6 +1,8 @@
 
-<nav class="navbar navbar-fixed-top navbar-light bg-faded">
-
+<nav class="navbar navbar-toggleable-sm fixed-top navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#nav-internal-toggle" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
     <a class="navbar-brand" href="/">
       <svg class="emblem" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    viewBox="11 105.9 29.4 30" enable-background="new 11 105.9 29.4 30" xml:space="preserve">
@@ -16,13 +18,10 @@
     Høgskolen i Østfold <small class="text-muted">Designmal</small></a>
 
 
-  <button class="navbar-toggler hidden-sm-up float-right" type="button" data-toggle="collapse" data-target="#nav-internal-toggle">
-    &#9776;
-  </button>
-  <div class="collapse navbar-toggleable-sm" id="nav-internal-toggle">
+  <div class="collapse navbar-collapse" id="nav-internal-toggle">
 
 
-  <ul id="nav-internal" class="nav navbar-nav float-xs-right">
+  <ul id="nav-internal" class="nav navbar-nav ml-auto">
       <li class="nav-item">{{#link-to 'template' (query-params del="top") class="nav-link"}}Dokumentmaler{{/link-to}}</li>
       <li class="nav-item">{{#link-to 'guide' (query-params del="top") class="nav-link"}}Grafisk profil{{/link-to}}</li>
       <li class="nav-item">{{#link-to 'webcomponent' (query-params del="top") class="nav-link"}}Webdesign{{/link-to}}</li>
