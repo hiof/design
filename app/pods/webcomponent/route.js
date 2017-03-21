@@ -4,13 +4,13 @@ export default Ember.Route.extend({
     model: function() {
 
 
-        //return fetch('http://hiof.no/api/v2/designguidelines/?type=webcomponents')
+        //return fetch('http://www.hiof.no/api/v2/designguidelines/?type=webcomponents')
         //  .then(function(response) {
         //    return response.json();
         //  });
 
 
-        var data = Ember.$.getJSON('http://hiof.no/api/v1/designguidelines/?type=webdesign');
+        var data = Ember.$.getJSON('http://www.hiof.no/api/v1/designguidelines/?type=webdesign');
         //console.log(data);
         return data;
     },

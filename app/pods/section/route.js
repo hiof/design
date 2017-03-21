@@ -9,9 +9,9 @@ export default Ember.Route.extend({
 
 
 
-        return Ember.$.getJSON('http://hiof.no/api/v1/designguidelines/');
+        return Ember.$.getJSON('http://www.hiof.no/api/v1/designguidelines/');
 
-        //var documentTemplateSections = Ember.$.getJSON("http://hiof.no/api/v1/designguidelines/?type=ducmenemplate").then(function(data) {
+        //var documentTemplateSections = Ember.$.getJSON("http://www.hiof.no/api/v1/designguidelines/?type=ducmenemplate").then(function(data) {
         //
         //    var files = [];
         //    Ember.$.each(data.results, function(key, val) {
@@ -29,7 +29,7 @@ export default Ember.Route.extend({
         //    return files;
         //});
 
-        //var webComponentSections = Ember.$.getJSON("http://hiof.no/api/v1/designguidelines/?type=webcomponents").then(function(data) {
+        //var webComponentSections = Ember.$.getJSON("http://www.hiof.no/api/v1/designguidelines/?type=webcomponents").then(function(data) {
         //
         //    var files = [];
         //    Ember.$.each(data.results, function(key, val) {
