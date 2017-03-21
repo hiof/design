@@ -18,9 +18,6 @@
 </header>
 {{/if}}
 
-
-
-
 {{#if illustration}}
 <section class="section-content include-illustration">
   {{{markdown-to-html markdown=content}}}
@@ -30,26 +27,22 @@
 </section>
 
 <aside class="section-illustration">
-  <img {{action 'openModal' basename}} class="img-illustration" data-id="modal-image-{{convert-aeoaa basename}}" src="https://hiof.no/assets/plugins/design-{{type}}/illustrations/{{illustration}}">
+  <img {{action 'openModal' basename}} class="img-illustration" data-id="modal-image-{{convert-aeoaa basename}}" src="https://www.hiof.no/assets/plugins/design-{{type}}/illustrations/{{illustration}}">
   {{#my-modal basename=basename}}
-  <img src="https://hiof.no/assets/plugins/design-{{type}}/illustrations/{{illustration}}">
+  <img src="https://www.hiof.no/assets/plugins/design-{{type}}/illustrations/{{illustration}}">
   {{/my-modal}}
 </aside>
 
 {{else}}
-
   {{{markdown-to-html markdown=content}}}
   {{#if markup}}
-  {{#themed-syntax withBuffers="true" lang=scss}}
-  {{{markup}}}
-  {{/themed-syntax}}
-
+    {{#themed-syntax withBuffers="true" lang=scss}}
+    {{{markup}}}
+    {{/themed-syntax}}
   {{/if}}
   {{#if auhtor}}
-  {{content-section-footer author=author pubdate=date}}
+    {{content-section-footer author=author pubdate=date}}
   {{/if}}
-
-
 {{/if}}
 
 {{#if assetpath}}
@@ -66,10 +59,10 @@
     {{#if (is-array resource.illustration)}}
 
     {{#each resource.illustration as |image|}}
-    <img class="card-img-top" src="https://hiof.no/assets/plugins/design-templates/illustrations/{{image.image}}-{{resource.version}}.jpg" data-each="true">
+    <img class="card-img-top" src="https://www.hiof.no/assets/plugins/design-templates/illustrations/{{image.image}}-{{resource.version}}.jpg" data-each="true">
     {{/each}}
     {{else}}
-    <img class="card-img-top" src="https://hiof.no/assets/plugins/design-templates/illustrations/{{resource.illustration.image}}.jpg">
+    <img class="card-img-top" src="https://www.hiof.no/assets/plugins/design-templates/illustrations/{{resource.illustration.image}}.jpg">
     {{/if}}
     {{else}}
     {{/if}}
@@ -84,9 +77,9 @@
     </ul>
     <div class="card-block">
       {{#if resource.format}}
-      <a class="btn btn-primary" href="https://hiof.no/assets/plugins/design-templates/public/{{resource.file}}-{{resource.format}}-{{resource.version}}.zip"><span class="glyphicon glyphicon-download"></span>{{#if (eq resource.lang 'en')}}Download{{else}}Last ned{{/if}}</a>
+      <a class="btn btn-primary" href="https://www.hiof.no/assets/plugins/design-templates/public/{{resource.file}}-{{resource.format}}-{{resource.version}}.zip"><span class="glyphicon glyphicon-download"></span>{{#if (eq resource.lang 'en')}}Download{{else}}Last ned{{/if}}</a>
       {{else}}
-      <a class="btn btn-primary" href="https://hiof.no/assets/plugins/design-templates/public/{{resource.file}}-{{resource.version}}.zip"><span class="glyphicon glyphicon-download"></span>{{#if (eq resource.lang 'en')}}Download{{else}}Last ned{{/if}}</a>
+      <a class="btn btn-primary" href="https://www.hiof.no/assets/plugins/design-templates/public/{{resource.file}}-{{resource.version}}.zip"><span class="glyphicon glyphicon-download"></span>{{#if (eq resource.lang 'en')}}Download{{else}}Last ned{{/if}}</a>
       {{/if}}
       <a class="card-link" href="mailto:design@hiof.no?subject=Malfeil: Fil:{{resource.file}}-{{resource.format}}, versjon: {{resource.version}}">{{#if (eq resource.lang 'en')}}Report issues with this file{{else}}Meld fra om feil/mangler{{/if}}</a>
     </div>
@@ -94,7 +87,7 @@
   {{/each}}
   {{else}}
   {{#if url}}
-  <a href="https://hiof.no{{assetpath}}{{url}}.zip" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span> {{url}}</a>
+  <a href="https://www.hiof.no{{assetpath}}{{url}}.zip" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span> {{url}}</a>
   {{/if}}
   {{/if}}
 </footer>

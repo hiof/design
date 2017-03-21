@@ -10,7 +10,7 @@ export default Ember.Route.extend({
     //  id: 1,
     //  del: params.del
     //});
-    return fetch('http://hiof.no/api/v2/designguidelines/?type=guides')
+    return fetch('http://www.hiof.no/api/v2/designguidelines/?type=guides')
     .then(function(response) {
 
       //console.log(response.json());
