@@ -5,7 +5,7 @@ export default Ember.Component.extend({
   attributeBindings: ['data-section-id'],
   classNames: ['section'],
   willInsertElement: function(){
-    //illustrationPath: 'https://hiof.no/assets/plugins/design-'+model.data.,post.type+'/illustrations/'+post.attributes.illustration
+    //illustrationPath: 'https://www.hiof.no/assets/plugins/design-'+model.data.,post.type+'/illustrations/'+post.attributes.illustration
   },
   didInsertElement: function() {
     //var count = 0;
