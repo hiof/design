@@ -41,49 +41,6 @@ ul,ol{
   }
 }
 
-//.nav-internal {
-//  //position: -webkit-sticky;
-//  //position: -moz-sticky;
-//  //position: -o-sticky;
-//  //position: -ms-sticky;
-//  //position: sticky;
-//  //top: 100px;
-//  //z-index: 1;
-//  //top: 0px;
-//  //right: 0;
-//  //height: 52px;
-//  //overflow: hidden;
-//  background: #fff;
-//  padding: 1rem;
-//  .nav-item {
-//    //display: inline-block;
-//    //list-style: none;
-//    margin-left: 0;
-//    a {
-//      font-size: 1.4rem;
-//      padding: 0rem 1rem;
-//    }
-//    ul{display:none;}
-//    .active{
-//      & + ul{
-//        display: block;
-//      }
-//    }
-//    .nav-item{
-//      margin-left: 2.4rem;
-//      .nav-item{
-//        margin-left: 2.4rem;
-//        .nav-item{
-//          margin-left: 2.4rem;
-//        }
-//      }
-//    }
-//  }
-//  //    white-space: nowrap;
-//  //  overflow-x: auto;
-//  //  -webkit-overflow-scrolling: touch;
-//  //  -ms-overflow-style: -ms-autohiding-scrollbar;
-//}
 .internal-nav{
   ul{
     padding-left: 1rem;
@@ -100,21 +57,7 @@ ul,ol{
 .content{
   box-shadow: .1rem 0 0  #eee;
 }
-.nav-internal-inline {
-  //width: 9000px;
-  //margin-top: -3rem;
-}
 
-
-//.nav-stacked {
-//  .nav-item {
-//    margin-left: 0;
-//  }
-//  ul{
-//    padding-left: 2rem;
-//  }
-//  //margin-left: 2.4rem;
-//}
 
 .fixedsticky {
   position: -webkit-sticky;
@@ -133,52 +76,6 @@ ul,ol{
   position: relative;
 }
 
-
-
-//@mixin flexbox() {
-//    display: -webkit-box;
-//    display: -moz-box;
-//    display: -ms-flexbox;
-//    display: -webkit-flex;
-//    display: flex;
-//}
-
-//@mixin flex($values) {
-//    -webkit-box-flex: $values;
-//    -moz-box-flex: $values;
-//    -webkit-flex: $values;
-//    -ms-flex: $values;
-//    flex: $values;
-//}
-
-//@mixin order($val) {
-//    -webkit-box-ordinal-group: $val;
-//    -moz-box-ordinal-group: $val;
-//    -ms-flex-order: $val;
-//    -webkit-order: $val;
-//    order: $val;
-//}
-
-//.main {
-//    @include flexbox();
-//    > * {
-//        padding: 10px;
-//        flex: 1 100%;
-//    }
-//    //& > h1 {
-//    //    display: block;
-//    //    width: 100%;
-//    //}
-//}
-
-//.content {
-//    flex: 3 0px;
-//}
-
-//.internal-nav {
-//    flex: 1 0px;
-//    border-left: 1px solid #eee;
-//}
 .internal-nav-top{
   position: fixed;
   bottom: 0;
@@ -442,5 +339,20 @@ img,video{
     padding-left: 3rem;
     margin-bottom: 4rem;
     display: inline-block;
+  }
+}
+
+
+
+
+
+// Layout fixes for IE11/IE10
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ CSS styles go here */
+  .content-frontpage{
+    width: 100%;
+  }
+  .navbar{
+    width: 100%;
   }
 }
