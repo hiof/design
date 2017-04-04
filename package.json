@@ -1,7 +1,7 @@
 {
   "name": "design",
-  "version": "1.2.2",
-  "description": "Small description for design goes here",
+  "version": "1.2.3",
+  "description": "Ember application to display design-resource-related-data from different content APIs",
   "license": "MIT",
   "author": "",
   "directories": {
