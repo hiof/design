@@ -10,7 +10,7 @@ export default Ember.Route.extend({
         //  });
 
 
-        var data = Ember.$.getJSON('http://www.hiof.no/api/v1/designguidelines/?type=webcomponents');
+        var data = Ember.$.getJSON('https://www.hiof.no/api/v1/designguidelines/?type=webcomponents');
         //console.log(data);
         return data;
     },
