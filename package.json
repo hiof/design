@@ -1,6 +1,6 @@
 {
   "name": "design",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Ember application to display design-resource-related-data from different content APIs",
   "license": "MIT",
   "author": "",
@@ -38,7 +38,7 @@
     "ember-cli-test-loader": "^1.1.0",
     "ember-cli-uglify": "^1.2.0",
     "ember-component-css": "0.2.11",
-    "ember-data": "^2.11.0",
+    "ember-data": "~2.11.0",
     "ember-export-application-global": "^1.0.5",
     "ember-lazy-image": "0.0.15",
     "ember-load-initializers": "^0.6.0",
