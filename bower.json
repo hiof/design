@@ -15,6 +15,5 @@
     "code-highlight-linenums": "^0.2.1"
   },
   "devDependencies": {
-    "ember": "2.11.1"
   }
 }

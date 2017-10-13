@@ -1,10 +1,11 @@
 /* eslint-env node */
+'use strict';
 
 module.exports = function(environment) {
-  var ENV = {
+  let ENV = {
     modulePrefix: 'design',
     podModulePrefix: 'design/pods',
-    environment: environment,
+    environment,
     rootURL: '/',
     locationType: 'auto',
     contentSecurityPolicy: {
