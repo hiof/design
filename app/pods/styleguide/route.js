@@ -4,7 +4,7 @@ export default Ember.Route.extend({
     model: function() {
 
 
-        //return fetch('http://www.hiof.no/api/v2/designguidelines/?type=webcomponents')
+        //return fetch('//www.hiof.no/api/v2/designguidelines/?type=webcomponents')
         //  .then(function(response) {
         //    return response.json();
         //  });

@@ -9,7 +9,7 @@ export default Ember.Route.extend({
 
 
 
-        return Ember.$.getJSON('http://www.hiof.no/api/v1/designguidelines/');
+        return Ember.$.getJSON('https://www.hiof.no/api/v1/designguidelines/');
 
         //var documentTemplateSections = Ember.$.getJSON("http://www.hiof.no/api/v1/designguidelines/?type=ducmenemplate").then(function(data) {
         //
