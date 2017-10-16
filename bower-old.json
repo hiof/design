@@ -8,7 +8,6 @@
     "hiof-typography": "https://github.com/hiof/typography.git",
     "sass-mq": "~3.2.4",
     "highlightjs": "~8.8.0",
-    "Stickyfill": "^1.1.4",
     "tocify": "https://github.com/gfranko/jquery.tocify.js.git",
     "tether": "^1.3.7",
     "bootstrap-v4": "bootstrap#v4.0.0-alpha.6",
