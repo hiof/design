@@ -1,15 +1,28 @@
+
 @import 'bootstrap-custom';
-@import '../../bower_components/sass-mq/mq';
+//@import '../../node_modules/sass-mq/mq';
 //@import '../../bower_components/hiof-layout/dist/layout';
-@import '../../bower_components/hiof-colors/dist/colors';
-@import '../../bower_components/hiof-typography/dist/typography';
-@import '../../bower_components/highlightjs/styles/github';
+@import '../../node_modules/colors/app/assets/sass/_variables';
+@import '../../node_modules/colors/app/assets/sass/colors';
+@import '../../node_modules/typography/app/assets/sass/_variables';
+//@import '../../node_modules/typography/app/assets/sass/typography';
+@import '../../node_modules/highlightjs/styles/github';
 @import "pod-styles";
+
+
+
 html {
   overflow-x: hidden;
+  font-size: 62.5%;
 }
 body {
   position: relative;
+}
+.container-fluid {
+  max-width: 124rem;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 2rem;
 }
 h1,
 h2,
@@ -145,47 +158,6 @@ img {
 .section {
   position: relative;
   padding: 3rem 0 0;
-  //&:before {
-  //    content: "";
-  //    width: 400%;
-  //    position: absolute;
-  //    bottom: 0;
-  //    left: -100%;
-  //    height: 10px;
-  //    z-index: -1;
-  //}
-  //&:nth-child(6n+1) {
-  //    &:before {
-  //        @extend .c-bg-aquablue;
-  //    }
-  //    color: #fff;
-  //}
-  //&:nth-child(6n+2) {
-  //    &:before {
-  //        @extend .c-bg-purple;
-  //    }
-  //    color: #fff;
-  //}
-  //&:nth-child(6n+3) {
-  //    &:before {
-  //        @extend .c-bg-pimnk;
-  //    }
-  //}
-  //&:nth-child(6n+4) {
-  //    &:before {
-  //        @extend .c-bg-warmgrey;
-  //    }
-  //}
-  //&:nth-child(6n+5) {
-  //    &:before {
-  //        @extend .c-bg-seagreen;
-  //    }
-  //}
-  //&:nth-child(6n+6) {
-  //    &:before {
-  //        @extend .c-bg-lightwarmgrey;
-  //    }
-  //}
   img {
     background: #fff;
     //
@@ -342,7 +314,29 @@ img,video{
   }
 }
 
+.c-bg-black {
+  background-color: #000 !important; }
 
+.c-bg-white {
+  background-color: #fff !important; }
+
+.c-bg-pink {
+  background-color: #D77869 !important; }
+
+.c-bg-seagreen {
+  background-color: #6FC2B4 !important; }
+
+.c-bg-lightwarmgrey {
+  background-color: #ECEAE5 !important; }
+
+.c-bg-warmgrey {
+  background-color: #C8C2BE !important; }
+
+.c-bg-purple {
+  background-color: #A396A3 !important; }
+
+.c-bg-aquablue {
+  background-color: #347E84 !important; }
 
 
 
@@ -356,3 +350,5 @@ img,video{
     width: 100%;
   }
 }
+
+@import "ember-cli-bootstrap-4/bootstrap";

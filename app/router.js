@@ -1,8 +1,8 @@
 import Ember from 'ember';
 import config from './config/environment';
-import { AnalyticsTransitionRouterMixin } from 'analytics';
+import GoogleAnalyticsRoute from 'ember-tracker/mixins/google-analytics-route';
 
-const Router = Ember.Router.extend(AnalyticsTransitionRouterMixin,{
+const Router = Ember.Router.extend(GoogleAnalyticsRoute,{
   location: config.locationType,
   rootURL: config.rootURL,
   //didTransition() {

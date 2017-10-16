@@ -12,15 +12,18 @@ module.exports = function(defaults) {
     // Add options here
   });
   //app.import('bower_components/bootstrap/dist/css/bootstrap.css');
-  app.import(app.bowerDirectory + '/Stickyfill/dist/stickyfill.css');
 
 
-  if (!process.env.EMBER_CLI_FASTBOOT) {
+  app.import('node_modules/colors/dist/colors.css');
+  app.import('node_modules/typography/dist/typography.css');
+
+  if (typeof FastBoot === 'undefined') {
     // This will only be included in the browser build
-    app.import(app.bowerDirectory + '/Stickyfill/dist/stickyfill.js');
+
+    app.import('node_modules/popper.js/dist/umd/popper.js');
     //app.import(app.bowerDirectory + '/tocify/src/javascripts/jquery.tocify.js');
     //app.import(app.bowerDirectory + '/toc/toc.js');
-    app.import(app.bowerDirectory + '/bootstrap-v4/dist/js/bootstrap.js');
+    app.import('node_modules/bootstrap/dist/js/bootstrap.js');
   }
   //app.import(app.bowerDirectory + '/scrollspy/jquery-scrollspy.js');
   //app.import('bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot', {

@@ -16,7 +16,7 @@ export default Ember.Route.extend({
     },
     didInsertElement(){
       this._super(...arguments);
-      console.log('did render...');
+      //console.log('did render...');
 
 
       //this.$('body').addClass('enabled');

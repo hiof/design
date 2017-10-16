@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import fetch from 'ember-network/fetch';
+import fetch from 'fetch';
 export default Ember.Route.extend({
   model() {
     return fetch('https://www.hiof.no/api/v2/designguidelines/?type=templates')
