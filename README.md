@@ -14,9 +14,9 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone git@github.com:hiof/design.git` this repository
 * `cd design`
-* `npm install`
+* `yarn install`
 
 ## Running / Development
 
@@ -40,7 +40,10 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+1. Build the project for production `ember build --environment production`
+2. Backup the `nodeweb.hiof.no/var/www/design/public`-folder (duplicate the folder, attach -backup-vx.x.x to folder name - use the current live version number)
+3. Copy/overwrite the content of the `/dist` folder to `nodeweb.hiof.no/var/www/design/public/`
+
 
 ## Further Reading / Useful Links
 
