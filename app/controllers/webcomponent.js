@@ -11,9 +11,9 @@ export default Ember.Controller.extend({
         scrollTop: Ember.$("#"+del).offset().top -80
       }, 1000);
 
-    },
-    click(el){
-      console.log(el);
-    }
+    }//,
+    //click(el){
+      //console.log(el);
+    //}
   }
 });
