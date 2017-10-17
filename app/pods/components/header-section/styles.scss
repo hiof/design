@@ -23,16 +23,17 @@
     padding-left: 4.4rem;
     //background-image: url('/assets/images/icons/emblem.svg');
     background-size: 32px 32px;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.8rem;
     position: relative;
     max-width: 21rem;
+    padding-top: .7rem;
     &:hover {
         color: #111;
     }
     .emblem {
         position: absolute;
-        top: .4rem;
+        top: .6rem;
         left: .6rem;
         width: 32px;
         height: 32px;
@@ -43,7 +44,7 @@
     }
     .text-muted{
       position: absolute;
-      top: 1.8rem;
+      top: 2.8rem;
       left: 4.4rem;
       font-size: 1rem;
       color: #111;

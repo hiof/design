@@ -4,8 +4,10 @@
 
    $grid-columns:               12 !default;
    $grid-gutter-width-base:     20px !default;
+   $font-family-base: "Source Sans Pro", "Helvetica new";
+   $font-size-base: 1.6rem;
 
-   @import "bootstrap";
+   @import "ember-cli-bootstrap-4/bootstrap"
 
 
    //@import "bootstrap/variables";

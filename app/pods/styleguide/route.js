@@ -4,7 +4,7 @@ export default Ember.Route.extend({
     model: function() {
 
 
-        //return fetch('http://www.hiof.no/api/v2/designguidelines/?type=webcomponents')
+        //return fetch('//www.hiof.no/api/v2/designguidelines/?type=webcomponents')
         //  .then(function(response) {
         //    return response.json();
         //  });
@@ -16,7 +16,7 @@ export default Ember.Route.extend({
     },
     didInsertElement(){
       this._super(...arguments);
-      console.log('did render...');
+      //console.log('did render...');
 
 
       //this.$('body').addClass('enabled');
