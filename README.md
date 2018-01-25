@@ -8,7 +8,7 @@ A short introduction of this app could easily go here.
 You will need the following things properly installed on your computer.
 
 * [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with NPM)
+* [Node.js](https://nodejs.org/) (with npm)
 * [Ember CLI](https://ember-cli.com/)
 * [Google Chrome](https://google.com/chrome/)
 
@@ -16,7 +16,7 @@ You will need the following things properly installed on your computer.
 
 * `git clone git@github.com:hiof/design.git` this repository
 * `cd design`
-* `yarn install`
+* `npm install`
 
 ## Running / Development
 
