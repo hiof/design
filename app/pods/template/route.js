@@ -1,6 +1,8 @@
-import Ember from 'ember';
+import Route from '@ember/routing/route';
 import fetch from 'fetch';
-export default Ember.Route.extend({
+import $ from 'jquery';
+
+export default Route.extend({
   model() {
     return fetch('https://www.hiof.no/api/v2/designguidelines/?type=templates')
       .then(function(response) {
@@ -21,8 +23,8 @@ export default Ember.Route.extend({
     if (typeof del === 'string' || del instanceof String){
       setTimeout(function(){
 
-        Ember.$('html, body').animate({
-          scrollTop: Ember.$("#"+del).offset().top -100
+        $('html, body').animate({
+          scrollTop: $("#"+del).offset().top -100
         }, 1000);
 
 

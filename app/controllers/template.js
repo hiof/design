@@ -1,14 +1,15 @@
-import Ember from 'ember';
+import Controller from '@ember/controller';
+import $ from 'jquery';
 
-export default Ember.Controller.extend({
+export default Controller.extend({
   queryParams: ['del'],
   del: null,
   actions: {
     goToSection(){
       let del = this.get('del');
 
-      Ember.$('html, body').animate({
-        scrollTop: Ember.$("#"+del).offset().top -80
+      $('html, body').animate({
+        scrollTop: $("#"+del).offset().top -80
       }, 1000);
 
     }

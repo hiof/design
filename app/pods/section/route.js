@@ -1,6 +1,7 @@
-import Ember from 'ember';
+import Route from '@ember/routing/route';
+import $ from 'jquery';
 
-export default Ember.Route.extend({
+export default Route.extend({
     activateDropdowns: function(){
       //console.log('Document is ready');
 
@@ -9,7 +10,7 @@ export default Ember.Route.extend({
 
 
 
-        return Ember.$.getJSON('https://www.hiof.no/api/v1/designguidelines/');
+        return $.getJSON('https://www.hiof.no/api/v1/designguidelines/');
 
         //var documentTemplateSections = Ember.$.getJSON("http://www.hiof.no/api/v1/designguidelines/?type=ducmenemplate").then(function(data) {
         //
@@ -48,10 +49,10 @@ export default Ember.Route.extend({
         //});
     },
     afterModel: function(){
-      Ember.$(document).on('click', '.dropdown-toggle', function(e) {
+      $(document).on('click', '.dropdown-toggle', function(e) {
             e.preventDefault();
-            Ember.$('.dropdown-menu').removeClass('.in');
-            Ember.$(this).siblings('.dropdown-menu').collapse('toggle');
+            $('.dropdown-menu').removeClass('.in');
+            $(this).siblings('.dropdown-menu').collapse('toggle');
             //console.log('Clicked on nav');
             //Ember.$(".navbar-toggle").click();
         });

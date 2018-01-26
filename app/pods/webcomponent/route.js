@@ -1,6 +1,7 @@
-import Ember from 'ember';
+import Route from '@ember/routing/route';
+import $ from 'jquery';
 
-export default Ember.Route.extend({
+export default Route.extend({
     model: function() {
 
 
@@ -10,7 +11,7 @@ export default Ember.Route.extend({
         //  });
 
 
-        var data = Ember.$.getJSON('https://www.hiof.no/api/v1/designguidelines/?type=webdesign');
+        var data = $.getJSON('https://www.hiof.no/api/v1/designguidelines/?type=webdesign');
         //console.log(data);
         return data;
     },
@@ -41,8 +42,8 @@ export default Ember.Route.extend({
       if (typeof del === 'string' || del instanceof String){
         setTimeout(function(){
 
-          Ember.$('html, body').animate({
-            scrollTop: Ember.$("#"+del).offset().top -80
+          $('html, body').animate({
+            scrollTop: $("#"+del).offset().top -80
           }, 1000);
 
 
