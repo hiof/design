@@ -52,20 +52,33 @@ ul,ol{
     padding: 0;
     width: 60rem;
   }
+  pre,
+  code{
+    background: #f7f7f9;
+
+  }
+  pre{
+    border: 0.1rem solid #ddd;
+  }
 }
 
 .internal-nav{
-  ul{
-    padding-left: 1rem;
-  }
-  .nav-item{
-    list-style: none;
-    margin-left: 0;
-    .nav-link{
-      padding: 0;
-
+  .nav-link{
+    &:focus{
+      outline: 0;
     }
   }
+  //ul{
+  //  padding-left: 1rem;
+  //}
+  //.nav-item{
+  //  list-style: none;
+  //  margin-left: 0;
+  //  .nav-link{
+  //    padding: 0;
+//
+  //  }
+  //}
 }
 .content{
   box-shadow: .1rem 0 0  #eee;
@@ -83,11 +96,11 @@ ul,ol{
   }
 }
 
-.container-fluid {
-  max-width: 104rem;
-  margin: 0 auto;
-  position: relative;
-}
+//.container-fluid {
+//  max-width: 104rem;
+//  margin: 0 auto;
+//  position: relative;
+//}
 
 .internal-nav-top{
   position: fixed;
