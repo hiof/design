@@ -4,7 +4,7 @@
     //border-bottom: 1px solid #ddd;
     //border-bottom: 1px solid #ddd;
     //border-bottom: 1px solid rgba(0,0,0,.1);
-    max-width: 104rem;
+    max-width: 124rem;
     margin: 0 auto;
     //&:after{
     //  content: "";
@@ -49,6 +49,11 @@
       font-size: 1rem;
       color: #111;
     }
+}
+.nav-link{
+  &:focus{
+    outline: 0;
+  }
 }
 .navbar-light{
   .navbar-nav{

@@ -1,6 +1,6 @@
 {
   "name": "design",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "private": true,
   "description": "Ember application to display design-resource-related-data from different content APIs",
   "license": "MIT",
