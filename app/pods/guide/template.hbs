@@ -13,7 +13,7 @@
 
 <aside class="internal-nav col-3">
 
-  <ul class="nav flex-column fixedsticky">
+  <ul class="nav flex-column nav-pills fixedsticky">
     {{#each model.data as |post|}}
     {{#if (eq post.attributes.titletype 2)}}
     <li class="nav-item"{{action "goToSection"}}>

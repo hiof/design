@@ -27,7 +27,7 @@
 
 </section>
 <aside class="internal-nav col-md-3">
-  <ul class="nav flex-column fixedsticky">
+  <ul class="nav flex-column nav-pills fixedsticky">
     {{#each model.data as |post|}}
     {{#if (eq post.attributes.titletype 2)}}
     <li class="nav-item" {{action "goToSection"}}>
@@ -35,7 +35,7 @@
     </li>
 
     {{else if (eq post.attributes.titletype 3)}}
-    <ul>
+    <ul style="display:none;">
     <li class="nav-item" {{action "goToSection"}}>
       {{#link-to 'webcomponent' (query-params del=post.attributes.slug) class="nav-link" }}{{post.attributes.title}}{{/link-to}}
     </li>
