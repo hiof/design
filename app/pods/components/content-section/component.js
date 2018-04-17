@@ -1,6 +1,6 @@
-import Ember from 'ember';
-
-export default Ember.Component.extend({
+import Component from '@ember/component'
+import $ from 'jquery';
+export default Component.extend({
   tagName: 'article',
   attributeBindings: ['data-section-id'],
   classNames: ['section'],
@@ -19,7 +19,7 @@ export default Ember.Component.extend({
   },
   actions: {
     openModal(element){
-      Ember.$("#modal-image-"+element).modal();
+      $("#modal-image-"+element).modal();
     }
   }
 

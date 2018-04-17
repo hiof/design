@@ -1,4 +1,4 @@
-import Ember from 'ember';
+import { helper } from '@ember/component/helper';
 
 export function convertAeoaa(params /*, hash*/ ) {
 
@@ -12,4 +12,4 @@ export function convertAeoaa(params /*, hash*/ ) {
     }
 }
 
-export default Ember.Helper.helper(convertAeoaa);
+export default helper(convertAeoaa);

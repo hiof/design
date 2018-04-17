@@ -7,6 +7,7 @@
 @import '../../node_modules/typography/app/assets/sass/_variables';
 //@import '../../node_modules/typography/app/assets/sass/typography';
 @import '../../node_modules/highlightjs/styles/github';
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,600,300italic,400italic,600italic,700,700italic,900,900italic);
 @import "pod-styles";
 
 
@@ -52,20 +53,33 @@ ul,ol{
     padding: 0;
     width: 60rem;
   }
+  pre,
+  code{
+    background: #f7f7f9;
+
+  }
+  pre{
+    border: 0.1rem solid #ddd;
+  }
 }
 
 .internal-nav{
-  ul{
-    padding-left: 1rem;
-  }
-  .nav-item{
-    list-style: none;
-    margin-left: 0;
-    .nav-link{
-      padding: 0;
-
+  .nav-link{
+    &:focus{
+      outline: 0;
     }
   }
+  //ul{
+  //  padding-left: 1rem;
+  //}
+  //.nav-item{
+  //  list-style: none;
+  //  margin-left: 0;
+  //  .nav-link{
+  //    padding: 0;
+//
+  //  }
+  //}
 }
 .content{
   box-shadow: .1rem 0 0  #eee;
@@ -83,11 +97,11 @@ ul,ol{
   }
 }
 
-.container-fluid {
-  max-width: 104rem;
-  margin: 0 auto;
-  position: relative;
-}
+//.container-fluid {
+//  max-width: 104rem;
+//  margin: 0 auto;
+//  position: relative;
+//}
 
 .internal-nav-top{
   position: fixed;
