@@ -29,13 +29,13 @@
     {{#each model.data as |post|}}
     {{#if (eq post.attributes.titletype 2)}}
     <li class="nav-item" {{action "goToSection"}}>
-      {{#link-to 'webcomponent' (query-params del=post.attributes.slug) class="nav-link" }}{{post.attributes.title}}{{/link-to}}
+      {{#link-to 'styleguide' (query-params del=post.attributes.slug) class="nav-link" }}{{post.attributes.title}}{{/link-to}}
     </li>
 
     {{else if (eq post.attributes.titletype 3)}}
     <ul>
       <li class="nav-item" {{action "goToSection"}}>
-        {{#link-to 'webcomponent' (query-params del=post.attributes.slug) class="nav-link" }}{{post.attributes.title}}{{/link-to}}
+        {{#link-to 'styleguide' (query-params del=post.attributes.slug) class="nav-link" }}{{post.attributes.title}}{{/link-to}}
       </li>
     </ul>
     {{/if}}
@@ -44,6 +44,6 @@
 </aside>
 <aside class="internal-nav-top">
   <ul>
-    <li class="nav-item"{{action "goToSection"}}>{{#link-to 'webcomponent' (query-params del="top") class="btn btn-primary" }}{{post.attributes.title}}til toppen{{/link-to}}</li>
+    <li class="nav-item"{{action "goToSection"}}>{{#link-to 'styleguide' (query-params del="top") class="btn btn-primary" }}{{post.attributes.title}}til toppen{{/link-to}}</li>
   </ul>
 </aside>
