@@ -8,7 +8,7 @@ module.exports = function(environment) {
     rootURL: '/',
     locationType: 'auto',
     contentSecurityPolicy: {
-      'connect-src': "'self' hiof.no",
+      'connect-src': "'self' www.hiof.no hiof.no https://design-test.hiof.no https://design.hiof.no http://design.hiof.no http://design-test.hiof.no",
       'img-src': "'self' https://hiof.no http://hiof.no placehold.it https://placeholdit.imgix.net www.google-analytics.com", // For placeholder images
       'script-src': "'self' 'unsafe-inline' 'unsafe-eval' cloudflare.com cdnjs.cloudflare.com https://gstatic.com www.google-analytics.com",
       'style-src': "'self' 'unsafe-inline' cloudflare.com cdnjs.cloudflare.com https://fonts.googleapis.com https://gstatic.com",

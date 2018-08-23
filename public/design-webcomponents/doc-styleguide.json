@@ -1,0 +1,243 @@
+{
+	"0": {
+		"title": "2-typography",
+		"slug": "2-typography",
+		"href": "2-typography.html",
+		"dest": "tmp/styleguide/2-typography.html",
+		"src": "tmp/sass/styleguide/2-typography.scss",
+		"sections": [
+			{
+				"comment": "<h2 id=\"component-typography\">Component: Typography</h2>\n"
+			},
+			{
+				"comment": "<h3 id=\"import-helpers-and-the-font\">Import helpers and the font</h3>\n<ul>\n<li>sass-mq</li>\n<li>frontend/standard/variables</li>\n<li>Source Sans Pro font</li>\n</ul>\n",
+				"result": "css\n@import '../../../vendor/sass-mq/mq';\n@import '../../../vendor/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';\n@import '../../../vendor/frontend/app/assets/sass/variables/_standard.scss';\n@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,600,300italic,400italic,600italic,700,700italic,900,900italic);\n",
+				"markup": "<pre class=\"hljs\"><code>css\n@import '../../../vendor/sass-mq/mq';\n@import '../../../vendor/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';\n@import '../../../vendor/frontend/app/assets/sass/variables/_standard.scss';\n@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,600,300italic,400italic,600italic,700,700italic,900,900italic);</code></pre>",
+				"styles": "<pre class=\"hljs\"><code><span class=\"hljs-at_rule\">@<span class=\"hljs-keyword\">import</span> <span class=\"hljs-string\">'../../../vendor/sass-mq/mq'</span>;</span>\n<span class=\"hljs-at_rule\">@<span class=\"hljs-keyword\">import</span> <span class=\"hljs-string\">'../../../vendor/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss'</span>;</span>\n<span class=\"hljs-at_rule\">@<span class=\"hljs-keyword\">import</span> <span class=\"hljs-string\">'../../../vendor/frontend/app/assets/sass/variables/_standard.scss'</span>;</span>\n<span class=\"hljs-at_rule\">@<span class=\"hljs-keyword\">import</span> <span class=\"hljs-string\">'../../../vendor/hiof-color/app/assets/sass/_variables'</span>;</span>\n\n<span class=\"hljs-at_rule\">@<span class=\"hljs-keyword\">import</span> <span class=\"hljs-string\">\"_variables\"</span>;</span>\n\n\n<span class=\"hljs-at_rule\">@<span class=\"hljs-keyword\">import</span><span class=\"hljs-preprocessor\"> url</span>(https://fonts.googleapis.com/css?family=Source+Sans+Pro:<span class=\"hljs-number\">400</span>,<span class=\"hljs-number\">200</span>,<span class=\"hljs-number\">200</span>italic,<span class=\"hljs-number\">300</span>,<span class=\"hljs-number\">600</span>,<span class=\"hljs-number\">300</span>italic,<span class=\"hljs-number\">400</span>italic,<span class=\"hljs-number\">600</span>italic,<span class=\"hljs-number\">700</span>,<span class=\"hljs-number\">700</span>italic,<span class=\"hljs-number\">900</span>,<span class=\"hljs-number\">900</span>italic);</span></code></pre>"
+			},
+			{
+				"comment": "<h3 id=\"rem-setup-and-text-size-adjust\">REM setup and text-size-adjust</h3>\n<p>Set 1rem to be 10px as a size-base.</p>\n",
+				"result": "css\nhtml {\n font-size: 62.5%;\n -ms-text-size-adjust: 100%;\n -webkit-text-size-adjust: 100%;\n}\n",
+				"markup": "<pre class=\"hljs\"><code>css\nhtml {\n font-size: 62.5%;\n -ms-text-size-adjust: 100%;\n -webkit-text-size-adjust: 100%;\n}</code></pre>",
+				"styles": "<pre class=\"hljs\"><code><span class=\"hljs-tag\">html</span> {\n  <span class=\"hljs-attribute\">font-size</span><span class=\"hljs-value\">: <span class=\"hljs-number\">62.5%</span>;</span>\n  <span class=\"hljs-comment\">//-ms-text-size-adjust: 100%;</span>\n  <span class=\"hljs-comment\">//-webkit-text-size-adjust: 100%;</span>\n  <span class=\"hljs-value\">text</span>-size-adjust<span class=\"hljs-value\">: <span class=\"hljs-number\">100%</span>;</span>\n}</code></pre>"
+			},
+			{
+				"comment": "<h3 id=\"focus\">Focus</h3>\n",
+				"result": "css\n:focus{\n outline: 3px solid $link-color;\n outline: .3rem solid $link-color;\n}\n",
+				"markup": "<pre class=\"hljs\"><code>css\n:focus{\n outline: 3px solid $link-color;\n outline: .3rem solid $link-color;\n}</code></pre>",
+				"styles": "<pre class=\"hljs\"><code><span class=\"hljs-pseudo\">:focus</span>{\n  <span class=\"hljs-attribute\">outline</span><span class=\"hljs-value\">: <span class=\"hljs-number\">3px</span> solid <span class=\"hljs-variable\">$link-color</span>;</span>\n  <span class=\"hljs-attribute\">outline</span><span class=\"hljs-value\">: .<span class=\"hljs-number\">3rem</span> solid <span class=\"hljs-variable\">$link-color</span>;</span>\n}</code></pre>"
+			},
+			{
+				"comment": "<h4 id=\"body-text-size\">Body text size</h4>\n",
+				"result": "css\nbody,\n.body,\n#body {\n font-size: $body-font-size;\n line-height: $body-line-height;\n font-family: $body-font-family;\n font-style: normal;\n font-weight: 400;\n}\n",
+				"markup": "<pre class=\"hljs\"><code>css\nbody,\n.body,\n#body {\n font-size: $body-font-size;\n line-height: $body-line-height;\n font-family: $body-font-family;\n font-style: normal;\n font-weight: 400;\n}</code></pre>",
+				"styles": "<pre class=\"hljs\"><code><span class=\"hljs-tag\">body</span>,\n<span class=\"hljs-class\">.body</span>,\n<span class=\"hljs-id\">#body</span> {\n  <span class=\"hljs-attribute\">font-size</span><span class=\"hljs-value\">: <span class=\"hljs-variable\">$body-font-size</span>;</span>\n  <span class=\"hljs-attribute\">line-height</span><span class=\"hljs-value\">: <span class=\"hljs-variable\">$body-line-height</span>;</span>\n  <span class=\"hljs-attribute\">font-family</span><span class=\"hljs-value\">: <span class=\"hljs-variable\">$body-font-family</span>;</span>\n  <span class=\"hljs-attribute\">font-style</span><span class=\"hljs-value\">: normal;</span>\n  <span class=\"hljs-attribute\">font-weight</span><span class=\"hljs-value\">: <span class=\"hljs-number\">400</span>;</span>\n}</code></pre>"
+			},
+			{
+				"comment": "<h4 id=\"headings\">Headings</h4>\n<p>Headings. OpenType ligatures, discretionary ligatures and lining figures enabled if available.</p>\n",
+				"result": "css\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;\n font-style: normal;\n font-weight: 700;\n font-family: $h-font-family;\n}\n",
+				"markup": "<pre class=\"hljs\"><code>css\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;\n font-style: normal;\n font-weight: 700;\n font-family: $h-font-family;\n}</code></pre>",
+				"styles": "<pre class=\"hljs\"><code><span class=\"hljs-tag\">h1</span>,\n<span class=\"hljs-tag\">h2</span>,\n<span class=\"hljs-tag\">h3</span>,\n<span class=\"hljs-tag\">h4</span>,\n<span class=\"hljs-tag\">h5</span>,\n<span class=\"hljs-tag\">h6</span> {\n  <span class=\"hljs-attribute\">font-feature-settings</span><span class=\"hljs-value\">: <span class=\"hljs-string\">'dlig'</span> <span class=\"hljs-number\">1</span>, <span class=\"hljs-string\">'liga'</span> <span class=\"hljs-number\">1</span>, <span class=\"hljs-string\">'lnum'</span> <span class=\"hljs-number\">1</span>, <span class=\"hljs-string\">'kern'</span> <span class=\"hljs-number\">1</span>;</span>\n  <span class=\"hljs-attribute\">font-style</span><span class=\"hljs-value\">: normal;</span>\n  <span class=\"hljs-attribute\">font-weight</span><span class=\"hljs-value\">: <span class=\"hljs-number\">700</span>;</span>\n  <span class=\"hljs-attribute\">font-family</span><span class=\"hljs-value\">: <span class=\"hljs-variable\">$h-font-family</span>;</span>\n}</code></pre>"
+			},
+			{
+				"comment": "<h5 id=\"heading-level-1-\">Heading level 1.</h5>\n<p><span class=\"h1\">Heading level 1 looks like this</span></p>\n",
+				"result": "css\nh1, .h1 {\n line-height: 3rem;\n font-size: 2.8rem;\n font-weight: 300;\n}\n",
+				"markup": "<pre class=\"hljs\"><code>css\nh1, .h1 {\n line-height: 3rem;\n font-size: 2.8rem;\n font-weight: 300;\n}</code></pre>",
+				"styles": "<pre class=\"hljs\"><code><span class=\"hljs-tag\">h1</span>, <span class=\"hljs-class\">.h1</span> {\n  <span class=\"hljs-attribute\">line-height</span><span class=\"hljs-value\">: <span class=\"hljs-number\">3rem</span>;</span>\n  <span class=\"hljs-attribute\">font-size</span><span class=\"hljs-value\">: <span class=\"hljs-number\">2.8rem</span>;</span>\n  <span class=\"hljs-attribute\">font-weight</span><span class=\"hljs-value\">: <span class=\"hljs-number\">300</span>;</span>\n}</code></pre>"
+			},
+			{
+				"comment": "<h5 id=\"heading-level-2-\">Heading level 2.</h5>\n<p><span class=\"h2\">Heading level 2 looks like this</span></p>\n",
+				"result": "css\nh2, .h2 {\n font-size: 2.2rem;\n font-weight: 300;\n}\n",
+				"markup": "<pre class=\"hljs\"><code>css\nh2, .h2 {\n font-size: 2.2rem;\n font-weight: 300;\n}</code></pre>",
+				"styles": "<pre class=\"hljs\"><code><span class=\"hljs-tag\">h2</span>, <span class=\"hljs-class\">.h2</span> {\n  <span class=\"hljs-attribute\">font-size</span><span class=\"hljs-value\">: <span class=\"hljs-number\">2.2rem</span>;</span>\n  <span class=\"hljs-attribute\">font-weight</span><span class=\"hljs-value\">: <span class=\"hljs-number\">300</span>;</span>\n}</code></pre>"
+			},
+			{
+				"comment": "<h5 id=\"heading-level-3-\">Heading level 3.</h5>\n<h5 id=\"example\">Example</h5>\n<p><span class=\"h3\">Heading level 3 looks like this</span></p>\n",
+				"result": "css\nh3, .h3 {\n font-size: 1.8rem;\n}\n",
+				"markup": "<pre class=\"hljs\"><code>css\nh3, .h3 {\n font-size: 1.8rem;\n}</code></pre>",
+				"styles": "<pre class=\"hljs\"><code><span class=\"hljs-tag\">h3</span>, <span class=\"hljs-class\">.h3</span> {\n  <span class=\"hljs-attribute\">font-size</span><span class=\"hljs-value\">: <span class=\"hljs-number\">1.8rem</span>;</span>\n}</code></pre>"
+			},
+			{
+				"comment": "<h5 id=\"heading-level-4-\">Heading level 4.</h5>\n<p><span class=\"h4\">Heading level 4 looks like this</span></p>\n",
+				"result": "css\nh4, .h4 {\n font-size: 1.6rem;\n}\n",
+				"markup": "<pre class=\"hljs\"><code>css\nh4, .h4 {\n font-size: 1.6rem;\n}</code></pre>",
+				"styles": "<pre class=\"hljs\"><code><span class=\"hljs-tag\">h4</span>, <span class=\"hljs-class\">.h4</span> {\n  <span class=\"hljs-attribute\">font-size</span><span class=\"hljs-value\">: <span class=\"hljs-number\">1.6rem</span>;</span>\n}</code></pre>"
+			},
+			{
+				"comment": "<h5 id=\"heading-level-5-\">Heading level 5.</h5>\n<p><span class=\"h5\">Heading level 5 looks like this</span></p>\n",
+				"result": "css\nh5, h6 {\n font-size: 1.6rem;\n}\n",
+				"markup": "<pre class=\"hljs\"><code>css\nh5, h6 {\n font-size: 1.6rem;\n}</code></pre>",
+				"styles": "<pre class=\"hljs\"><code><span class=\"hljs-tag\">h5</span>, <span class=\"hljs-class\">.h5</span> {\n  <span class=\"hljs-attribute\">font-size</span><span class=\"hljs-value\">: <span class=\"hljs-number\">1.6rem</span>;</span>\n}</code></pre>"
+			},
+			{
+				"comment": "<h5 id=\"heading-level-6-\">Heading level 6.</h5>\n<p>&lt;span class=&quot;h6&gt;Heading level 6 looks like this</span></p>\n",
+				"result": "css\nh6, .h6 {}\n",
+				"markup": "<pre class=\"hljs\"><code>css\nh6, .h6 {}</code></pre>",
+				"styles": "<pre class=\"hljs\"><code><span class=\"hljs-tag\">h6</span>, <span class=\"hljs-class\">.h6</span> {}</code></pre>"
+			},
+			{
+				"comment": "<h5 id=\"heading-combined-with-other-content\">Heading combined with other content</h5>\n<p>Nice spacing after high level headings and images. Text sits directly below h4, h5 and h6.</p>\n",
+				"result": "css\nh1 + p,\nh1 + ol,\nh1 + ul,\nh1 + dl,\nh1 + blockquote p,\nh1 + pre,\n.alpha + p,\n.alpha + ol,\n.alpha + ul,\n.alpha + blockquote p,\n.alpha + pre,\nh2 + p,\nh2 + ol,\nh2 + ul,\nh2 + dl,\nh2 + blockquote p,\nh2 + pre,\n.beta + p,\n.beta + ol,\n.beta + ul,\n.beta + blockquote p,\n.beta + pre,\nimg + p,\nimg + ol,\nimg + ul,\nimg + blockquote p,\nimg + pre,\n#sidebar header + * {\n margin-top: 2rem;\n}\n",
+				"markup": "<pre class=\"hljs\"><code>css\nh1 + p,\nh1 + ol,\nh1 + ul,\nh1 + dl,\nh1 + blockquote p,\nh1 + pre,\n.alpha + p,\n.alpha + ol,\n.alpha + ul,\n.alpha + blockquote p,\n.alpha + pre,\nh2 + p,\nh2 + ol,\nh2 + ul,\nh2 + dl,\nh2 + blockquote p,\nh2 + pre,\n.beta + p,\n.beta + ol,\n.beta + ul,\n.beta + blockquote p,\n.beta + pre,\nimg + p,\nimg + ol,\nimg + ul,\nimg + blockquote p,\nimg + pre,\n#sidebar header + * {\n margin-top: 2rem;\n}</code></pre>",
+				"styles": "<pre class=\"hljs\"><code><span class=\"hljs-tag\">h1</span> + <span class=\"hljs-tag\">p</span>,\n<span class=\"hljs-tag\">h1</span> + <span class=\"hljs-tag\">ol</span>,\n<span class=\"hljs-tag\">h1</span> + <span class=\"hljs-tag\">ul</span>,\n<span class=\"hljs-tag\">h1</span> + <span class=\"hljs-tag\">dl</span>,\n<span class=\"hljs-tag\">h1</span> + <span class=\"hljs-tag\">blockquote</span> <span class=\"hljs-tag\">p</span>,\n<span class=\"hljs-tag\">h1</span> + <span class=\"hljs-tag\">pre</span>,\n<span class=\"hljs-class\">.alpha</span> + <span class=\"hljs-tag\">p</span>,\n<span class=\"hljs-class\">.alpha</span> + <span class=\"hljs-tag\">ol</span>,\n<span class=\"hljs-class\">.alpha</span> + <span class=\"hljs-tag\">ul</span>,\n<span class=\"hljs-class\">.alpha</span> + <span class=\"hljs-tag\">blockquote</span> <span class=\"hljs-tag\">p</span>,\n<span class=\"hljs-class\">.alpha</span> + <span class=\"hljs-tag\">pre</span>,\n<span class=\"hljs-tag\">h2</span> + <span class=\"hljs-tag\">p</span>,\n<span class=\"hljs-tag\">h2</span> + <span class=\"hljs-tag\">ol</span>,\n<span class=\"hljs-tag\">h2</span> + <span class=\"hljs-tag\">ul</span>,\n<span class=\"hljs-tag\">h2</span> + <span class=\"hljs-tag\">dl</span>,\n<span class=\"hljs-tag\">h2</span> + <span class=\"hljs-tag\">blockquote</span> <span class=\"hljs-tag\">p</span>,\n<span class=\"hljs-tag\">h2</span> + <span class=\"hljs-tag\">pre</span>,\n<span class=\"hljs-class\">.beta</span> + <span class=\"hljs-tag\">p</span>,\n<span class=\"hljs-class\">.beta</span> + <span class=\"hljs-tag\">ol</span>,\n<span class=\"hljs-class\">.beta</span> + <span class=\"hljs-tag\">ul</span>,\n<span class=\"hljs-class\">.beta</span> + <span class=\"hljs-tag\">blockquote</span> <span class=\"hljs-tag\">p</span>,\n<span class=\"hljs-class\">.beta</span> + <span class=\"hljs-tag\">pre</span>,\n<span class=\"hljs-tag\">img</span> + <span class=\"hljs-tag\">p</span>,\n<span class=\"hljs-tag\">img</span> + <span class=\"hljs-tag\">ol</span>,\n<span class=\"hljs-tag\">img</span> + <span class=\"hljs-tag\">ul</span>,\n<span class=\"hljs-tag\">img</span> + <span class=\"hljs-tag\">blockquote</span> <span class=\"hljs-tag\">p</span>,\n<span class=\"hljs-tag\">img</span> + <span class=\"hljs-tag\">pre</span>,\n<span class=\"hljs-id\">#sidebar</span> <span class=\"hljs-tag\">header</span> + *,\n<span class=\"hljs-tag\">h2</span> + <span class=\"hljs-id\">#freetext</span> {\n  <span class=\"hljs-attribute\">margin-top</span><span class=\"hljs-value\">: <span class=\"hljs-number\">2rem</span>;</span>\n}</code></pre>"
+			},
+			{
+				"comment": "<h4 id=\"lists\">Lists</h4>\n"
+			},
+			{
+				"comment": "<h4 id=\"a-links\">A-links</h4>\n"
+			},
+			{
+				"comment": "<p>Dotted underline on links within the content section</p>\n"
+			},
+			{
+				"comment": "<h4 id=\"paragraphs\">Paragraphs</h4>\n<p>Paragraphs. OpenType ligatures and oldstyle figures enabled if available.</p>\n"
+			},
+			{
+				"comment": "<h4 id=\"forms\">Forms</h4>\n"
+			},
+			{
+				"comment": "<h4 id=\"quotes\">Quotes</h4>\n"
+			},
+			{
+				"comment": "<h4 id=\"horizontal-rule-\">Horizontal rule.</h4>\n"
+			},
+			{
+				"comment": "<h4 id=\"code-block-some-styles-from-normalize-included-\">Code block. Some styles from normalize included.</h4>\n<p>Some styles from normalize included.</p>\n"
+			},
+			{
+				"comment": "<h4 id=\"helpers\">Helpers</h4>\n"
+			},
+			{
+				"comment": "<h5 id=\"bold\">Bold</h5>\n"
+			},
+			{
+				"comment": "<h5 id=\"italic-\">Italic.</h5>\n"
+			},
+			{
+				"comment": "<h5 id=\"caption-or-inline-small-text-\">Caption or inline small text.</h5>\n"
+			},
+			{
+				"comment": "<h5 id=\"abbrevation\">Abbrevation</h5>\n"
+			},
+			{
+				"comment": "<h5 id=\"nice-spacing-for-captions-\">Nice spacing for captions.</h5>\n"
+			},
+			{
+				"comment": "<h5 id=\"letter-space-those-capitals-people-jan-tschichold-would-be-proud-\">Letter space those capitals people, Jan Tschichold would be proud.</h5>\n"
+			},
+			{
+				"comment": "<h5 id=\"special-styling-for-inline-editing-notes-from-the-admission-office\">Special styling for inline-editing notes from the admission office</h5>\n"
+			},
+			{
+				"comment": "<h3 id=\"mq-tweaks-at-sertain-breakpoints\">MQ tweaks at sertain breakpoints</h3>\n"
+			},
+			{
+				"comment": "<h4 id=\"small-screens\">Small screens</h4>\n"
+			},
+			{
+				"comment": "<h4 id=\"medium-screens\">Medium screens</h4>\n"
+			},
+			{
+				"comment": "<h4 id=\"large-screens\">Large screens</h4>\n"
+			},
+			{
+				"comment": "<h4 id=\"hr-screens\">HR screens</h4>\n"
+			}
+		],
+		"isFile": true
+	},
+	"1": {
+		"title": "3-layout",
+		"slug": "3-layout",
+		"href": "3-layout.html",
+		"dest": "tmp/styleguide/3-layout.html",
+		"src": "tmp/sass/styleguide/3-layout.scss",
+		"sections": [
+			{
+				"comment": "<h2 id=\"component-layout\">Component: Layout</h2>\n"
+			},
+			{
+				"comment": "<h3 id=\"box-sizing\">Box sizing</h3>\n<p>Setup all elements with <code>box-sizing:border-box</code> (this includes the padding in the element width)</p>\n",
+				"result": "css\n*,\n*:before,\n*:after {\n    box-sizing: border-box;\n}\n",
+				"markup": "<pre class=\"hljs\"><code>css\n*,\n*:before,\n*:after {\n    box-sizing: border-box;\n}</code></pre>",
+				"styles": "<pre class=\"hljs\"><code>*,\n*<span class=\"hljs-pseudo\">:before</span>,\n*<span class=\"hljs-pseudo\">:after</span> {\n    <span class=\"hljs-attribute\">box-sizing</span><span class=\"hljs-value\">: border-box;</span>\n}</code></pre>"
+			},
+			{
+				"comment": "<h3 id=\"float-sizing-for-lo-prefixed-element\">Float/sizing for <code>.lo-</code> prefixed element</h3>\n",
+				"result": "css\n@mixin floatAndStandardSpacing(){\n    float: left;\n    margin-bottom: 2rem;\n    padding: 0 1rem;\n}\n",
+				"markup": "<pre class=\"hljs\"><code>css\n@mixin floatAndStandardSpacing(){\n    float: left;\n    margin-bottom: 2rem;\n    padding: 0 1rem;\n}</code></pre>",
+				"styles": "<pre class=\"hljs\"><code><span class=\"hljs-at_rule\">@<span class=\"hljs-keyword\">mixin</span><span class=\"hljs-preprocessor\"> floatAndStandardSpacing</span>(){</span>\n    <span class=\"hljs-attribute\">float</span><span class=\"hljs-value\">: left;</span>\n    <span class=\"hljs-attribute\">margin-bottom</span><span class=\"hljs-value\">: <span class=\"hljs-number\">2rem</span>;</span>\n    <span class=\"hljs-attribute\">padding</span><span class=\"hljs-value\">: <span class=\"hljs-number\">0</span> <span class=\"hljs-number\">1rem</span>;</span>\n}</code></pre>"
+			},
+			{
+				"comment": "<h3 id=\"layout-classes\">Layout classes</h3>\n<p>Sets the layout up using the <code>.lo-</code> prefix. The following options are available:</p>\n<ul>\n<li>.lo-full{} (100% width of the parrent)</li>\n<li>.lo-half{} (50% width of the parrent)</li>\n<li>.lo-quarter{}  (25% width of the parrent)</li>\n<li>.lo-auron-1-3{} (38.2% width of the parrent)</li>\n<li>.lo-auron-2-3{} (61.8% width of the parrent)</li>\n<li>.lo-one-third{} (33% width of parrent)</li>\n<li>.lo-two-thirds{} (66% width of parrent)</li>\n</ul>\n"
+			},
+			{
+				"comment": "<h4 id=\"examples-\">Examples:</h4>\n",
+				"result": "\n<div class=\"c-bg-pink lo-full\">Full width element</div>\n<div class=\"c-bg-pink lo-half\">half width element</div>\n<div class=\"c-bg-purple lo-half\">half width element</div>\n<div class=\"c-bg-aquablue lo-quarter\">quarter width element</div>\n<div class=\"c-bg-pink lo-quarter\">quarter width element</div>\n<div class=\"c-bg-purple lo-quarter\">quarter width element</div>\n<div class=\"c-bg-pink lo-quarter\">quarter width element</div>\n<div class=\"c-bg-aquablue lo-auron-1-3\">lo-auron-1-3 width element</div>\n<div class=\"c-bg-seagreen lo-auron-2-3\">lo-auron-2-3 width element</div>\n<div class=\"c-bg-purple lo-one-third\">lo-one-third width element</div>\n<div class=\"c-bg-pink lo-two-thirds\">lo-two-thirds width element</div>\n",
+				"markup": "<pre class=\"hljs\"><code><span class=\"hljs-tag\">&lt;<span class=\"hljs-title\">div</span> <span class=\"hljs-attribute\">class</span>=<span class=\"hljs-value\">\"c-bg-pink lo-full\"</span>&gt;</span>Full width element<span class=\"hljs-tag\">&lt;/<span class=\"hljs-title\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-title\">div</span> <span class=\"hljs-attribute\">class</span>=<span class=\"hljs-value\">\"c-bg-pink lo-half\"</span>&gt;</span>half width element<span class=\"hljs-tag\">&lt;/<span class=\"hljs-title\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-title\">div</span> <span class=\"hljs-attribute\">class</span>=<span class=\"hljs-value\">\"c-bg-purple lo-half\"</span>&gt;</span>half width element<span class=\"hljs-tag\">&lt;/<span class=\"hljs-title\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-title\">div</span> <span class=\"hljs-attribute\">class</span>=<span class=\"hljs-value\">\"c-bg-aquablue lo-quarter\"</span>&gt;</span>quarter width element<span class=\"hljs-tag\">&lt;/<span class=\"hljs-title\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-title\">div</span> <span class=\"hljs-attribute\">class</span>=<span class=\"hljs-value\">\"c-bg-pink lo-quarter\"</span>&gt;</span>quarter width element<span class=\"hljs-tag\">&lt;/<span class=\"hljs-title\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-title\">div</span> <span class=\"hljs-attribute\">class</span>=<span class=\"hljs-value\">\"c-bg-purple lo-quarter\"</span>&gt;</span>quarter width element<span class=\"hljs-tag\">&lt;/<span class=\"hljs-title\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-title\">div</span> <span class=\"hljs-attribute\">class</span>=<span class=\"hljs-value\">\"c-bg-pink lo-quarter\"</span>&gt;</span>quarter width element<span class=\"hljs-tag\">&lt;/<span class=\"hljs-title\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-title\">div</span> <span class=\"hljs-attribute\">class</span>=<span class=\"hljs-value\">\"c-bg-aquablue lo-auron-1-3\"</span>&gt;</span>lo-auron-1-3 width element<span class=\"hljs-tag\">&lt;/<span class=\"hljs-title\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-title\">div</span> <span class=\"hljs-attribute\">class</span>=<span class=\"hljs-value\">\"c-bg-seagreen lo-auron-2-3\"</span>&gt;</span>lo-auron-2-3 width element<span class=\"hljs-tag\">&lt;/<span class=\"hljs-title\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-title\">div</span> <span class=\"hljs-attribute\">class</span>=<span class=\"hljs-value\">\"c-bg-purple lo-one-third\"</span>&gt;</span>lo-one-third width element<span class=\"hljs-tag\">&lt;/<span class=\"hljs-title\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-title\">div</span> <span class=\"hljs-attribute\">class</span>=<span class=\"hljs-value\">\"c-bg-pink lo-two-thirds\"</span>&gt;</span>lo-two-thirds width element<span class=\"hljs-tag\">&lt;/<span class=\"hljs-title\">div</span>&gt;</span></code></pre>",
+				"styles": "<pre class=\"hljs\"><code><span class=\"hljs-class\">.lo-full</span>,\n<span class=\"hljs-class\">.lo-half</span>,\n<span class=\"hljs-class\">.lo-quarter</span>,\n<span class=\"hljs-class\">.lo-auron-1-3</span>,\n<span class=\"hljs-class\">.lo-auron-2-3</span>,\n<span class=\"hljs-class\">.lo-one-third</span>,\n<span class=\"hljs-class\">.lo-two-thirds</span> {\n    <span class=\"hljs-at_rule\">@<span class=\"hljs-keyword\">include</span><span class=\"hljs-preprocessor\"> floatAndStandardSpacing</span>;</span>\n}\n\n<span class=\"hljs-tag\">html</span>,\n<span class=\"hljs-id\">#body</span>,\n<span class=\"hljs-class\">.body</span> {\n    <span class=\"hljs-attribute\">width</span><span class=\"hljs-value\">: <span class=\"hljs-number\">100%</span>;</span>\n}\n\n\n<span class=\"hljs-id\">#body</span>,\n<span class=\"hljs-class\">.body</span> {\n    <span class=\"hljs-comment\">//padding-top: 4rem;</span>\n    <span class=\"hljs-attribute\">min-height</span><span class=\"hljs-value\">: <span class=\"hljs-number\">80rem</span>;</span>\n    <span class=\"hljs-attribute\">overflow-x</span><span class=\"hljs-value\">: hidden;</span>\n}\n\n<span class=\"hljs-id\">#main</span>,\n<span class=\"hljs-class\">.main</span> {\n    <span class=\"hljs-attribute\">padding-top</span><span class=\"hljs-value\">: <span class=\"hljs-number\">4.4rem</span>;</span>\n}\n\n<span class=\"hljs-id\">#header</span>,\n<span class=\"hljs-class\">.header</span>,\n<span class=\"hljs-id\">#main</span>,\n<span class=\"hljs-class\">.main</span>,\n<span class=\"hljs-id\">#footer</span>,\n<span class=\"hljs-class\">.footer</span> {\n    <span class=\"hljs-attribute\">max-width</span><span class=\"hljs-value\">: <span class=\"hljs-number\">104rem</span>;</span>\n    <span class=\"hljs-attribute\">margin</span><span class=\"hljs-value\">: <span class=\"hljs-number\">0</span> auto;</span>\n    <span class=\"hljs-comment\">// IE11 fix since it lacks UA styling</span>\n    <span class=\"hljs-attribute\">display</span><span class=\"hljs-value\">: block;</span>\n}\n\n<span class=\"hljs-id\">#content</span>,\n<span class=\"hljs-class\">.content</span> {\n    <span class=\"hljs-attribute\">padding-left</span><span class=\"hljs-value\">: <span class=\"hljs-number\">2rem</span>;</span>\n    <span class=\"hljs-attribute\">min-height</span><span class=\"hljs-value\">: <span class=\"hljs-number\">30rem</span>;</span>\n    &gt; <span class=\"hljs-tag\">header</span> {\n        <span class=\"hljs-attribute\">position</span><span class=\"hljs-value\">: relative;</span>\n        <span class=\"hljs-comment\">//min-height: 7rem;</span>\n    }\n}\n\n<span class=\"hljs-id\">#main</span>,\n<span class=\"hljs-class\">.main</span>{\n  <span class=\"hljs-tag\">footer</span> <span class=\"hljs-tag\">header</span> {\n    <span class=\"hljs-tag\">h2</span> {\n        <span class=\"hljs-attribute\">padding-left</span><span class=\"hljs-value\">: <span class=\"hljs-number\">2rem</span>;</span>\n    }\n  }\n}\n<span class=\"hljs-class\">.float-left</span> {\n    <span class=\"hljs-attribute\">float</span><span class=\"hljs-value\">: left;</span>\n}\n\n<span class=\"hljs-class\">.float-right</span> {\n    <span class=\"hljs-attribute\">float</span><span class=\"hljs-value\">: right;</span>\n}\n\n<span class=\"hljs-tag\">html</span><span class=\"hljs-class\">.index</span> {\n    <span class=\"hljs-class\">.lo-full</span>,\n    <span class=\"hljs-class\">.lo-half</span>,\n    <span class=\"hljs-class\">.lo-auron-1-3</span>,\n    <span class=\"hljs-class\">.lo-auron-2-3</span> {\n        <span class=\"hljs-tag\">header</span> {\n            <span class=\"hljs-tag\">h2</span> {\n                <span class=\"hljs-attribute\">float</span><span class=\"hljs-value\">: left;</span>\n            }\n        }\n    }\n}\n\n<span class=\"hljs-tag\">header</span><span class=\"hljs-class\">.lo-full</span> {\n    <span class=\"hljs-attribute\">padding-left</span><span class=\"hljs-value\">: <span class=\"hljs-number\">0</span>;</span>\n}\n\n<span class=\"hljs-id\">#content</span>,\n<span class=\"hljs-class\">.content</span>,\n<span class=\"hljs-id\">#sidebar</span>,\n<span class=\"hljs-class\">.sidebar</span> {\n    <span class=\"hljs-attribute\">padding-top</span><span class=\"hljs-value\">: <span class=\"hljs-number\">2rem</span>;</span>\n}\n\n<span class=\"hljs-at_rule\">@<span class=\"hljs-keyword\">include</span><span class=\"hljs-preprocessor\"> mq</span>(<span class=\"hljs-variable\">$until</span>:<span class=\"hljs-preprocessor\"> small</span>) {</span>\n    <span class=\"hljs-class\">.lo-full</span>,\n    <span class=\"hljs-class\">.lo-half</span>,\n    <span class=\"hljs-class\">.lo-quarter</span>,\n    <span class=\"hljs-class\">.lo-auron-1-3</span>,\n    <span class=\"hljs-class\">.lo-auron-2-3</span>,\n    <span class=\"hljs-class\">.lo-one-third</span>,\n    <span class=\"hljs-class\">.lo-two-thirds</span> {\n        <span class=\"hljs-attribute\">width</span><span class=\"hljs-value\">: <span class=\"hljs-number\">100%</span>;</span>\n    }\n    <span class=\"hljs-id\">#main</span>,\n    <span class=\"hljs-class\">.main</span> {\n        <span class=\"hljs-attribute\">padding-top</span><span class=\"hljs-value\">: <span class=\"hljs-number\">0rem</span>;</span>\n    }\n    <span class=\"hljs-id\">#people</span>,\n    <span class=\"hljs-id\">#calendar</span>,\n    <span class=\"hljs-id\">#research</span>,\n    <span class=\"hljs-id\">#news</span> {\n        <span class=\"hljs-attribute\">padding</span><span class=\"hljs-value\">: <span class=\"hljs-number\">0</span> <span class=\"hljs-number\">1rem</span>;</span>\n    }\n    <span class=\"hljs-id\">#people</span> {\n        <span class=\"hljs-class\">.lo-full</span> {\n            <span class=\"hljs-attribute\">padding</span><span class=\"hljs-value\">: <span class=\"hljs-number\">0</span>;</span>\n        }\n    }\n    <span class=\"hljs-id\">#calendar</span> {\n        <span class=\"hljs-class\">.lo-half</span> {\n            <span class=\"hljs-attribute\">width</span><span class=\"hljs-value\">: <span class=\"hljs-number\">50%</span>;</span>\n            <span class=\"hljs-attribute\">padding</span><span class=\"hljs-value\">: <span class=\"hljs-number\">0</span>;</span>\n        }\n    }\n    <span class=\"hljs-id\">#research</span>,\n    <span class=\"hljs-id\">#news</span> {\n        <span class=\"hljs-class\">.lo-quarter</span> {\n            <span class=\"hljs-attribute\">padding</span><span class=\"hljs-value\">: <span class=\"hljs-number\">0</span>;</span>\n        }\n    }\n}\n\n<span class=\"hljs-at_rule\">@<span class=\"hljs-keyword\">include</span><span class=\"hljs-preprocessor\"> mq</span>(<span class=\"hljs-variable\">$from</span>:<span class=\"hljs-preprocessor\"> small</span>, <span class=\"hljs-variable\">$until</span>:<span class=\"hljs-preprocessor\"> large</span>) {</span>\n    <span class=\"hljs-class\">.lo-full</span> {\n        <span class=\"hljs-attribute\">width</span><span class=\"hljs-value\">: <span class=\"hljs-number\">100%</span>;</span>\n    }\n    <span class=\"hljs-class\">.lo-half</span> {\n        <span class=\"hljs-attribute\">width</span><span class=\"hljs-value\">: <span class=\"hljs-number\">50%</span>;</span>\n        <span class=\"hljs-attribute\">padding</span><span class=\"hljs-value\">: <span class=\"hljs-number\">0</span> <span class=\"hljs-number\">1rem</span>;</span>\n    }\n    <span class=\"hljs-class\">.lo-one-third</span> {\n        <span class=\"hljs-attribute\">width</span><span class=\"hljs-value\">: <span class=\"hljs-number\">100%</span>;</span>\n        <span class=\"hljs-attribute\">padding</span><span class=\"hljs-value\">: <span class=\"hljs-number\">0</span> <span class=\"hljs-number\">1rem</span>;</span>\n    }\n    <span class=\"hljs-class\">.lo-two-thirds</span> {\n        <span class=\"hljs-attribute\">width</span><span class=\"hljs-value\">: <span class=\"hljs-number\">100%</span>;</span>\n        <span class=\"hljs-attribute\">padding</span><span class=\"hljs-value\">: <span class=\"hljs-number\">0</span> <span class=\"hljs-number\">1rem</span>;</span>\n    }\n    <span class=\"hljs-class\">.lo-quarter</span> {\n        <span class=\"hljs-attribute\">width</span><span class=\"hljs-value\">: <span class=\"hljs-number\">50%</span>;</span>\n        <span class=\"hljs-attribute\">padding</span><span class=\"hljs-value\">: <span class=\"hljs-number\">0</span> <span class=\"hljs-number\">1rem</span>;</span>\n    }\n    <span class=\"hljs-class\">.lo-auron-1-3</span> {\n        <span class=\"hljs-attribute\">width</span><span class=\"hljs-value\">: <span class=\"hljs-number\">100%</span> * <span class=\"hljs-number\">0.382</span>;</span>\n        <span class=\"hljs-attribute\">padding</span><span class=\"hljs-value\">: <span class=\"hljs-number\">0</span> <span class=\"hljs-number\">1rem</span>;</span>\n    }\n    <span class=\"hljs-class\">.lo-auron-2-3</span> {\n        <span class=\"hljs-attribute\">width</span><span class=\"hljs-value\">: <span class=\"hljs-number\">100%</span> * <span class=\"hljs-number\">0.618</span>;</span>\n        <span class=\"hljs-comment\">//width: 100%;</span>\n    }\n    <span class=\"hljs-id\">#people</span>,\n    <span class=\"hljs-id\">#calendar</span>,\n    <span class=\"hljs-id\">#research</span>,\n    <span class=\"hljs-id\">#news</span> {\n        <span class=\"hljs-attribute\">padding</span><span class=\"hljs-value\">: <span class=\"hljs-number\">0</span> <span class=\"hljs-number\">1rem</span>;</span>\n    }\n    <span class=\"hljs-id\">#people</span> {\n        <span class=\"hljs-class\">.lo-full</span> {\n            <span class=\"hljs-attribute\">padding</span><span class=\"hljs-value\">: <span class=\"hljs-number\">0</span>;</span>\n        }\n    }\n    <span class=\"hljs-id\">#calendar</span> {\n        <span class=\"hljs-class\">.lo-half</span> {\n            <span class=\"hljs-attribute\">width</span><span class=\"hljs-value\">: <span class=\"hljs-number\">50%</span>;</span>\n            <span class=\"hljs-attribute\">padding</span><span class=\"hljs-value\">: <span class=\"hljs-number\">0</span>;</span>\n        }\n    }\n    <span class=\"hljs-id\">#research</span>,\n    <span class=\"hljs-id\">#news</span> {\n        <span class=\"hljs-class\">.lo-quarter</span> {\n            <span class=\"hljs-attribute\">padding</span><span class=\"hljs-value\">: <span class=\"hljs-number\">0</span> .<span class=\"hljs-number\">5rem</span>;</span>\n        }\n    }\n}\n\n<span class=\"hljs-at_rule\">@<span class=\"hljs-keyword\">include</span><span class=\"hljs-preprocessor\"> mq</span>(<span class=\"hljs-variable\">$from</span>:<span class=\"hljs-preprocessor\"> large</span>) {</span>\n\n    <span class=\"hljs-class\">.lo-full</span> {\n        <span class=\"hljs-attribute\">width</span><span class=\"hljs-value\">: <span class=\"hljs-number\">100%</span>;</span>\n    }\n    <span class=\"hljs-class\">.lo-half</span> {\n        <span class=\"hljs-attribute\">width</span><span class=\"hljs-value\">: <span class=\"hljs-number\">50%</span>;</span>\n        <span class=\"hljs-attribute\">padding</span><span class=\"hljs-value\">: <span class=\"hljs-number\">0</span> <span class=\"hljs-number\">1rem</span>;</span>\n    }\n    <span class=\"hljs-class\">.lo-quarter</span> {\n        <span class=\"hljs-attribute\">width</span><span class=\"hljs-value\">: <span class=\"hljs-number\">25%</span>;</span>\n        <span class=\"hljs-attribute\">padding</span><span class=\"hljs-value\">: <span class=\"hljs-number\">0</span> <span class=\"hljs-number\">1rem</span>;</span>\n    }\n    <span class=\"hljs-class\">.lo-auron-1-3</span> {\n        <span class=\"hljs-attribute\">width</span><span class=\"hljs-value\">: <span class=\"hljs-number\">100%</span> * <span class=\"hljs-number\">0.382</span>;</span>\n        <span class=\"hljs-attribute\">padding</span><span class=\"hljs-value\">: <span class=\"hljs-number\">0</span> <span class=\"hljs-number\">1rem</span>;</span>\n    }\n    <span class=\"hljs-class\">.lo-auron-2-3</span> {\n        <span class=\"hljs-attribute\">width</span><span class=\"hljs-value\">: <span class=\"hljs-number\">100%</span> * <span class=\"hljs-number\">0.618</span>;</span>\n    }\n    <span class=\"hljs-class\">.lo-one-third</span> {\n        <span class=\"hljs-attribute\">width</span><span class=\"hljs-value\">: <span class=\"hljs-number\">31%</span>;</span>\n        <span class=\"hljs-attribute\">margin-left</span><span class=\"hljs-value\">: <span class=\"hljs-number\">1%</span>;</span>\n        <span class=\"hljs-attribute\">margin-right</span><span class=\"hljs-value\">: <span class=\"hljs-number\">1%</span>;</span>\n        <span class=\"hljs-attribute\">padding</span><span class=\"hljs-value\">: <span class=\"hljs-number\">0</span> <span class=\"hljs-number\">1rem</span>;</span>\n    }\n    <span class=\"hljs-class\">.lo-two-thirds</span> {\n        <span class=\"hljs-attribute\">width</span><span class=\"hljs-value\">: <span class=\"hljs-number\">62%</span>;</span>\n        <span class=\"hljs-attribute\">margin-left</span><span class=\"hljs-value\">: <span class=\"hljs-number\">1%</span>;</span>\n        <span class=\"hljs-attribute\">margin-right</span><span class=\"hljs-value\">: <span class=\"hljs-number\">1%</span>;</span>\n        <span class=\"hljs-attribute\">padding</span><span class=\"hljs-value\">: <span class=\"hljs-number\">0</span> <span class=\"hljs-number\">1rem</span>;</span>\n    }\n    <span class=\"hljs-class\">.lo-first</span> {\n        <span class=\"hljs-attribute\">padding-left</span><span class=\"hljs-value\">: <span class=\"hljs-number\">0</span>;</span>\n    }\n    <span class=\"hljs-class\">.lo-last</span> {\n        <span class=\"hljs-attribute\">padding-right</span><span class=\"hljs-value\">: <span class=\"hljs-number\">0</span>;</span>\n    }\n    <span class=\"hljs-class\">.lo-auron-2-3</span> {\n        <span class=\"hljs-class\">.lo-quarter</span> {}\n        <span class=\"hljs-class\">.lo-first</span> {\n            <span class=\"hljs-attribute\">padding-left</span><span class=\"hljs-value\">: <span class=\"hljs-number\">0</span>;</span>\n        }\n        <span class=\"hljs-class\">.lo-last</span> {\n            <span class=\"hljs-attribute\">padding-right</span><span class=\"hljs-value\">: <span class=\"hljs-number\">0</span>;</span>\n        }\n    }\n    <span class=\"hljs-id\">#people</span>,\n    <span class=\"hljs-id\">#calendar</span> {\n        <span class=\"hljs-attribute\">padding-top</span><span class=\"hljs-value\">: <span class=\"hljs-number\">1rem</span>;</span>\n    }\n}</code></pre>"
+			}
+		],
+		"isFile": true
+	},
+	"2": {
+		"title": "4-colors",
+		"slug": "4-colors",
+		"href": "4-colors.html",
+		"dest": "tmp/styleguide/4-colors.html",
+		"src": "tmp/sass/styleguide/4-colors.scss",
+		"sections": [
+			{
+				"comment": "<h2 id=\"component-colors\">Component: Colors</h2>\n"
+			},
+			{
+				"comment": "<h3 id=\"transparency-functions\">Transparency functions</h3>\n",
+				"result": "\n@function trans($color, $percentage) {\n @return lighten($color, (1-$percentage)*5%);\n}\n",
+				"markup": "<pre class=\"hljs\"><code>@function trans($color, $percentage) {\n @return lighten($color, (1-$percentage)*5%);\n}</code></pre>",
+				"styles": "<pre class=\"hljs\"><code><span class=\"hljs-at_rule\">@function<span class=\"hljs-preprocessor\"> trans</span>(<span class=\"hljs-variable\">$color</span>, <span class=\"hljs-variable\">$percentage</span>) {</span>\n  <span class=\"hljs-at_rule\">@return<span class=\"hljs-preprocessor\"> lighten</span>(<span class=\"hljs-variable\">$color</span>, (<span class=\"hljs-number\">1</span>-<span class=\"hljs-variable\">$percentage</span>)*<span class=\"hljs-number\">5%</span>);</span>\n}</code></pre>"
+			},
+			{
+				"comment": "<h3 id=\"transparency-to-hex-value-mixin\">Transparency to hex value mixin</h3>\n",
+				"result": "\n@mixin transtohex($type, $color, $percentage) {\n    @if $type == color {\n        color: trans($color, $percentage);\n        //color: rgba($color, $percentage);\n    }\n    @if $type == bg {\n        background-color: trans($color, $percentage);\n        //background-color: rgba($color, $percentage);\n    }\n}\n",
+				"markup": "<pre class=\"hljs\"><code>@mixin transtohex($type, $color, $percentage) {\n    @if $type == color {\n        color: trans($color, $percentage);\n        //color: rgba($color, $percentage);\n    }\n    @if $type == bg {\n        background-color: trans($color, $percentage);\n        //background-color: rgba($color, $percentage);\n    }\n}</code></pre>",
+				"styles": "<pre class=\"hljs\"><code><span class=\"hljs-at_rule\">@<span class=\"hljs-keyword\">mixin</span><span class=\"hljs-preprocessor\"> transtohex</span>(<span class=\"hljs-variable\">$type</span>, <span class=\"hljs-variable\">$color</span>, <span class=\"hljs-variable\">$percentage</span>) {</span>\n    <span class=\"hljs-at_rule\">@<span class=\"hljs-keyword\">if</span> <span class=\"hljs-variable\">$type</span> ==<span class=\"hljs-preprocessor\"> color</span> {</span>\n        <span class=\"hljs-attribute\">color</span><span class=\"hljs-value\">: <span class=\"hljs-function\">trans</span>(<span class=\"hljs-variable\">$color</span>, <span class=\"hljs-variable\">$percentage</span>);</span>\n        <span class=\"hljs-comment\">//color: rgba($color, $percentage);</span>\n    }\n    <span class=\"hljs-at_rule\">@<span class=\"hljs-keyword\">if</span> <span class=\"hljs-variable\">$type</span> ==<span class=\"hljs-preprocessor\"> bg</span> {</span>\n        <span class=\"hljs-attribute\">background-color</span><span class=\"hljs-value\">: <span class=\"hljs-function\">trans</span>(<span class=\"hljs-variable\">$color</span>, <span class=\"hljs-variable\">$percentage</span>);</span>\n        <span class=\"hljs-comment\">//background-color: rgba($color, $percentage);</span>\n    }\n}</code></pre>"
+			},
+			{
+				"comment": "<h3 id=\"color-contstants\">Color contstants</h3>\n",
+				"result": "\n$c-black: #000;\n$c-white: #fff;\n$c-pink: #D77869;\n$c-seagreen: #6FC2B4;\n$c-lightwarmgrey:#ECEAE5;\n$c-warmgrey:#C8C2BE;\n$c-purple:#A396A3;\n$c-aquablue:#347E84;\n$hiof-blue: #073B58;\n$color-primary-action: #3276b1;\n$navbar-default-link-color: $color-primary-action;\n$black: $c-black;\n$white: $c-white;\n$array: (black: $c-black, white: $c-white, pink: $c-pink, seagreen: $c-seagreen, lightwarmgrey: $c-lightwarmgrey, warmgrey: $c-warmgrey, purple: $c-purple, aquablue: $c-aquablue);\n$tints: (85: .85, 60: .60, 45: .45, 30: .30, 15: .15);\n",
+				"markup": "<pre class=\"hljs\"><code>$c-black: #000;\n$c-white: #fff;\n$c-pink: #D77869;\n$c-seagreen: #6FC2B4;\n$c-lightwarmgrey:#ECEAE5;\n$c-warmgrey:#C8C2BE;\n$c-purple:#A396A3;\n$c-aquablue:#347E84;\n$hiof-blue: #073B58;\n$color-primary-action: #3276b1;\n$navbar-default-link-color: $color-primary-action;\n$black: $c-black;\n$white: $c-white;\n$array: (black: $c-black, white: $c-white, pink: $c-pink, seagreen: $c-seagreen, lightwarmgrey: $c-lightwarmgrey, warmgrey: $c-warmgrey, purple: $c-purple, aquablue: $c-aquablue);\n$tints: (85: .85, 60: .60, 45: .45, 30: .30, 15: .15);</code></pre>",
+				"styles": "<pre class=\"hljs\"><code><span class=\"hljs-at_rule\">@<span class=\"hljs-keyword\">import</span> <span class=\"hljs-string\">\"_variables\"</span>;</span></code></pre>"
+			},
+			{
+				"comment": "<h3 id=\"color-class-helpers\">Color class-helpers</h3>\n"
+			},
+			{
+				"comment": "<h4 id=\"generate-class-helpers-for-each-text-color\">Generate class-helpers for each text-color</h4>\n<h5 id=\"generated-values\">Generated values</h5>\n<ul>\n<li><code>.c-black</code></li>\n<li><code>.c-white</code></li>\n<li><code>.c-pink</code></li>\n<li><code>.c-seagreen</code></li>\n<li><code>.c-lightwarmgrey</code></li>\n<li><code>.c-warmgrey</code></li>\n<li><code>.c-purple</code></li>\n<li><code>.c-aquablue</code></li>\n</ul>\n<h5 id=\"examples-\">Examples:</h5>\n<div class=\"lo-full c-black\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>\n<div class=\"lo-full c-bg-black c-white\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>\n<div class=\"lo-full c-pink\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>\n<div class=\"lo-full c-seagreen\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>\n<div class=\"lo-full c-lightwarmgrey\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>\n<div class=\"lo-full c-warmgrey\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>\n<div class=\"lo-full c-purple\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>\n<div class=\"lo-full c-aquablue\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>"
+			},
+			{
+				"comment": "<h4 id=\"generate-class-helpers-for-each-background-color\">Generate class-helpers for each background-color</h4>\n<h5 id=\"generated-values-\">Generated values:</h5>\n<ul>\n<li><code>.c-bg-black</code></li>\n<li><code>.c-bg-white</code></li>\n<li><code>.c-bg-pink</code></li>\n<li><code>.c-bg-seagreen</code></li>\n<li><code>.c-bg-lightwarmgrey</code></li>\n<li><code>.c-bg-warmgrey</code></li>\n<li><code>.c-bg-purple</code></li>\n<li><code>.c-bg-aquablue</code></li>\n</ul>\n<h5 id=\"examples-\">Examples:</h5>\n<div class=\"lo-full c-bg-black\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>\n<div class=\"lo-full c-bg-white\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>\n<div class=\"lo-full c-bg-pink\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>\n<div class=\"lo-full c-bg-seagreen\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>\n<div class=\"lo-full c-bg-lightwarmgrey\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>\n<div class=\"lo-full c-bg-warmgrey\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>\n<div class=\"lo-full c-bg-purple\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>\n<div class=\"lo-full c-bg-aquablue\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum nulla, sollicitudin hendrerit ex. Maecenas nisi est, ullamcorper nec mauris vitae, finibus dictum sem.</p></div>"
+			},
+			{
+				"comment": "<h4 id=\"generate-class-helpers-for-each-text-color-tints\">Generate class-helpers for each text-color tints</h4>\n"
+			},
+			{
+				"comment": "<h4 id=\"generate-class-helpers-for-each-background-color-tints\">Generate class-helpers for each background-color tints</h4>\n"
+			}
+		],
+		"isFile": true
+	},
+	"3": {
+		"title": "print",
+		"slug": "print",
+		"href": "print.html",
+		"dest": "tmp/styleguide/print.html",
+		"src": "tmp/sass/styleguide/print.scss",
+		"sections": [
+			{
+				"comment": "<h3 id=\"component-print\">Component: Print</h3>\n"
+			}
+		],
+		"isFile": true
+	}
+}
