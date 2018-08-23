@@ -12,18 +12,18 @@
   "repository": "",
   "scripts": {
     "build": "ember build",
-    "lint:js": "eslint ./*.js app blueprints config lib server tests",
+    "lint:js": "eslint .",
     "start": "ember serve",
     "test": "ember test"
   },
   "devDependencies": {
     "@ember-decorators/babel-transforms": "^0.1.1",
     "bootstrap": "4.0.0",
-    "broccoli-asset-rev": "^2.4.5",
+    "broccoli-asset-rev": "^2.7.0",
     "code-highlight-linenums": "^0.2.1",
     "colors": "git+https://github.com/hiof/colors.git",
     "ember-ajax": "^3.0.0",
-    "ember-cli": "~3.1.3",
+    "ember-cli": "~3.2.0",
     "ember-cli-app-version": "^3.0.0",
     "ember-cli-babel": "^6.6.0",
     "ember-cli-bootstrap-4": "^0.5.5",
@@ -33,25 +33,23 @@
     "ember-cli-htmlbars": "^2.0.1",
     "ember-cli-htmlbars-inline-precompile": "^1.0.0",
     "ember-cli-inject-live-reload": "^1.4.1",
-    "ember-cli-qunit": "^4.1.1",
+    "ember-cli-qunit": "^4.3.2",
     "ember-cli-release": "^0.2.9",
     "ember-cli-sass": "^7.1.4",
     "ember-cli-shims": "^1.2.0",
     "ember-cli-showdown": "^4.1.0",
     "ember-cli-sri": "^2.1.0",
-    "ember-cli-template-lint": "^0.7.5",
-    "ember-cli-test-loader": "^2.2.0",
     "ember-cli-uglify": "^2.0.0",
     "ember-component-css": "^0.6.2",
-    "ember-data": "~3.1.0",
+    "ember-data": "~3.2.0",
     "ember-export-application-global": "^2.0.0",
     "ember-fetch": "^3.4.0",
     "ember-lazy-image": "0.0.15",
-    "ember-load-initializers": "^1.0.0",
+    "ember-load-initializers": "^1.1.0",
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-resolver": "^4.0.0",
     "ember-scroll-to": "^0.6.4",
-    "ember-source": "~3.1.0",
+    "ember-source": "~3.2.0",
     "ember-themed-syntax": "^0.1.2",
     "ember-tracker": "^0.5.1",
     "ember-truth-helpers": "^2.0.0",
@@ -68,13 +66,14 @@
     "showdown": "^1.7.6",
     "stickyfilljs": "^2.0.2",
     "tether": "^1.4.0",
-    "typography": "git+https://github.com/hiof/typography.git"
+    "typography": "git+https://github.com/hiof/typography.git",
+    "qunit-dom": "^0.6.2"
   },
   "dependencies": {},
   "fastbootDependencies": [
     "showdown"
   ],
   "engines": {
-    "node": "^4.5 || 6.* || >= 7.*"
+    "node": "6.* || 8.* || >= 10.*"
   }
 }
