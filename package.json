@@ -1,6 +1,6 @@
 {
   "name": "design",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "private": true,
   "description": "Ember application to display design-resource-related-data from different content APIs",
   "license": "MIT",
@@ -12,7 +12,7 @@
   "repository": "",
   "scripts": {
     "build": "ember build",
-    "lint:js": "eslint ./*.js app config lib server tests",
+    "lint:js": "eslint ./*.js app blueprints config lib server tests",
     "start": "ember serve",
     "test": "ember test"
   },
@@ -23,7 +23,7 @@
     "code-highlight-linenums": "^0.2.1",
     "colors": "git+https://github.com/hiof/colors.git",
     "ember-ajax": "^3.0.0",
-    "ember-cli": "~3.1.2",
+    "ember-cli": "~3.1.3",
     "ember-cli-app-version": "^3.0.0",
     "ember-cli-babel": "^6.6.0",
     "ember-cli-bootstrap-4": "^0.5.5",
