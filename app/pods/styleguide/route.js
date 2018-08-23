@@ -11,7 +11,7 @@ export default Route.extend({
         //  });
 
 
-        var data = $.getJSON('https://www.hiof.no/api/v1/designguidelines/?type=webcomponents');
+        var data = $.getJSON('https://design.hiof.no/api/v2/designguidelines/index.php?type=webcomponents');
         //console.log(data);
         return data;
     },

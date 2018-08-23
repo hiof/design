@@ -1,0 +1,180 @@
+{
+  "0-1-introduksjon": {
+    "title": "Introduksjon",
+    "author": "Kenneth Dahlstrøm",
+    "date": "2015-07-31T00:00:00.000Z",
+    "position": 1,
+    "preview": "Høgskolen i Østfold har per 04.juli 2014 vedtatt en oppdatering av høgskolens eksisterende designmal. Den nye designmalen skal bidra til å løfte, samle og posisjonere Høgskolen i Østfold som en attraktiv og profesjonell høgskole, med et godt og bredt studietilbud.\n\nVår oppdaterte visuelle identitet innebærer at logo, emblem, fonter, ikonbruk og grafiske elementer skal brukes på en tydelig og definert måte. Vi ønsker at den forvaltes og utvikles innenfor rammene som er gitt. Den visuelle identiteten er en videreutvikling av høgskolens designmal fra 2005.",
+    "iso8601Date": "2015-07-31T02:00:00+02:00",
+    "basename": "0-1-introduksjon"
+  },
+  "0-2-hvordan-bruke-designmalen": {
+    "title": "Hvordan bruke designmalen",
+    "author": "Kenneth Dahlstrøm",
+    "date": "2015-07-31T00:00:00.000Z",
+    "position": 2,
+    "preview": "Høgskolens designmal tar for seg elementene i den grafiske identiteten og gir en detaljert beskrivelse for bruk av de ulike elementene.\n\nDisse retningslinjene må følges konsekvent, ettersom avvik vil svekke profilens helhetlige inntrykk. I alle sammenhenger og i alle kanaler hvor Høgskolen i Østfold opptrer visuelt, skal det skje i samsvar med designmalens retningslinjer.\n\nHøgskolens designmal er utviklet som ressurs for høgskolen som helhet, og for grafisk designere, reklamebyråer, trykkerier og andre eksterne aktører som har ansvar for design og kreativ produksjon tilknyttet høgskolens profil.",
+    "iso8601Date": "2015-07-31T02:00:00+02:00",
+    "basename": "0-2-hvordan-bruke-designmalen"
+  },
+  "0-3-retningslinjer": {
+    "title": "Retningslinjer",
+    "author": "Kenneth Dahlstrøm",
+    "date": "2015-07-31T00:00:00.000Z",
+    "position": 3,
+    "illustration": "1-1-hovedlogo.jpg",
+    "preview": "Her kommer det generelle retningslinjer for hvordan denne designmalen skal brukes.",
+    "iso8601Date": "2015-07-31T02:00:00+02:00",
+    "basename": "0-3-retningslinjer"
+  },
+  "1-01-hovedlogo": {
+    "title": "1.1 Hovedlogo",
+    "author": "Kenneth Dahlstrøm",
+    "date": "2015-08-04T00:00:00.000Z",
+    "position": 4,
+    "illustration": "1-1-hovedlogo.jpg",
+    "preview": "Høgskolen i Østfold sin logo består av et emblem og ordbildet “Høgskolen i Østfold”.\n\nEmblemet og ordbildet skal aldri endres eller modifiseres på noen måte. Det er utarbeidet egne retningslinjer for bruk av emblem. Se eget kapittel.\n\nLogoen skal alltid reproduseres i sort eller hvitt.\n\nPå følgende sider kan du se videre retningslinjer for clear space, minimumstørrelse, plassering, eksempler på logobruk og feil bruk av logo.",
+    "iso8601Date": "2015-08-04T02:00:00+02:00",
+    "basename": "1-01-hovedlogo"
+  },
+  "1-02-Sekundærlogo": {
+    "title": "1.2 Sekundærlogo",
+    "author": "Kenneth Dahlstrøm",
+    "date": "2015-08-04T00:00:00.000Z",
+    "position": 4,
+    "illustration": "1-2-sekundaerlogo.jpg",
+    "preview": "Ved behov skal sekundærlogo benyttes.\n\nDenne logoversjonen følger samme retningslinjer som hovedlogo.",
+    "iso8601Date": "2015-08-04T02:00:00+02:00",
+    "basename": "1-02-Sekundærlogo"
+  },
+  "1-03-Hovedlogo-norske-avdelingsnavn": {
+    "title": "1.3 Hovedlogo, norske avdelingsnavn",
+    "author": "Kenneth Dahlstrøm",
+    "date": "2015-08-04T00:00:00.000Z",
+    "position": 4,
+    "illustration": "1-1-hovedlogo.jpg",
+    "preview": "I noen settinger er det behov for å supplere høgskolens hovedlogo med avdelingsnavn.\n\nMinimum clear space og plassering av avdelingsnavn skal følge retningslinjer som vist til høyre.\n\nAvdelingsnavn skal ligge opptil den stiplete linjen A og alltid startes fra linje B. Fontsnittet skal være Source Sans Pro Regular. Avdelingsnavn skal aldri være lenger enn logonavnet, dvs aldri lenger enn linje C.\n\nDet er utarbeidet ferdige logofiler for avdelingsnavn. Se eksempler til høyre.",
+    "iso8601Date": "2015-08-04T02:00:00+02:00",
+    "basename": "1-03-Hovedlogo-norske-avdelingsnavn"
+  },
+  "1-04-sekundærlogo-engelske-avdelingsnavn": {
+    "title": "1.4 Sekundærlogo, engelske avdelingsnavn",
+    "author": "Kenneth Dahlstrøm",
+    "date": "2015-08-04T00:00:00.000Z",
+    "position": 4,
+    "illustration": "1-1-hovedlogo.jpg",
+    "preview": "Sekundærlogo med engelske avdelingsnavn følger samme retningslinjer som hovedlogo med avdelingsnavn.\n\nMinimum clear space og plassering av avdelingsnavn skal følge retningslinjer som vist til høyre.\n\nAvdelingsnavn skal ligge opptil den stiplete linjen A og alltid startes fra linje B. Fontsnittet skal være Source Sans Pro Regular. Avdelingsnavn skal aldri være lenger enn logonavnet, dvs aldri lenger enn linje C.\n\nDet er utarbeidet ferdige logofiler for sekundærlogo med engelske avdelingsnavn. Se eksempler til høyre.",
+    "iso8601Date": "2015-08-04T02:00:00+02:00",
+    "basename": "1-04-sekundærlogo-engelske-avdelingsnavn"
+  },
+  "1-05-Clear-space": {
+    "title": "1.5 Clear space [luft rundt logo]",
+    "author": "Kenneth Dahlstrøm",
+    "date": "2015-08-04T00:00:00.000Z",
+    "position": 4,
+    "illustration": "1-1-hovedlogo.jpg",
+    "preview": "Høgskolens logo skal alltid plasseres i en fremtredende posisjon slik at den vises tydelig. Rundt logoen skal det alltid være nok plass til å sikre et rent og oversiktlig visuelt bilde. Mengden clear space varierer i direkte proposjon til logoens størrelse.\n\nLogoen bør aldri bli forstyrret av eller koblet sammen med andre elementer som reduserer dens tydelighet og lesbarhet. Riktig mengde clear space beregnes ved hjelp av emblemets “to streker”. Som vist til høyre.",
+    "iso8601Date": "2015-08-04T02:00:00+02:00",
+    "basename": "1-05-Clear-space"
+  },
+  "1-06-Minimum-clear-space": {
+    "title": "1.6 Minimum clear space",
+    "author": "Kenneth Dahlstrøm",
+    "date": "2015-08-04T00:00:00.000Z",
+    "position": 4,
+    "illustration": "1-1-hovedlogo.jpg",
+    "preview": "Denne er å foretrekke i all produksjon.",
+    "iso8601Date": "2015-08-04T02:00:00+02:00",
+    "basename": "1-06-Minimum-clear-space"
+  },
+  "1-07-Clear-space-ved-unntak": {
+    "title": "1.7 Clear space ved unntak",
+    "author": "Kenneth Dahlstrøm",
+    "date": "2015-08-04T00:00:00.000Z",
+    "position": 4,
+    "illustration": "1-1-hovedlogo.jpg",
+    "preview": "Der det ikke er mulig å benytte minimum clear space, skal en clear space ved unntak benyttes. Dette gjelder kun flater som har spesielle begrensninger.",
+    "iso8601Date": "2015-08-04T02:00:00+02:00",
+    "basename": "1-07-Clear-space-ved-unntak"
+  },
+  "1-08-Eksempler-på-clear-space": {
+    "title": "1.8 Eksempler på clear space",
+    "author": "Kenneth Dahlstrøm",
+    "date": "2015-08-04T00:00:00.000Z",
+    "position": 4,
+    "illustration": "1-08-hovedlogo.jpg",
+    "preview": "",
+    "iso8601Date": "2015-08-04T02:00:00+02:00",
+    "basename": "1-08-Eksempler-på-clear-space"
+  },
+  "1-09-Plassering-av-logo-i-hjørne": {
+    "title": "1.9 Plassering av logo i hjørne",
+    "author": "Kenneth Dahlstrøm",
+    "date": "2015-08-04T00:00:00.000Z",
+    "position": 4,
+    "illustration": "1-1-hovedlogo.jpg",
+    "preview": "I de tilfeller hvor logoen skal vises liten, bør den plasseres i hjørnet av formatet. På de flater hvor det ikke foreligger maler for design og oppsett, er det disse fire plasseringer for høgskolens hovedlogo som gjelder. Hensikten med dette er å utvikle en visuell standard, minimere variasjon og koordinere alle høgskolens profilbyggende flater. Her er riktig bruk av clear space svært viktig.\n\nHøgskolens hovedlogo skal plasseres som vist på denne siden.",
+    "iso8601Date": "2015-08-04T02:00:00+02:00",
+    "basename": "1-09-Plassering-av-logo-i-hjørne"
+  },
+  "1-10-Plassering-av-logo-sentrert": {
+    "title": "1.10 Plassering av logo sentrert",
+    "author": "Kenneth Dahlstrøm",
+    "date": "2015-08-04T00:00:00.000Z",
+    "position": 4,
+    "illustration": "1-1-hovedlogo.jpg",
+    "preview": "I de tilfeller hvor logoen skal vises stor på en flate, bør den midtstilles på formatet. På de flatene det ikke foreligger maler\nfor design og oppsett, er det plasseringer for høgskolens hovedlogo som gjelder. Hensikten med dette er å utvikle en visuell standard, minimere variasjon og koordinere alle høgskolens profil- byggende flater. Her er riktig bruk av clear space svært viktig.\n\nA — Logo på rektangulært format skal midtstilles på flaten og plasseres ved bruk av clear space.\n\nB — Logo på avlangt format. Hovedlogo skal her midtstilles og plasseres ved bruk av clear space. Enten i topp eller bunn.\n\nC — Logo på kvadratisk format. Hovedlogo skal midtstilles på flate og plasseres ved bruk av clear space.\n\nD — Logo på asymmetrisk format. Hovedlogo skal plasseres på en måte som gjør at all clear space ligger\ninnenfor formatet.",
+    "iso8601Date": "2015-08-04T02:00:00+02:00",
+    "basename": "1-10-Plassering-av-logo-sentrert"
+  },
+  "1-11-Logoens-minimum-størrelse": {
+    "title": "1.11 Logoens minimum størrelse",
+    "author": "Kenneth Dahlstrøm",
+    "date": "2015-08-04T00:00:00.000Z",
+    "position": 4,
+    "illustration": "1-1-hovedlogo.jpg",
+    "preview": "For at logoen skal gjengis så tydelig som mulig, er den blitt tilordnet en minimumsstørrelse. Disse målene er av stor betydning både i trykte medier [print] og digitale flater [skjermer].\n\nFor trykte media gjelder 7 mm som minstemål for logo.\n\nFor digitale flater gjelder 27 px som minstemål for logo.",
+    "iso8601Date": "2015-08-04T02:00:00+02:00",
+    "basename": "1-11-Logoens-minimum-størrelse"
+  },
+  "1-12-Feil-bruk-av-logo": {
+    "title": "1.12 Feil bruk av logo",
+    "author": "Kenneth Dahlstrøm",
+    "date": "2015-08-04T00:00:00.000Z",
+    "position": 4,
+    "illustration": "1-1-hovedlogo.jpg",
+    "preview": "Det er viktig at alle elementer i logoens identitet blir brukt i samsvar med reglene i denne designmalen. Når konsulenter og eksterne leverandører av grafisk materiell er involvert, bør det sikres:\n\nAt de er kjent med reglene som gjelder for høgskolens logo. At de er utstyrt med riktige originaler [logo, emblem, typografi].\n\nAt de forstår at det er forbudt å gjøre endringer og/eller justeringer av disse originalene, for eksempel lage sine egne versjoner av logoen.\n\nKombiner ikke logoen med andre elementer som for eksempel logoer, ord, grafikk, bilder, slagord eller symboler som kan skape en hybridlogo.",
+    "iso8601Date": "2015-08-04T02:00:00+02:00",
+    "basename": "1-12-Feil-bruk-av-logo"
+  },
+  "2-01-clear-space": {
+    "title": "2.1 Clear space [luft rundt emblem]",
+    "author": "Kenneth Dahlstrøm",
+    "date": "2015-08-04T00:00:00.000Z",
+    "position": 4,
+    "illustration": "1-1-hovedlogo.jpg",
+    "preview": "Ved bruk av kun emblem er minimum clear space å foretrekke.",
+    "iso8601Date": "2015-08-04T02:00:00+02:00",
+    "basename": "2-01-clear-space"
+  },
+  "2-02-minimumsstorrelse": {
+    "title": "2.2 Minimumstørrelse",
+    "author": "Kenneth Dahlstrøm",
+    "date": "2015-08-04T00:00:00.000Z",
+    "position": 4,
+    "illustration": "1-1-hovedlogo.jpg",
+    "preview": "",
+    "iso8601Date": "2015-08-04T02:00:00+02:00",
+    "basename": "2-02-minimumsstorrelse"
+  },
+  "2-03-eksempler-paa-bruk": {
+    "title": "2.3 Eksempler på bruk av emblem",
+    "author": "Kenneth Dahlstrøm",
+    "date": "2015-08-04T00:00:00.000Z",
+    "position": 4,
+    "illustration": "1-1-hovedlogo.jpg",
+    "preview": "Det er mulig å benytte emblemet uten logonavn der den horisontale logoen blir for bred i forhold til format eller medie.\n\nDet er viktig at emblemets clear space og minimumstørrelse overholdes for at emblemet skal fremstå visuelt riktig og genkjennelig.",
+    "iso8601Date": "2015-08-04T02:00:00+02:00",
+    "basename": "2-03-eksempler-paa-bruk"
+  }
+}

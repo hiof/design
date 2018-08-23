@@ -1,0 +1,898 @@
+{
+  "bachelor-forsidemal-eng": {
+    "title": "Bachelorthesis cover page",
+    "author": "Agnes Kristine Øktedalen Olsen Sirland <agnes.k.sirland@hiof.no>",
+    "date": "2015-09-07T00:00:00.000Z",
+    "relatedasset": [
+      {
+        "title": "Bachelorthesis cover page in Word-format",
+        "format": "docx",
+        "version": "v1.0.0",
+        "formathelpertext": "",
+        "file": "bachelor-forsidemal-eng"
+      },
+      {
+        "title": "Bachelorthesis cover page for OpenOffice",
+        "format": "ott",
+        "version": "v1.0.0",
+        "formathelpertext": "",
+        "file": "bachelor-forsidemal-eng"
+      },
+      {
+        "title": "Bachelorthesis cover page in PDF",
+        "format": "pdf",
+        "version": "v1.0.0",
+        "formathelpertext": "Edit the PDF-template in your editor and merge it in as the frontpage to your paper.",
+        "file": "bachelor-forsidemal-eng"
+      }
+    ],
+    "illustration": "template-bachelor-forsidemal-eng.jpg",
+    "position": 11,
+    "preview": "Use this template to write your bachelor thesis in English. You should start to write your thesis within this template, as it will ensure that formatting of titles, subtitles and table of contents does not change or disappear. You may also insert your thesis into this template after it is finished. However, depending on what kind of software you use, there may be a chance you need to redo your formatting of titles, subtitles and table of contents.",
+    "iso8601Date": "2015-09-07T02:00:00+02:00",
+    "basename": "bachelor-forsidemal-eng"
+  },
+  "bachelor-forsidemal-nor": {
+    "title": "Forsidemal for bacheloroppgraver",
+    "author": "Agnes Kristine Øktedalen Olsen Sirland <agnes.k.sirland@hiof.no>",
+    "date": "2015-09-07T00:00:00.000Z",
+    "relatedasset": [
+      {
+        "title": "Forsidemal for bacheloroppgaver i Word-format",
+        "format": "docx",
+        "version": "v1.0.0",
+        "formathelpertext": "",
+        "file": "bachelor-forsidemal-nor"
+      },
+      {
+        "title": "Forsidemal for bacheloroppgaver i OpenOffice",
+        "format": "ott",
+        "version": "v1.0.0",
+        "formathelpertext": "",
+        "file": "bachelor-forsidemal-nor"
+      },
+      {
+        "title": "Forsidemal for bacheloroppgaver i PDF",
+        "format": "pdf",
+        "version": "v1.0.0",
+        "formathelpertext": "Edit the PDF-template in your editor and merge it in as the frontpage to your paper.",
+        "file": "bachelor-forsidemal-nor"
+      }
+    ],
+    "illustration": "template-bachelor-forsidemal-nor.jpg",
+    "position": 10,
+    "preview": "Dette er malen som skal brukes for bacheloroppgaver som leveres på norsk. Du burde starte med denne malen som utgangspunkt for oppgaven din. Da vil du være sikker på at formatering av titler og undertitler, innholdsfortegnelse osv. ikke endrer seg eller forsvinner. Det er også mulig å legge oppgaven din inn i denne malen etter at den er skrevet. Men avhengig av softwaren du bruker så kan det være en mulighet for at formatteringen av titler, undertitler og innholdsfortegnelse må gjøres på nytt etter at oppgaven er lagt inn i forsiden.",
+    "iso8601Date": "2015-09-07T02:00:00+02:00",
+    "basename": "bachelor-forsidemal-nor"
+  },
+  "brev-eng": {
+    "title": "Letter template",
+    "author": "Kenneth Lindbeck-Dahlstrøm",
+    "date": "2018-02-14T00:00:00.000Z",
+    "relatedasset": [
+      {
+        "title": "Letter template",
+        "format": "doc",
+        "version": "v1.1.0",
+        "formathelpertext": "",
+        "file": "lettertemplate"
+      },
+      {
+        "title": "Letter template",
+        "format": "ott",
+        "version": "v1.1.0",
+        "formathelpertext": "",
+        "file": "lettertemplate"
+      }
+    ],
+    "illustration": "template-brev-eng.jpg",
+    "position": 22,
+    "preview": "The letter template is available through the [Public 360](https://hiof.p360.uninett.no/) archive system for archival information. If you need to send **non-archive worthy letters**, download the template below.",
+    "iso8601Date": "2018-02-14T01:00:00+01:00",
+    "basename": "brev-eng"
+  },
+  "brev-nor": {
+    "title": "Brevmal norsk",
+    "author": "Kenneth Lindbeck-Dahlstrøm",
+    "date": "2018-02-14T00:00:00.000Z",
+    "relatedasset": [
+      {
+        "title": "Brevmal",
+        "format": "doc",
+        "version": "v1.1.0",
+        "formathelpertext": "",
+        "file": "brevmal"
+      },
+      {
+        "title": "Brevmal",
+        "format": "ott",
+        "version": "v1.1.0",
+        "formathelpertext": "",
+        "file": "brevmal"
+      }
+    ],
+    "illustration": "template-brev-nor.jpg",
+    "position": 21,
+    "preview": "Brevmalen er tilgjengelig via [arkivsystemet Public 360](https://hiof.p360.uninett.no/) for arkivverdig informasjon. Hvis du har behov for å sende brev som **ikke er arkivverdig** last ned malen under.",
+    "iso8601Date": "2018-02-14T01:00:00+01:00",
+    "basename": "brev-nor"
+  },
+  "brochure": {
+    "title": "Brosjyrer",
+    "author": "Kenneth Lindbeck-Dahlstrøm",
+    "date": "2016-06-30T00:00:00.000Z",
+    "relatedasset": null,
+    "illustration": "template-brosjyre.jpg",
+    "position": 30,
+    "category": "brochure",
+    "preview": "Brosjyrer utarbeides i samarbeid med Marked- og kommunikasjonsenheten. Ta kontakt på [infoenheten@hiof.no](infoenheten@hiof.no).",
+    "iso8601Date": "2016-06-30T02:00:00+02:00",
+    "basename": "brochure"
+  },
+  "designmal": {
+    "title": "Introduksjon",
+    "author": "Kenneth Lindbeck-Dahlstrøm",
+    "date": "2016-06-29T00:00:00.000Z",
+    "illustration": "template-designmal.jpg",
+    "position": 1,
+    "preview": "Høgskolen har fått utarbeidet maler slik at ansatte og studenter raskt kan komme i gang med å utarbeide innholdet samtidig som man ivaretar [Høgskolens grafiske profil](/grafisk-profil).\n\nHvis du har spørsmål eller har tekniske problemer relatert til malene, ta kontakt med [Marked- og kommunikasjonsenheten](mailto:infoenheten@hiof.no). Merk gjerne e-posten med «mal» i tittelfeltet.",
+    "iso8601Date": "2016-06-29T02:00:00+02:00",
+    "basename": "designmal"
+  },
+  "dorskiltmal": {
+    "title": "Dørskiltmal",
+    "author": "Agnes Kristine Øktedalen Olsen Sirland <agnes.k.sirland@hiof.no>",
+    "date": "2016-08-16T00:00:00.000Z",
+    "relatedasset": [
+      {
+        "title": "Mal for dørskilt",
+        "format": "doc",
+        "version": "v1.0.1",
+        "formathelpertext": "",
+        "file": "dorskiltmal"
+      }
+    ],
+    "illustration": "template-dorskiltmal.jpg",
+    "position": 16,
+    "preview": "Dette er malen du bruker når du lager dørskilt til kontoret ditt. Du fyller ut feltene og skriver ut på en printer nær deg. Så klipper du ut dørskiltet slik at det passer i rammen. Heksagon-designet skal ideelt sett være utfallende, det betyr at det helst ikke skal være noen marg rundt designet i bunn. Fargen på utskriften kan variere noe basert på printerens toner-status.",
+    "iso8601Date": "2016-08-16T02:00:00+02:00",
+    "basename": "dorskiltmal"
+  },
+  "epostsignatur": {
+    "title": "E-postsignatur",
+    "author": "Kenneth Lindbeck-Dahlstrøm",
+    "date": "2016-06-29T00:00:00.000Z",
+    "relatedasset": [
+      {
+        "title": "OpenOffice mal du kan kopiere fra",
+        "format": "ott",
+        "version": "v1.0.0",
+        "formathelpertext": "",
+        "file": "epostsignatur"
+      },
+      {
+        "title": "Word mal du kan kopiere fra",
+        "format": "pdf",
+        "version": "v1.0.0",
+        "formathelpertext": "",
+        "file": "epostsignatur"
+      }
+    ],
+    "illustration": "template-epost.jpg",
+    "position": 4,
+    "preview": "E-postsignaturen består av følgende tekst satt i sekundærfontsnittet Arial:\n\n\n```\nMed vennlig hilsen,\nFornavn Mellomnavn Etternavn\n\nStillingstittel\nAvdeling eller enhetsnavn\nHøgskolen i Østfold\n\nTelefon: +47 61 21 00 00\nMobil: +47 450 00 000\nKontor: A1-000, studiested\nEpost: fornavn.etternavn@hiof.no\n```\n\nSignaturen kan innholde lenker til sosiale medier. Lenker til sosiale medier plasseres nederst i din e-postsignatur:\n\n```\nHiØ på web: hiof.no\nHiØ på Facebook:  facebook.com/hiofnorge\nHiØ på Twitter: twitter.com/hiofnorge\nHiØ på Instagram: instagram.com/hiofnorge\nHiØ på Flickr: flickr.com/photos/utdanning\n```\n\nHvis en fagansatt ønsker å knytte opp et emnes lenke i signaturen bytter man ut `HiØ`-delen med for eksempel emnenavn og lenke til tilhørende ressurs.\n\n### Tekniske retningslinjer for signatur\n\n- Signaturen bruker enkle linjeskift for ny linje\n    - To enkle linjeskift for mellomrom.\n- Informasjon skal ikke lenkes, det skal kun være tekst.\n    - Adresse _skal ikke_ hyperlinkes da det skaper trøbbel for enkelte klienter. Enkelte epostklienter vil formatere dette selv.\n    - Signaturen _skal ikke_ inneholde formatering av nummer med protokoll som for eksempel `sip:+47 61210000` eller `tlf:+4761210000`. Enkelte epostklienter vil formatere dette selv.\n    - Epostadresse _skal ikke_ hyperlinkes da det skaper trøbbel for enkelte klienter. Enkelte epostklienter vil formatere dette selv.",
+    "iso8601Date": "2016-06-29T02:00:00+02:00",
+    "basename": "epostsignatur"
+  },
+  "logo-nor": {
+    "title": "Logo",
+    "author": "Kenneth Lindbeck-Dahlstrøm <kld@hiof.no>",
+    "date": "2017-08-21T00:00:00.000Z",
+    "relatedasset": [
+      {
+        "title": "HiØ-logo - sort",
+        "illustration": [
+          {
+            "image": "hiof-logo-nor-black"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "Denne logofilen inneholder formatene jpg, png, eps, pdf og svg.",
+        "lang": "no",
+        "file": "hiof-logo-nor-black"
+      },
+      {
+        "title": "HiØ-logo - hvit",
+        "illustration": [
+          {
+            "image": "hiof-logo-nor-white"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "Denne logofilen inneholder formatene jpg, png, eps, pdf og svg.",
+        "lang": "no",
+        "file": "hiof-logo-nor-white"
+      },
+      {
+        "title": "HiØ-logo - black",
+        "illustration": [
+          {
+            "image": "hiof-logo-eng-black"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "This file include the logo in jpg, png, eps, pdf and svg formats.",
+        "lang": "en",
+        "file": "hiof-logo-eng-black"
+      },
+      {
+        "title": "HiØ-logo - white",
+        "illustration": [
+          {
+            "image": "hiof-logo-eng-white"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "This file include the logo in jpg, png, eps, pdf and svg formats.",
+        "lang": "en",
+        "file": "hiof-logo-eng-white"
+      },
+      {
+        "title": "HiØ-logo - sort - Akademi for Scenekunst",
+        "illustration": [
+          {
+            "image": "hiof-logo-nor-black-subbranding-as"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "Denne logofilen inneholder formatene jpg, png, eps, pdf og svg.",
+        "lang": "no",
+        "file": "hiof-logo-nor-black-subbranding-as"
+      },
+      {
+        "title": "HiØ-logo - hvit - Akademi for Scenekunst",
+        "illustration": [
+          {
+            "image": "hiof-logo-nor-white-subbranding-as"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "Denne logofilen inneholder formatene jpg, png, eps, pdf og svg.",
+        "lang": "no",
+        "file": "hiof-logo-nor-white-subbranding-as"
+      },
+      {
+        "title": "HiØ-logo - sort - Avdeling for helse og velferd",
+        "illustration": [
+          {
+            "image": "hiof-logo-nor-black-subbranding-hv"
+          }
+        ],
+        "version": "v1.0.2",
+        "formathelpertext": "Denne logofilen inneholder formatene jpg, png, eps, pdf og svg.",
+        "lang": "no",
+        "file": "hiof-logo-nor-black-subbranding-hv"
+      },
+      {
+        "title": "HiØ-logo - hvit - Avdeling for helse og velferd",
+        "illustration": [
+          {
+            "image": "hiof-logo-nor-white-subbranding-hv"
+          }
+        ],
+        "version": "v1.0.2",
+        "formathelpertext": "Denne logofilen inneholder formatene jpg, png, eps, pdf og svg.",
+        "lang": "no",
+        "file": "hiof-logo-nor-white-subbranding-hv"
+      },
+      {
+        "title": "HiØ-logo - sort - Ingeniørfag",
+        "illustration": [
+          {
+            "image": "hiof-logo-nor-black-subbranding-ir"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "Denne logofilen inneholder formatene jpg, png, eps, pdf og svg.",
+        "lang": "no",
+        "file": "hiof-logo-nor-black-subbranding-ir"
+      },
+      {
+        "title": "HiØ-logo - hvit - Ingeniørfag",
+        "illustration": [
+          {
+            "image": "hiof-logo-nor-white-subbranding-ir"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "Denne logofilen inneholder formatene jpg, png, eps, pdf og svg.",
+        "lang": "no",
+        "file": "hiof-logo-nor-white-subbranding-ir"
+      },
+      {
+        "title": "HiØ-logo - sort - Informasjonsteknologi",
+        "illustration": [
+          {
+            "image": "hiof-logo-nor-black-subbranding-it"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "Denne logofilen inneholder formatene jpg, png, eps, pdf og svg.",
+        "lang": "no",
+        "file": "hiof-logo-nor-black-subbranding-it"
+      },
+      {
+        "title": "HiØ-logo - hvit - Informasjonsteknologi",
+        "illustration": [
+          {
+            "image": "hiof-logo-nor-white-subbranding-it"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "Denne logofilen inneholder formatene jpg, png, eps, pdf og svg.",
+        "lang": "no",
+        "file": "hiof-logo-nor-white-subbranding-it"
+      },
+      {
+        "title": "HiØ-logo - sort - Lærerutdanning",
+        "illustration": [
+          {
+            "image": "hiof-logo-nor-black-subbranding-lu"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "Denne logofilen inneholder formatene jpg, png, eps, pdf og svg.",
+        "lang": "no",
+        "file": "hiof-logo-nor-black-subbranding-lu"
+      },
+      {
+        "title": "HiØ-logo - hvit - Lærerutdanning",
+        "illustration": [
+          {
+            "image": "hiof-logo-nor-white-subbranding-lu"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "Denne logofilen inneholder formatene jpg, png, eps, pdf og svg.",
+        "lang": "no",
+        "file": "hiof-logo-nor-white-subbranding-lu"
+      },
+      {
+        "title": "HiØ-logo - sort - Økonomi, språk og samfunnsfag",
+        "illustration": [
+          {
+            "image": "hiof-logo-nor-black-subbranding-oss"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "Denne logofilen inneholder formatene jpg, png, eps, pdf og svg.",
+        "lang": "no",
+        "file": "hiof-logo-nor-black-subbranding-oss"
+      },
+      {
+        "title": "HiØ-logo - hvit - Økonomi, språk og samfunnsfag",
+        "illustration": [
+          {
+            "image": "hiof-logo-nor-white-subbranding-oss"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "Denne logofilen inneholder formatene jpg, png, eps, pdf og svg.",
+        "lang": "no",
+        "file": "hiof-logo-nor-white-subbranding-oss"
+      },
+      {
+        "title": "HiØ-logo - sort - Biblioteket",
+        "illustration": [
+          {
+            "image": "hiof-logo-nor-black-subbranding-biblioteket"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "Denne logofilen inneholder formatene jpg, png, eps, pdf og svg.",
+        "lang": "no",
+        "file": "hiof-logo-nor-black-subbranding-biblioteket"
+      },
+      {
+        "title": "HiØ-logo - hvit - Biblioteket",
+        "illustration": [
+          {
+            "image": "hiof-logo-nor-white-subbranding-biblioteket"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "Denne logofilen inneholder formatene jpg, png, eps, pdf og svg.",
+        "lang": "no",
+        "file": "hiof-logo-nor-white-subbranding-biblioteket"
+      },
+      {
+        "title": "HiØ-logo - sort - HiØ VIDERE",
+        "illustration": [
+          {
+            "image": "hiof-logo-nor-black-subbranding-hiovidere"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "Denne logofilen inneholder formatene jpg, png, eps, pdf og svg.",
+        "lang": "no",
+        "file": "hiof-logo-nor-black-subbranding-hiovidere"
+      },
+      {
+        "title": "HiØ-logo - hvit - HiØ VIDERE",
+        "illustration": [
+          {
+            "image": "hiof-logo-nor-white-subbranding-hiovidere"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "Denne logofilen inneholder formatene jpg, png, eps, pdf og svg.",
+        "lang": "no",
+        "file": "hiof-logo-nor-white-subbranding-hiovidere"
+      },
+      {
+        "title": "HiØ-logo - sort - HiØ VIDERE",
+        "illustration": [
+          {
+            "image": "hiof-logo-nor-black-subbranding-bedriftsidrettslaget"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "Denne logofilen inneholder formatene jpg, png, eps, pdf og svg.",
+        "lang": "no",
+        "file": "hiof-logo-nor-black-subbranding-bedriftsidrettslaget"
+      },
+      {
+        "title": "HiØ-logo - hvit - HiØ VIDERE",
+        "illustration": [
+          {
+            "image": "hiof-logo-nor-white-subbranding-bedriftsidrettslaget"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "Denne logofilen inneholder formatene jpg, png, eps, pdf og svg.",
+        "lang": "no",
+        "file": "hiof-logo-nor-white-subbranding-bedriftsidrettslaget"
+      },
+      {
+        "title": "HiØ-logo - sort",
+        "illustration": [
+          {
+            "image": "hiof-logo-nor-black"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "Denne logofilen inneholder formatene jpg, png, eps, pdf og svg.",
+        "lang": "no",
+        "file": "hiof-logo-nor-black"
+      },
+      {
+        "title": "HiØ-logo - hvit",
+        "illustration": [
+          {
+            "image": "hiof-logo-nor-white"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "Denne logofilen inneholder formatene jpg, png, eps, pdf og svg.",
+        "lang": "no",
+        "file": "hiof-logo-nor-white"
+      },
+      {
+        "title": "HiØ-logo - black - Norwegian Theater Academy",
+        "illustration": [
+          {
+            "image": "hiof-logo-eng-black-subbranding-as"
+          }
+        ],
+        "version": "v1.0.1",
+        "formathelpertext": "This file include the logo in jpg, png, eps, pdf and svg formats.",
+        "lang": "en",
+        "file": "hiof-logo-eng-black-subbranding-as"
+      },
+      {
+        "title": "HiØ-logo - white - Norwegian Theater Academy",
+        "illustration": [
+          {
+            "image": "hiof-logo-eng-white-subbranding-as"
+          }
+        ],
+        "version": "v1.0.1",
+        "formathelpertext": "This file include the logo in jpg, png, eps, pdf and svg formats.",
+        "lang": "en",
+        "file": "hiof-logo-eng-white-subbranding-as"
+      },
+      {
+        "title": "HiØ-logo - black - Faculty of Health and Welfare",
+        "illustration": [
+          {
+            "image": "hiof-logo-eng-black-subbranding-hv"
+          }
+        ],
+        "version": "v1.0.2",
+        "formathelpertext": "This file include the logo in jpg, png, eps, pdf and svg formats.",
+        "lang": "en",
+        "file": "hiof-logo-eng-black-subbranding-hv"
+      },
+      {
+        "title": "HiØ-logo - white - Faculty of Health and Welfare",
+        "illustration": [
+          {
+            "image": "hiof-logo-eng-white-subbranding-hv"
+          }
+        ],
+        "version": "v1.0.2",
+        "formathelpertext": "This file include the logo in jpg, png, eps, pdf and svg formats.",
+        "lang": "en",
+        "file": "hiof-logo-eng-white-subbranding-hv"
+      },
+      {
+        "title": "HiØ-logo - black - Faculty of Engineering",
+        "illustration": [
+          {
+            "image": "hiof-logo-eng-black-subbranding-ir"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "This file include the logo in jpg, png, eps, pdf and svg formats.",
+        "lang": "en",
+        "file": "hiof-logo-eng-black-subbranding-ir"
+      },
+      {
+        "title": "HiØ-logo - white - Faculty of Engineering",
+        "illustration": [
+          {
+            "image": "hiof-logo-eng-white-subbranding-ir"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "This file include the logo in jpg, png, eps, pdf and svg formats.",
+        "lang": "en",
+        "file": "hiof-logo-eng-white-subbranding-ir"
+      },
+      {
+        "title": "HiØ-logo - black - Faculty of Computer Sciences",
+        "illustration": [
+          {
+            "image": "hiof-logo-eng-black-subbranding-it"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "This file include the logo in jpg, png, eps, pdf and svg formats.",
+        "lang": "en",
+        "file": "hiof-logo-eng-black-subbranding-it"
+      },
+      {
+        "title": "HiØ-logo - white - Faculty of Computer Sciences",
+        "illustration": [
+          {
+            "image": "hiof-logo-eng-white-subbranding-it"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "This file include the logo in jpg, png, eps, pdf and svg formats.",
+        "lang": "en",
+        "file": "hiof-logo-eng-white-subbranding-it"
+      },
+      {
+        "title": "HiØ-logo - black - Faculty of Education",
+        "illustration": [
+          {
+            "image": "hiof-logo-eng-black-subbranding-lu"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "This file includes the logo in jpg, png, eps and white format.",
+        "lang": "en",
+        "file": "hiof-logo-eng-black-subbranding-lu"
+      },
+      {
+        "title": "HiØ-logo - white - Faculty of Education",
+        "illustration": [
+          {
+            "image": "hiof-logo-eng-white-subbranding-lu"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "This file includes the logo in jpg, png, eps and black format.",
+        "lang": "en",
+        "file": "hiof-logo-eng-white-subbranding-lu"
+      },
+      {
+        "title": "HiØ-logo - black - Faculty of Business, Languages, and Social Sciences",
+        "illustration": [
+          {
+            "image": "hiof-logo-eng-black-subbranding-oss"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "This file include the logo in jpg, png, eps, pdf and svg formats.",
+        "lang": "en",
+        "file": "hiof-logo-eng-black-subbranding-oss"
+      },
+      {
+        "title": "HiØ-logo - white - Faculty of Business, Languages, and Social Sciences",
+        "illustration": [
+          {
+            "image": "hiof-logo-eng-white-subbranding-oss"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "This file include the logo in jpg, png, eps, pdf and svg formats.",
+        "lang": "en",
+        "file": "hiof-logo-eng-white-subbranding-oss"
+      },
+      {
+        "title": "HiØ-logo - black - Library",
+        "illustration": [
+          {
+            "image": "hiof-logo-eng-black-subbranding-biblioteket"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "This file include the logo in jpg, png, eps, pdf and svg formats.",
+        "lang": "en",
+        "file": "hiof-logo-eng-black-subbranding-biblioteket"
+      },
+      {
+        "title": "HiØ-logo - white - Library",
+        "illustration": [
+          {
+            "image": "hiof-logo-eng-white-subbranding-biblioteket"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "This file include the logo in jpg, png, eps, pdf and svg formats.",
+        "lang": "en",
+        "file": "hiof-logo-eng-white-subbranding-biblioteket"
+      },
+      {
+        "title": "HiØ-logo - black - HiØ VIDERE",
+        "illustration": [
+          {
+            "image": "hiof-logo-eng-black-subbranding-hiovidere"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "This file include the logo in jpg, png, eps, pdf and svg formats.",
+        "lang": "en",
+        "file": "hiof-logo-eng-black-subbranding-hiovidere"
+      },
+      {
+        "title": "HiØ-logo - white - HiØ VIDERE",
+        "illustration": [
+          {
+            "image": "hiof-logo-eng-white-subbranding-hiovidere"
+          }
+        ],
+        "version": "v1.0.0",
+        "formathelpertext": "This file include the logo in jpg, png, eps, pdf and svg formats.",
+        "lang": "en",
+        "file": "hiof-logo-eng-white-subbranding-hiovidere"
+      }
+    ],
+    "illustration": "template-presentasjonsmal-nor.jpg",
+    "position": 35,
+    "category": "logo",
+    "preview": "Høgskolens logo består av et emblem og ordbildet *“Høgskolen i Østfold”*. Les mer om retningslinjer for [bruk av logo](/grafisk-profil?del=1-00-logo) og [bruk av emblem](/grafisk-profil?del=2-00-emblem) i den grafiske profilen. Logoen kommer i både norsk og engelsk versjon.\n\nLogoen er tilgjenglig i en versjon der emblem og tekst er i sort og i en versjon der emblem og tekst er i hvit. Den sorte varianten passer på lyse bakgrunner mens den hvite varianten passer til mørke bakgrunner.\n\nI tilleg er logoen tilgjenglig med underbrand for avdelinger, akademiet, biblioteket, HiØ VIDERE og Bedriftsidrettslaget.",
+    "iso8601Date": "2017-08-21T02:00:00+02:00",
+    "basename": "logo-nor"
+  },
+  "master-forsidemal-eng": {
+    "title": "Masterthesis cover page",
+    "author": "Agnes Kristine Øktedalen Olsen Sirland <agnes.k.sirland@hiof.no>",
+    "date": "2015-08-20T00:00:00.000Z",
+    "relatedasset": [
+      {
+        "title": "masterthesis cover page in Word-format",
+        "format": "docx",
+        "version": "v1.0.0",
+        "formathelpertext": "",
+        "file": "master-forsidemal-eng"
+      },
+      {
+        "title": "masterthesis cover page for OpenOffice",
+        "format": "ott",
+        "version": "v1.0.0",
+        "formathelpertext": "",
+        "file": "master-forsidemal-eng"
+      },
+      {
+        "title": "masterthesis cover page in PDF",
+        "format": "pdf",
+        "version": "v1.0.0",
+        "formathelpertext": "Edit the PDF-template in your editor and merge it in as the frontpage to your paper.",
+        "file": "master-forsidemal-eng"
+      }
+    ],
+    "illustration": "template-master-forsidemal-eng.jpg",
+    "position": 13,
+    "preview": "Use this template to write your master thesis in English. You should start to write your thesis within this template, as it will ensure that formatting of titles, subtitles and table of contents does not change or disappear. You may also insert your thesis into this template after it is finished. However, depending on what kind of software you use, there may be a chance you need to redo your formatting of titles, subtitles and table of contents.",
+    "iso8601Date": "2015-08-20T02:00:00+02:00",
+    "basename": "master-forsidemal-eng"
+  },
+  "master-forsidemal-nor": {
+    "title": "Forsidemal for masteroppgaver",
+    "author": "Agnes Kristine Øktedalen Olsen Sirland <agnes.k.sirland@hiof.no>",
+    "date": "2015-08-20T00:00:00.000Z",
+    "relatedasset": [
+      {
+        "title": "Forsidemal for masteroppgaver i Word-format",
+        "format": "docx",
+        "version": "v1.0.0",
+        "formathelpertext": "",
+        "file": "master-forsidemal-nor"
+      },
+      {
+        "title": "Forsidemal for masteroppgaver i OpenOffice",
+        "format": "ott",
+        "version": "v1.0.0",
+        "formathelpertext": "",
+        "file": "master-forsidemal-nor"
+      },
+      {
+        "title": "Forsidemal for masteroppgaver i PDF",
+        "format": "pdf",
+        "version": "v1.0.0",
+        "formathelpertext": "Edit the PDF-template in your editor and merge it in as the frontpage to your paper.",
+        "file": "master-forsidemal-nor"
+      }
+    ],
+    "illustration": "template-master-forsidemal-nor.jpg",
+    "position": 12,
+    "preview": "Dette er malen som skal brukes for masteroppgaver som leveres på norsk. Du burde starte med denne malen som utgangspunkt for oppgaven din. Da vil du være sikker på at formatering av titler og undertitler, innholdsfortegnelse osv. ikke endrer seg eller forsvinner. Det er også mulig å legge oppgaven din inn i denne malen etter at den er skrevet. Men avhengig av softwaren du bruker så kan det være en mulighet for at formatteringen av titler, undertitler og innholdsfortegnelse må gjøres på nytt etter at oppgaven er lagt inn i forsiden.",
+    "iso8601Date": "2015-08-20T02:00:00+02:00",
+    "basename": "master-forsidemal-nor"
+  },
+  "omslag-oppdragsrapport": {
+    "title": "Omslag oppdragsrapport",
+    "author": "Agnes Kristine Øktedalen Olsen Sirland <agnes.k.sirland@hiof.no>",
+    "date": "2016-06-30T00:00:00.000Z",
+    "illustration": "template-omslag-oppdragsrapport.jpg",
+    "position": 15,
+    "preview": "Dette er malene for oppdragsrapporter som utarbeides av høgskolens forskningsmiljø på oppdrag av eksterne samarbeidspartnere. Biblioteket holder i prosessen, så husk å kontakte de tidlig og [følg deres rutiner og retningslinjer](http://www2.hiof.no/nor/hogskolen-i-ostfold/for-ansatte/praktisk-for-forskere/open-access/retningslinjer-skriftserier). Forsiden settes inn av trykkeriet. Du kan velge mellom to ulike uttrykk:\n\n- Omslag oppdragsrapport A: Omslaget på oppdragsrapporten kan inneholde et bilde som passer i bilderammen i denne malen. Send ved et høyoppløselig bilde som kan brukes når du sender rapporten til trykk, og dine kommentarer til evt. utsnitt (husk at bildet må være skriftlig godkjent for bruk på trykte og digitale medier av fotograf og evt. avbildede personer).\n- Omslag oppdragsrapport B: Om du ikke har et bilde, eller ikke ønsker å bruke et bilde, så vil Oppdragsrapport forside B benyttes.",
+    "iso8601Date": "2016-06-30T02:00:00+02:00",
+    "basename": "omslag-oppdragsrapport"
+  },
+  "plakatmal": {
+    "title": "Plakatmaler",
+    "author": "Bård Halvorsen <bard.halvorsen@hiof.no>",
+    "date": "2016-06-29T00:00:00.000Z",
+    "relatedasset": [
+      {
+        "title": "Plakatmal-A",
+        "format": "ai",
+        "version": "v1.0.0",
+        "formathelpertext": "Plakatmal-A - Adobe Illustrator dokument. [Les mer om hvordan du bruker malen](http://blogg.hiof.no/beta/kom-i-gang-med-illustrator)",
+        "file": "plakatmal-a"
+      },
+      {
+        "title": "Plakatmal-B",
+        "format": "ai",
+        "version": "v1.0.0",
+        "formathelpertext": "Plakatmal-B - Adobe Illustrator dokument. [Les mer om hvordan du bruker malen](http://blogg.hiof.no/beta/kom-i-gang-med-illustrator)",
+        "file": "plakatmal-b"
+      },
+      {
+        "title": "Plakatmal-C",
+        "format": "ai",
+        "version": "v1.0.0",
+        "formathelpertext": "Plakatmal-C - Adobe Illustrator dokument. [Les mer om hvordan du bruker malen](http://blogg.hiof.no/beta/kom-i-gang-med-illustrator)",
+        "file": "plakatmal-c"
+      },
+      {
+        "title": "Plakatmal-D",
+        "format": "ai",
+        "version": "v1.0.0",
+        "formathelpertext": "Plakatmal-D - Adobe Illustrator dokument. [Les mer om hvordan du bruker malen](http://blogg.hiof.no/beta/kom-i-gang-med-illustrator)",
+        "file": "plakatmal-d"
+      }
+    ],
+    "illustration": "template-plakatmal.jpg",
+    "position": 5,
+    "category": "poster",
+    "preview": "### Plakat med stort bilde (plakatmal-A)\n\nDette er HiØs mal for A3-plakat med STORT bilde, tittel, ingress og dato.\n\nNå kan plakaten lages ved å bruke nye versjoner av Adobe Illustrator, herunder skifte av foto og innskriving av ny tekst.\n\n\n### Plakat med medium bilde (plakatmal-B)\n\nDette er HiØs mal for A3-plakat med MEDIUM bilde, tittel, ingress, dato og tekst.\n\nNå kan plakaten lages ved å bruke nye versjoner av Adobe Illustrator, herunder skifte av foto og innskriving av ny tekst.\n\n### Plakat med lite bilde  (plakatmal-C)\n\nDette er HiØs mal for A3-plakat med LITE bilde, tittel, ingress, dato og tekst.\n\nNå kan plakaten lages ved å bruke nye versjoner av Adobe Illustrator, herunder skifte av foto og innskriving av ny tekst.\n\n### Plakat uten bilde  (plakatmal-D)\n\nDette er HiØs mal for A3-plakat UTEN bilde, men med tittel, ingress, dato, tekst og den design som Høgskolen i Østfold bruker.\n\nNå kan plakaten lages ved å bruke nye versjoner av Adobe Illustrator.",
+    "iso8601Date": "2016-06-29T02:00:00+02:00",
+    "basename": "plakatmal"
+  },
+  "presentasjonsmal-eng": {
+    "title": "Presentation template",
+    "author": "Agnes Kristine Øktedalen Olsen Sirland <agnes.k.sirland@hiof.no>",
+    "date": "2015-08-20T00:00:00.000Z",
+    "relatedasset": [
+      {
+        "title": "Presentation template for PowerPoint",
+        "format": "potx",
+        "version": "v1.1.0",
+        "formathelpertext": "",
+        "file": "presentasjonsmal-eng"
+      }
+    ],
+    "illustration": "template-presentasjonsmal-eng.jpg",
+    "position": 3,
+    "category": "presentation",
+    "preview": "Dette er høgskolens presentasjonsverktøy med engelsk logo. Bruk denne malen når du skal presentere noe for et utenlandsk publikum. Presentasjonsmalen åpner med et utvalg slides du kan velge mellom. Du kan slette de du ikke ønsker å bruke i presentasjonen din. Nye innholdssider finner du under «Nytt lysbilde» eller så endrer du oppsettet på siden under «Oppsett».\n\nFeltet der det står «Presentasjonsmal Høgskolen i Østfold», samt bunnteksten «Fornavn Etternavn | Avdelingsnavn», og alle tekstfelter, kan du endre til det du ønsker i din presentasjon. Om du ønsker å ta bort bunntekst på alle slides, eller evt. endre bunnteksten på alle slides til ditt navn og din avdeling/enhet, så gjør du det via: «Sett inn» - «Topptekst og bunntekst» - Endre bunnteksten til det du ønsker – og avslutt med «Bruk på alle».",
+    "iso8601Date": "2015-08-20T02:00:00+02:00",
+    "basename": "presentasjonsmal-eng"
+  },
+  "presentasjonsmal-nor": {
+    "title": "Presentasjonsmal",
+    "author": "Agnes Kristine Øktedalen Olsen Sirland <agnes.k.sirland@hiof.no>",
+    "date": "2015-08-20T00:00:00.000Z",
+    "relatedasset": [
+      {
+        "title": "Presentasjonsmal for PowerPoint",
+        "format": "potx",
+        "version": "v1.1.0",
+        "formathelpertext": "PowerPoint - presentasjonsmal",
+        "file": "presentasjonsmal-nor"
+      }
+    ],
+    "illustration": "template-presentasjonsmal-nor.jpg",
+    "position": 2,
+    "category": "presentation",
+    "preview": "Dette er høgskolens presentasjonsmal. Bruk denne malen når du skal presentere noe. Presentasjonsmalen åpner med et utvalg slides du kan velge mellom. Du kan slette de du ikke ønsker å bruke i presentasjonen din. Nye innholdssider finner du under «Nytt lysbilde» eller så endrer du oppsettet på siden under «Oppsett».\n\nFeltet der det står «Presentasjonsmal Høgskolen i Østfold», samt bunnteksten «Fornavn Etternavn | Avdelingsnavn», og alle tekstfelter, kan du endre til det du ønsker i din presentasjon. Om du ønsker å ta bort bunntekst på alle slides, eller evt. endre bunnteksten på alle slides til ditt navn og din avdeling/enhet, så gjør du det via: «Sett inn» - «Topptekst og bunntekst» - Endre bunnteksten til det du ønsker – og avslutt med «Bruk på alle».",
+    "iso8601Date": "2015-08-20T02:00:00+02:00",
+    "basename": "presentasjonsmal-nor"
+  },
+  "rapport-forsidemal": {
+    "title": "Forsidemaler for rapporter",
+    "author": "Agnes Kristine Øktedalen Olsen Sirland <agnes.k.sirland@hiof.no>",
+    "date": "2015-12-7",
+    "relatedasset": [
+      {
+        "title": "Forsidemal-A",
+        "format": "indd",
+        "version": "v1.0.0",
+        "formathelpertext": "Forsidemal-A - Adobe InDesign dokument. [Les mer om hvordan du bruker malen](http://blogg.hiof.no/beta/kom-i-gang-med-Indesign)",
+        "file": "rapport-forsidemal-a"
+      },
+      {
+        "title": "Forsidemal-B",
+        "format": "indd",
+        "version": "v1.0.0",
+        "formathelpertext": "Forsidemal-B - Adobe InDesign dokument. [Les mer om hvordan du bruker malen](http://blogg.hiof.no/beta/kom-i-gang-med-Indesign)",
+        "file": "rapport-forsidemal-b"
+      },
+      {
+        "title": "Forsidemal-C",
+        "format": "indd",
+        "version": "v1.0.0",
+        "formathelpertext": "Forsidemal-C - Adobe InDesign dokument. [Les mer om hvordan du bruker malen](http://blogg.hiof.no/beta/kom-i-gang-med-Indesign)",
+        "file": "rapport-forsidemal-c"
+      },
+      {
+        "title": "Forsidemal-C Word",
+        "format": "docx",
+        "version": "v1.0.0",
+        "formathelpertext": "Forsidemal-C - Word format som du kan ta i bruk med installert programvare.",
+        "file": "rapport-forsidemal-c"
+      }
+    ],
+    "illustration": "template-rapport-forsidemal.jpg",
+    "position": 14,
+    "preview": "Dette er malene som kan brukes på forskningsrapporter og annen rapportering ved høgskolen. Du kan velge mellom tre ulike uttrykk.\n- Rapport forsidemal A kan inneholde et bilde du selv ønsker. Denne forsiden kan redigeres i Adobe InDesign (.id) eller Adobe Acrobat (.pdf).\n- Rapport forsidemal B tilbyr en forside med høgskolens heksagon-uttrykk og farger som går i hverandre. Dette er ment å symbolisere høgskolens mangfold og. Denne forsiden kan redigeres i Adobe InDesign (.id) eller Adobe Acrobat (.pdf).\n- Rapport forsidemal C tilbyr en formell forside i én farge med høgskolens heksagon-uttrykk. Denne forsiden kan redigeres i Word (.docx), Adobe InDesign (.id) eller Adobe Acrobat (.pdf).",
+    "iso8601Date": "2015-12-07T00:00:00+01:00",
+    "basename": "rapport-forsidemal"
+  },
+  "stillingsannonse": {
+    "title": "Stillingsannonser",
+    "author": "Kenneth Lindbeck-Dahlstrøm",
+    "date": "2015-11-10T00:00:00.000Z",
+    "illustration": "template-stillingsannonse.jpg",
+    "position": 20,
+    "category": "annonse",
+    "preview": "Stillingsannonsemalene blir brukt i høgskolens annonseplattform JobbNorge. Ta kontakt med HR for bistand til stillingsannonser på [stilling@hiof.no](stilling@hiof.no).",
+    "iso8601Date": "2015-11-10T01:00:00+01:00",
+    "basename": "stillingsannonse"
+  },
+  "visittkort": {
+    "title": "Visittkort",
+    "author": "Agnes Kristine Øktedalen Olsen Sirland <agnes.k.sirland@hiof.no>",
+    "date": "2015-12-7",
+    "illustration": "template-visittkort.jpg",
+    "position": 15,
+    "preview": "Visittkort bestilles [via et bestillingsskjema som finnes på ansattes intranett](http://www2.hiof.no/nor/intranett-ansatte/visittkort). Visittkort er behovsprøvd, og skal godkjennes av din leder.",
+    "iso8601Date": "2015-12-07T00:00:00+01:00",
+    "basename": "visittkort"
+  }
+}

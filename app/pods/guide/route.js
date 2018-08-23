@@ -11,7 +11,7 @@ export default Route.extend({
     //  id: 1,
     //  del: params.del
     //});
-    return fetch('https://www.hiof.no/api/v2/designguidelines/?type=guides')
+    return fetch('https://design.hiof.no/api/v2/designguidelines/index.php?type=guides')
     .then(function(response) {
 
       //console.log(response.json());
