@@ -27,9 +27,9 @@
   </section>
 
   <aside class="section-illustration">
-    <img alt="Illustrasjon for: {{title}}" {{action 'openModal' basename}} class="img-illustration" data-id="modal-image-{{convert-aeoaa basename}}" src="https://www.hiof.no/assets/plugins/design-{{type}}/illustrations/{{illustration}}">
+    <img alt="Illustrasjon for: {{title}}" {{action 'openModal' basename}} class="img-illustration" data-id="modal-image-{{convert-aeoaa basename}}" src="/design-{{type}}/illustrations/{{illustration}}">
     {{#my-modal basename=basename}}
-      <img alt="Illustrasjon for: {{title}}" src="https://www.hiof.no/assets/plugins/design-{{type}}/illustrations/{{illustration}}">
+      <img alt="Illustrasjon for: {{title}}" src="/design-{{type}}/illustrations/{{illustration}}">
     {{/my-modal}}
   </aside>
 
@@ -64,10 +64,10 @@
               {{#if (is-array resource.illustration)}}
 
                 {{#each resource.illustration as |image|}}
-                  <img alt="Illustrasjon for: {{resource.title}}" class="card-img-top" src="https://www.hiof.no/assets/plugins/design-templates/illustrations/{{image.image}}-{{resource.version}}.jpg" data-each="true">
+                  <img alt="Illustrasjon for: {{resource.title}}" class="card-img-top" src="/design-templates/illustrations/{{image.image}}-{{resource.version}}.jpg" data-each="true">
                 {{/each}}
               {{else}}
-                <img alt="Illustrasjon for: {{resource.title}}" class="card-img-top" src="https://www.hiof.no/assets/plugins/design-templates/illustrations/{{resource.illustration.image}}.jpg">
+                <img alt="Illustrasjon for: {{resource.title}}" class="card-img-top" src="/design-templates/illustrations/{{resource.illustration.image}}.jpg">
               {{/if}}
             {{else}}
             {{/if}}
@@ -82,9 +82,9 @@
             </ul>
             <div class="card-body">
               {{#if resource.format}}
-                <a class="btn btn-primary" href="https://www.hiof.no/assets/plugins/design-templates/public/{{resource.file}}-{{resource.format}}-{{resource.version}}.zip"><span class="glyphicon glyphicon-download"></span>{{#if (eq resource.lang 'en')}}Download{{else}}Last ned{{/if}}</a>
+                <a class="btn btn-primary" href="/design-templates/public/{{resource.file}}-{{resource.format}}-{{resource.version}}.zip"><span class="glyphicon glyphicon-download"></span>{{#if (eq resource.lang 'en')}}Download{{else}}Last ned{{/if}}</a>
               {{else}}
-                <a class="btn btn-primary" href="https://www.hiof.no/assets/plugins/design-templates/public/{{resource.file}}-{{resource.version}}.zip"><span class="glyphicon glyphicon-download"></span>{{#if (eq resource.lang 'en')}}Download{{else}}Last ned{{/if}}</a>
+                <a class="btn btn-primary" href="/design-templates/public/{{resource.file}}-{{resource.version}}.zip"><span class="glyphicon glyphicon-download"></span>{{#if (eq resource.lang 'en')}}Download{{else}}Last ned{{/if}}</a>
               {{/if}}
               <a class="card-link" href="mailto:design@hiof.no?subject=Malfeil: Fil:{{resource.file}}-{{resource.format}}, versjon: {{resource.version}}">{{#if (eq resource.lang 'en')}}Report issues with this file{{else}}Meld fra om feil/mangler{{/if}}</a>
             </div>
@@ -94,7 +94,7 @@
       </div>
     {{else}}
       {{#if url}}
-        <a href="https://www.hiof.no{{assetpath}}{{url}}.zip" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span> {{url}}</a>
+        <a href="https://design.hiof.no{{assetpath}}{{url}}.zip" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span> {{url}}</a>
       {{/if}}
     {{/if}}
   </footer>

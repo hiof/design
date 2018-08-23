@@ -4,7 +4,7 @@ import $ from 'jquery';
 
 export default Route.extend({
   model() {
-    return fetch('https://www.hiof.no/api/v2/designguidelines/?type=templates')
+    return fetch('https://design.hiof.no/api/v2/designguidelines/index.php?type=templates')
       .then(function(response) {
         return response.json();
       });
